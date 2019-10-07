@@ -30,7 +30,7 @@
 
 \hwtitle
   {Assignment 1}
-  {Will Crichton (wcrichto)} %% REPLACE THIS WITH YOUR NAME/ID
+  {Kun Ho Kim (khkim1)} %% REPLACE THIS WITH YOUR NAME/ID
 
 \problem{Problem 1}
 
@@ -38,11 +38,19 @@ Part 1:
 
 \begin{alignat*}{1}
 \msf{Property}~p ::= \qamp \varepsilon \\
-\mid \qamp \ldots \\
+\mid \qamp > n \quad \mid \quad < n \\
+\mid \qamp = n \quad \mid \quad =s \\
+\mid \qamp p_{1} \land p_{2} \quad \mid \quad p_{1} \lor p_{2}
 \\
-\msf{Schema}~\tau ::= \qamp \tnum \prop{p} \\
-\mid \qamp \ldots
+\msf{Schema}~\tau ::= \qamp \tnum \prop{p} \mid \quad \tstr \prop{p} \quad \mid \quad \tbool \\
+\mid \qamp \{(s: \tau_{s})^{*}\} \\
+\mid \qamp [\tau]
 \end{alignat*}
+
+\begin{comment}
+\mid \qamp [\tnum \prop{p}] \quad \mid \quad [\tstr \prop{p}] \quad \mid \quad [\tbool]\\
+\mid \qamp [\{(s: \tau_{s})\}^{*}]
+\end{comment}
 
 Part 2:
 
@@ -52,31 +60,87 @@ Part 2:
 \begin{mathpar}
 
 \ir{S-Bool-False}{\ }{\matches{\falset}{\tbool}}
-
 \ir{S-Bool-True}{\ }{\matches{\truet}{\tbool}}
+\\
+\ir{N $\varepsilon$}{\ }{\matches{n}{\tnum \prop{\eps}}}
+\ir{N>}{n > m}{\matches{n}{\tnum \prop{> m}}}
+\ir{N<}{n < m}{\matches{n}{\tnum \prop{< m}}}
+\ir{N=}{n = m}{\matches{n}{\tnum \prop{= m}}}
+\\
+\ir{N-and}{\matches{n}{\tnum \prop{p_{1}}} \land \matches{n}{\tnum \prop{p_{2}}}}{\matches{n}{\tnum \prop{p_{1} \land p_{2}}}}
+\ir{N-or}{\matches{n}{\tnum \prop{p_{1}}} \lor \matches{n}{\tnum \prop{p_{2}}}}{\matches{n}{\tnum \prop{p_{1} \lor p_{2}}}}
+\\
+\ir{S $\varepsilon$}{\ }{\matches{s}{\tstr \prop{\eps}}}
+\ir{S=}{s = w}{\matches{s}{\tstr \prop{= w}}}
+\\
+\ir{S-and}{\matches{s}{\tstr \prop{p_{1}}} \land \matches{s}{\tstr \prop{p_{2}}}}{\matches{s}{\tstr \prop{p_{1} \land p_{2}}}}
+\ir{S-or}{\matches{s}{\tstr \prop{p_{1}}} \lor \matches{s}{\tstr \prop{p_{2}}}}{\matches{s}{\tstr \prop{p_{1} \lor p_{2}}}}
+\\
+\ir{Dict}{\forall s' \in s \quad \matches{j_{s'}}{\tau_{s'}}}{\matches{\{(s: j)^*\}}{\{(s: \tau_{s})^*\}}}
+\ir{Array}{\forall i = 0, ..., |j|-1 \quad \matches{j_{i}}{\tau}}{\matches{[j^*]}{[\tau]}}
 
-% Inference rules go here
 
 \end{mathpar}
+
+\newpage
 
 \problem{Problem 2}
 
 Part 1:
 
 \begin{mathpar}
-% Inference rules go here
+\ir{Terminal}{\ }{\val{(\varepsilon, j)}} 
+
+\ir{DictKey}{s' \in s}
+{(.s'a, \{(s: j)^*\}) \mapsto (a, j_{s'})} 
+
+\ir{ArrIdx}{ \ }
+{([n]a, [j^*]) \mapsto (a, j_{n})} 
+
+\ir{Pipe}{ (a, j_{n}) \mapsto (a', j_{n}') \quad \forall n = 0, ..., |j|-1}
+{(|a, [j^*]) \mapsto (|a', [j'^*]))} 
+
+\ir{Pipe-$\varepsilon$}{ }
+{(|\varepsilon, [j^*]) \mapsto (\varepsilon, [j^*])} 
+
 \end{mathpar}
 
 Part 2:
 
 \begin{mathpar}
-% Inference rules go here
+\ir{Access$\varepsilon$}{ }{ \matches{\varepsilon}{ \tau }}
+\ir{AccessArr}{ \matches{a}{\tau} }{ \matches{[n]a}{[\tau]}} 
+\ir{AccessDict}{ s' \in s \quad \matches{a}{\tau_{s'}} }{ \matches{.s'a}{\{(s: \tau_{s})^*\}} } 
+\ir{AccessMap}{ \matches{a}{\tau} }{ \matches{|a}{ [\tau] }}
 \end{mathpar}
 
 \textit{Accessor safety}: for all $a, j, \tau$, if $\matches{a}{\tau}$ and $\matches{j}{\tau}$, then there exists a $j'$ such that $\evals{(a, j)}{\aeps, j'}$.
 
 \begin{proof}
-% Proof goes here.
+We prove by induction separately for the four accessor types: 
+
+$\bullet$ Base case: $\varepsilon$. This case trivially holds, since $(\varepsilon, j)$ denotes that the accessor has terminated. 
+
+Assume for induction that for all $a, j, \tau$ such that $a$ is a composition of $k$ primitive accessors excluding "$|$", $a \sim \tau, j \sim \tau \Rightarrow \exists j'$ s.t $\evals{(a, j)}{(\varepsilon, j')}$. We exhaustively consider all successor triplets $(S(a), j, \tau)$ for which $S(a), j \sim \tau$ and $S(a)$ is a composition of $k+1$ primitive accessors excluding "$|$": 
+
+$\bullet$ If $S(a) = [n]a \sim [\tau], [j^*] \sim [\tau]$ then by (ArrIdx) we have $([n]a, [j^*]) \mapsto (a, j_{n})$. Since $a \sim \tau$ by the inversion lemma on (AccessArr) and $j _{n} \sim \tau \quad \forall n = 0, ..., |j|-1$, we conclude that $\exists j'$ s.t $\evals{(a, j_{n})}{(\varepsilon, j')}$ by the induction hypothesis. 
+
+$\bullet$ If $S(a) = .s'a \sim \{(s: \tau_{s})^*\}, \{(s: j)^*\} \sim \{(s: \tau_{s})^*\}$,  then by the inversion lemma on (AccessDict) we have $s' \in s$ and $a \sim \tau_{s'}$. By (DictKey) we then have $(.s'a, \{(s: j)^*\}) \mapsto (a, j_{s'})$. Since $a \sim \tau_{s'}, j _{s'} \sim \tau_{s'}$ we conclude that $\exists j'$ s.t $\evals{(a, j_{s'})}{(\varepsilon, j')}$ by the induction hypothesis. 
+
+Now we provide a separate proof of the accessor safety theorem for Pipe. 
+
+$\bullet$ If $|a \sim [\tau], [j^*] \sim [\tau]$, then $j_{n} \sim \tau ~~ \forall n = 0, ..., |j|-1$ and $a \sim \tau$ by the inversion lemma on (AccessMap). As shown previously for $S(a) = [n]a, S(a) = .s'a$, it holds that $j_{n} \sim \tau~~\forall n = 0, ..., |j|-1$ and $a \sim \tau \Rightarrow \exists (a', j_{n}')~~\forall n = 0, ..., |j|-1$ s.t $(a, j_{n}) \mapsto (a', j_{n}')$ and $\exists \tau'$ s.t $a', j_{n}' \sim \tau'$. Invoking inference rule (Pipe) we obtain $(|a, [j^*]) \mapsto (|a', [j^*'])$. Since $a', j_{n}' \sim \tau$ we may repeatedly apply (Pipe) until we obtain $\evals{(|a, [j^*])}{(|\varepsilon, [j_{t}^*])}$ since every accessor ends with $\varepsilon$. Then invoking (Pipe-$\varepsilon$), we obtain $\evals{(|a, [j^*])}{(\varepsilon, [j_{t}^*])}$. 
+
+We've exhaustively covered all cases of $(a, j, \tau)$ for which $a, j \sim \tau$ and thus conclude the proof. 
+
+
 \end{proof}
 
 \end{document}
+
+
+\begin{comment}
+$\bullet$ Case 2: $[n]a$. First consider the base case when $a = [n]\varepsilon$. By (AccessArr), it follows that $\matches{[n]\varepsilon}{[\tau]} \quad \forall \tau$. Then, by (Arr-Idx), $j \sim [\tau] \Rightarrow ([n]\varepsilon, j) \mapsto (\varepsilon, j_{n})$. So the safety theorem holds.  
+
+We now assume for induction that $[n]a \sim \tau, j \sim \tau \Rightarrow \exists j'$ s.t $\evals{([n]a, j)}{(\varepsilon, j')}$. We wish to show that $[n]aa' \sim \tau, j \sim \tau \Rightarrow \exists j'$ s.t $\evals{([n]aa', j)}{(\varepsilon, j')}$. We assume that $[n]a \sim [\tau]$ so by the inversion lemma we have $aa' \sim \tau$. For $j \sim [\tau]$, we further get by (Arr-Idx) that $([n]aa', j) \mapsto (aa', j_{n})$. Then we know that $aa' \sim \tau$ and $j_{n} \sim \tau$.  
+\end{comment}
