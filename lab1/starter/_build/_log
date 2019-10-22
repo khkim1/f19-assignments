@@ -1,0 +1,20 @@
+### Starting build.
+# Target: exercise2.ml.depends, tags: { package(core), ppx(ppx-jane -as-ppx), bin_annot, debug, extension:ml, file:exercise2.ml, ocaml, ocamldep, quiet, short_paths, thread, traverse }
+ocamlfind ocamldep -package core -ppx 'ppx-jane -as-ppx' -modules exercise2.ml > exercise2.ml.depends
+# Target: exercise2.cmo, tags: { package(core), ppx(ppx-jane -as-ppx), bin_annot, byte, compile, debug, extension:cmo, extension:ml, file:exercise2.cmo, file:exercise2.ml, implem, ocaml, quiet, short_paths, thread, traverse }
+ocamlfind ocamlc -c -w A-4-33-40-41-42-43-34-44 -strict-sequence -g -bin-annot -short-paths -thread -package core -ppx 'ppx-jane -as-ppx' -o exercise2.cmo exercise2.ml
++ ocamlfind ocamlc -c -w A-4-33-40-41-42-43-34-44 -strict-sequence -g -bin-annot -short-paths -thread -package core -ppx 'ppx-jane -as-ppx' -o exercise2.cmo exercise2.ml
+File "exercise2.ml", line 20, characters 6-24:
+Warning 26: unused variable forecast_to_string.
+File "exercise2.ml", line 62, characters 53-54:
+Warning 27: unused variable n.
+# Target: exercise2.cmx, tags: { package(core), ppx(ppx-jane -as-ppx), bin_annot, compile, debug, extension:cmx, extension:ml, file:exercise2.cmx, file:exercise2.ml, implem, native, ocaml, quiet, short_paths, thread, traverse }
+ocamlfind ocamlopt -c -w A-4-33-40-41-42-43-34-44 -strict-sequence -g -bin-annot -short-paths -thread -package core -ppx 'ppx-jane -as-ppx' -o exercise2.cmx exercise2.ml
++ ocamlfind ocamlopt -c -w A-4-33-40-41-42-43-34-44 -strict-sequence -g -bin-annot -short-paths -thread -package core -ppx 'ppx-jane -as-ppx' -o exercise2.cmx exercise2.ml
+File "exercise2.ml", line 20, characters 6-24:
+Warning 26: unused variable forecast_to_string.
+File "exercise2.ml", line 62, characters 53-54:
+Warning 27: unused variable n.
+# Target: exercise2.native, tags: { package(core), ppx(ppx-jane -as-ppx), bin_annot, debug, dont_link_with, extension:native, file:exercise2.native, link, native, ocaml, program, quiet, short_paths, thread, traverse }
+ocamlfind ocamlopt -linkpkg -g -thread -package core exercise2.cmx -o exercise2.native # cached
+# Compilation successful.
