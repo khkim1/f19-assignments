@@ -1,0 +1,472 @@
+"src/parser.ml" 6 55 59 "src/parser.ml" 6 55 64
+type(
+  ((Lexing.lexbuf -> Grammar.token) -> Lexing.lexbuf -> 'a) ->
+  string -> ('a, string) result
+)
+ident(
+  def parse "src/parser.ml" 19 512 512 "src/parser.ml" 1 0 -1
+)
+"src/parser.ml" 6 55 65 "src/parser.ml" 6 55 66
+type(
+  (Lexing.lexbuf -> Grammar.token) -> Lexing.lexbuf -> 'a
+)
+ident(
+  def f "src/parser.ml" 6 55 67 "src/parser.ml" 17 465 510
+)
+"src/parser.ml" 6 55 67 "src/parser.ml" 6 55 72
+type(
+  string
+)
+ident(
+  def input "src/parser.ml" 7 75 77 "src/parser.ml" 17 465 510
+)
+"src/parser.ml" 7 75 81 "src/parser.ml" 7 75 88
+type(
+  Lexing.lexbuf
+)
+ident(
+  def filebuf "src/parser.ml" 8 119 121 "src/parser.ml" 17 465 510
+)
+"src/parser.ml" 7 75 91 "src/parser.ml" 7 75 109
+type(
+  string -> Lexing.lexbuf
+)
+ident(
+  int_ref Lexing.from_string "lexing.mli" 83 3481 3481 "lexing.mli" 83 3481 3515
+)
+"src/parser.ml" 7 75 110 "src/parser.ml" 7 75 115
+type(
+  string
+)
+ident(
+  int_ref input "src/parser.ml" 6 55 67 "src/parser.ml" 6 55 72
+)
+"src/parser.ml" 7 75 91 "src/parser.ml" 7 75 115
+call(
+  stack
+)
+type(
+  Lexing.lexbuf
+)
+"src/parser.ml" 8 119 130 "src/parser.ml" 8 119 131
+type(
+  (Lexing.lexbuf -> Grammar.token) -> Lexing.lexbuf -> 'a
+)
+ident(
+  int_ref f "src/parser.ml" 6 55 65 "src/parser.ml" 6 55 66
+)
+"src/parser.ml" 8 119 132 "src/parser.ml" 8 119 143
+type(
+  Lexing.lexbuf -> Grammar.token
+)
+ident(
+  int_ref Lexer.token "src/lexer.ml" 1780 122957 122965 "src/lexer.ml" 1780 122957 122970
+)
+"src/parser.ml" 8 119 144 "src/parser.ml" 8 119 151
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref filebuf "src/parser.ml" 7 75 81 "src/parser.ml" 7 75 88
+)
+"src/parser.ml" 8 119 129 "src/parser.ml" 8 119 152
+call(
+  stack
+)
+type(
+  'a
+)
+"src/parser.ml" 8 119 125 "src/parser.ml" 8 119 153
+type(
+  ('a, string) result
+)
+"src/parser.ml" 9 159 175 "src/parser.ml" 9 159 178
+type(
+  string
+)
+ident(
+  def msg "src/parser.ml" 9 159 182 "src/parser.ml" 9 159 191
+)
+"src/parser.ml" 9 159 163 "src/parser.ml" 9 159 178
+type(
+  exn
+)
+"src/parser.ml" 9 159 188 "src/parser.ml" 9 159 191
+type(
+  string
+)
+ident(
+  int_ref msg "src/parser.ml" 9 159 175 "src/parser.ml" 9 159 178
+)
+"src/parser.ml" 9 159 182 "src/parser.ml" 9 159 191
+type(
+  ('a, string) result
+)
+"src/parser.ml" 10 192 196 "src/parser.ml" 10 192 209
+type(
+  exn
+)
+"src/parser.ml" 11 213 221 "src/parser.ml" 11 213 230
+type(
+  Lexing.position
+)
+ident(
+  def start_pos "src/parser.ml" 12 266 270 "src/parser.ml" 17 465 510
+)
+"src/parser.ml" 11 213 233 "src/parser.ml" 11 213 254
+type(
+  Lexing.lexbuf -> Lexing.position
+)
+ident(
+  int_ref Lexing.lexeme_start_p "lexing.mli" 128 5368 5368 "lexing.mli" 128 5368 5407
+)
+"src/parser.ml" 11 213 255 "src/parser.ml" 11 213 262
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref filebuf "src/parser.ml" 7 75 81 "src/parser.ml" 7 75 88
+)
+"src/parser.ml" 11 213 233 "src/parser.ml" 11 213 262
+call(
+  stack
+)
+type(
+  Lexing.position
+)
+"src/parser.ml" 12 266 274 "src/parser.ml" 12 266 281
+type(
+  Lexing.position
+)
+ident(
+  def end_pos "src/parser.ml" 13 315 319 "src/parser.ml" 17 465 510
+)
+"src/parser.ml" 12 266 284 "src/parser.ml" 12 266 303
+type(
+  Lexing.lexbuf -> Lexing.position
+)
+ident(
+  int_ref Lexing.lexeme_end_p "lexing.mli" 132 5496 5496 "lexing.mli" 132 5496 5533
+)
+"src/parser.ml" 12 266 304 "src/parser.ml" 12 266 311
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref filebuf "src/parser.ml" 7 75 81 "src/parser.ml" 7 75 88
+)
+"src/parser.ml" 12 266 284 "src/parser.ml" 12 266 311
+call(
+  stack
+)
+type(
+  Lexing.position
+)
+"src/parser.ml" 14 327 333 "src/parser.ml" 14 327 347
+type(
+  (int -> int -> int -> string, unit, string) Pervasives.format ->
+  int -> int -> int -> string
+)
+ident(
+  int_ref Core.Printf.sprintf "src/printf.mli" 7 128 128 "src/printf.mli" 7 128 199
+)
+"src/parser.ml" 14 327 348 "src/parser.ml" 14 327 388
+type(
+  (int -> int -> int -> string, unit, string) Pervasives.format
+)
+"src/parser.ml" 15 389 397 "src/parser.ml" 15 389 406
+type(
+  Lexing.position
+)
+ident(
+  int_ref start_pos "src/parser.ml" 11 213 221 "src/parser.ml" 11 213 230
+)
+"src/parser.ml" 15 389 397 "src/parser.ml" 15 389 415
+type(
+  int
+)
+"src/parser.ml" 16 416 425 "src/parser.ml" 16 416 434
+type(
+  Lexing.position
+)
+ident(
+  int_ref start_pos "src/parser.ml" 11 213 221 "src/parser.ml" 11 213 230
+)
+"src/parser.ml" 16 416 425 "src/parser.ml" 16 416 443
+type(
+  int
+)
+"src/parser.ml" 16 416 444 "src/parser.ml" 16 416 445
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Core.( - ) "src/core_pervasives.mli" 215 8438 8438 "src/core_pervasives.mli" 215 8438 8484
+)
+"src/parser.ml" 16 416 446 "src/parser.ml" 16 416 455
+type(
+  Lexing.position
+)
+ident(
+  int_ref start_pos "src/parser.ml" 11 213 221 "src/parser.ml" 11 213 230
+)
+"src/parser.ml" 16 416 446 "src/parser.ml" 16 416 463
+type(
+  int
+)
+"src/parser.ml" 16 416 424 "src/parser.ml" 16 416 464
+type(
+  int
+)
+"src/parser.ml" 17 465 474 "src/parser.ml" 17 465 481
+type(
+  Lexing.position
+)
+ident(
+  int_ref end_pos "src/parser.ml" 12 266 274 "src/parser.ml" 12 266 281
+)
+"src/parser.ml" 17 465 474 "src/parser.ml" 17 465 490
+type(
+  int
+)
+"src/parser.ml" 17 465 491 "src/parser.ml" 17 465 492
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Core.( - ) "src/core_pervasives.mli" 215 8438 8438 "src/core_pervasives.mli" 215 8438 8484
+)
+"src/parser.ml" 17 465 493 "src/parser.ml" 17 465 500
+type(
+  Lexing.position
+)
+ident(
+  int_ref end_pos "src/parser.ml" 12 266 274 "src/parser.ml" 12 266 281
+)
+"src/parser.ml" 17 465 493 "src/parser.ml" 17 465 508
+type(
+  int
+)
+"src/parser.ml" 17 465 473 "src/parser.ml" 17 465 509
+type(
+  int
+)
+"src/parser.ml" 13 315 325 "src/parser.ml" 17 465 510
+call(
+  stack
+)
+type(
+  string
+)
+"src/parser.ml" 13 315 319 "src/parser.ml" 17 465 510
+type(
+  ('a, string) result
+)
+"src/parser.ml" 12 266 270 "src/parser.ml" 17 465 510
+type(
+  ('a, string) result
+)
+"src/parser.ml" 11 213 217 "src/parser.ml" 17 465 510
+type(
+  ('a, string) result
+)
+"src/parser.ml" 8 119 121 "src/parser.ml" 17 465 510
+type(
+  ('a, string) result
+)
+"src/parser.ml" 7 75 77 "src/parser.ml" 17 465 510
+type(
+  ('a, string) result
+)
+"src/parser.ml" 19 512 516 "src/parser.ml" 19 512 525
+type(
+  ((Lexing.lexbuf -> Grammar.token) -> Lexing.lexbuf -> 'a) -> string -> 'a
+)
+ident(
+  def parse_exn "src/parser.ml" 25 618 618 "src/parser.ml" 1 0 -1
+)
+"src/parser.ml" 19 512 526 "src/parser.ml" 19 512 527
+type(
+  (Lexing.lexbuf -> Grammar.token) -> Lexing.lexbuf -> 'a
+)
+ident(
+  def f "src/parser.ml" 19 512 528 "src/parser.ml" 22 577 615
+)
+"src/parser.ml" 19 512 528 "src/parser.ml" 19 512 533
+type(
+  string
+)
+ident(
+  def input "src/parser.ml" 20 536 538 "src/parser.ml" 22 577 615
+)
+"src/parser.ml" 20 536 544 "src/parser.ml" 20 536 549
+type(
+  ((Lexing.lexbuf -> Grammar.token) -> Lexing.lexbuf -> 'a) ->
+  string -> ('a, string) result
+)
+ident(
+  int_ref parse "src/parser.ml" 6 55 59 "src/parser.ml" 6 55 64
+)
+"src/parser.ml" 20 536 550 "src/parser.ml" 20 536 551
+type(
+  (Lexing.lexbuf -> Grammar.token) -> Lexing.lexbuf -> 'a
+)
+ident(
+  int_ref f "src/parser.ml" 19 512 526 "src/parser.ml" 19 512 527
+)
+"src/parser.ml" 20 536 552 "src/parser.ml" 20 536 557
+type(
+  string
+)
+ident(
+  int_ref input "src/parser.ml" 19 512 528 "src/parser.ml" 19 512 533
+)
+"src/parser.ml" 20 536 544 "src/parser.ml" 20 536 557
+call(
+  stack
+)
+type(
+  ('a, string) result
+)
+"src/parser.ml" 21 563 570 "src/parser.ml" 21 563 571
+type(
+  'a
+)
+ident(
+  def e "src/parser.ml" 21 563 575 "src/parser.ml" 21 563 576
+)
+"src/parser.ml" 21 563 567 "src/parser.ml" 21 563 571
+type(
+  ('a, string) result
+)
+"src/parser.ml" 21 563 575 "src/parser.ml" 21 563 576
+type(
+  'a
+)
+ident(
+  int_ref e "src/parser.ml" 21 563 570 "src/parser.ml" 21 563 571
+)
+"src/parser.ml" 22 577 587 "src/parser.ml" 22 577 588
+type(
+  string
+)
+ident(
+  def s "src/parser.ml" 22 577 592 "src/parser.ml" 22 577 615
+)
+"src/parser.ml" 22 577 581 "src/parser.ml" 22 577 588
+type(
+  ('a, string) result
+)
+"src/parser.ml" 22 577 592 "src/parser.ml" 22 577 597
+type(
+  exn -> 'a
+)
+ident(
+  int_ref Core.raise "src/core_pervasives.mli" 16 610 610 "src/core_pervasives.mli" 16 610 649
+)
+"src/parser.ml" 22 577 613 "src/parser.ml" 22 577 614
+type(
+  string
+)
+ident(
+  int_ref s "src/parser.ml" 22 577 587 "src/parser.ml" 22 577 588
+)
+"src/parser.ml" 22 577 598 "src/parser.ml" 22 577 615
+type(
+  exn
+)
+"src/parser.ml" 22 577 592 "src/parser.ml" 22 577 615
+type(
+  'a
+)
+"src/parser.ml" 20 536 538 "src/parser.ml" 22 577 615
+type(
+  'a
+)
+"src/parser.ml" 25 618 622 "src/parser.ml" 25 618 632
+type(
+  string -> (Expr.t, string) result
+)
+ident(
+  def parse_expr "src/parser.ml" 26 663 663 "src/parser.ml" 1 0 -1
+)
+"src/parser.ml" 25 618 635 "src/parser.ml" 25 618 640
+type(
+  ((Lexing.lexbuf -> Grammar.token) -> Lexing.lexbuf -> Expr.t) ->
+  string -> (Expr.t, string) result
+)
+ident(
+  int_ref parse "src/parser.ml" 6 55 59 "src/parser.ml" 6 55 64
+)
+"src/parser.ml" 25 618 641 "src/parser.ml" 25 618 662
+type(
+  (Lexing.lexbuf -> Grammar.token) -> Lexing.lexbuf -> Expr.t
+)
+ident(
+  int_ref Grammar.expr_toplevel "src/grammar.mli" 63 710 710 "src/grammar.mli" 63 710 786
+)
+"src/parser.ml" 25 618 635 "src/parser.ml" 25 618 662
+call(
+  stack
+)
+type(
+  string -> (Expr.t, string) result
+)
+"src/parser.ml" 26 663 667 "src/parser.ml" 26 663 681
+type(
+  string -> Expr.t
+)
+ident(
+  def parse_expr_exn "src/parser.ml" 28 717 717 "src/parser.ml" 1 0 -1
+)
+"src/parser.ml" 26 663 684 "src/parser.ml" 26 663 693
+type(
+  ((Lexing.lexbuf -> Grammar.token) -> Lexing.lexbuf -> Expr.t) ->
+  string -> Expr.t
+)
+ident(
+  int_ref parse_exn "src/parser.ml" 19 512 516 "src/parser.ml" 19 512 525
+)
+"src/parser.ml" 26 663 694 "src/parser.ml" 26 663 715
+type(
+  (Lexing.lexbuf -> Grammar.token) -> Lexing.lexbuf -> Expr.t
+)
+ident(
+  int_ref Grammar.expr_toplevel "src/grammar.mli" 63 710 710 "src/grammar.mli" 63 710 786
+)
+"src/parser.ml" 26 663 684 "src/parser.ml" 26 663 715
+call(
+  stack
+)
+type(
+  string -> Expr.t
+)
+"src/parser.ml" 28 717 721 "src/parser.ml" 28 717 735
+type(
+  string -> Type.t
+)
+ident(
+  def parse_type_exn "src/parser.ml" 28 717 769 "src/parser.ml" 1 0 -1
+)
+"src/parser.ml" 28 717 738 "src/parser.ml" 28 717 747
+type(
+  ((Lexing.lexbuf -> Grammar.token) -> Lexing.lexbuf -> Type.t) ->
+  string -> Type.t
+)
+ident(
+  int_ref parse_exn "src/parser.ml" 19 512 516 "src/parser.ml" 19 512 525
+)
+"src/parser.ml" 28 717 748 "src/parser.ml" 28 717 769
+type(
+  (Lexing.lexbuf -> Grammar.token) -> Lexing.lexbuf -> Type.t
+)
+ident(
+  int_ref Grammar.type_toplevel "src/grammar.mli" 61 632 632 "src/grammar.mli" 61 632 708
+)
+"src/parser.ml" 28 717 738 "src/parser.ml" 28 717 769
+call(
+  stack
+)
+type(
+  string -> Type.t
+)
