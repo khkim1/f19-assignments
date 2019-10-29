@@ -1,0 +1,3079 @@
+"src/interpreter.ml" 11 108 116 "src/interpreter.ml" 11 108 123
+type(
+  Expr.t -> outcome
+)
+ident(
+  def trystep "src/interpreter.ml" 11 108 108 "src/interpreter.ml" 1 0 -1
+)
+"src/interpreter.ml" 11 108 125 "src/interpreter.ml" 11 108 126
+type(
+  Expr.t
+)
+ident(
+  def e "src/interpreter.ml" 11 108 137 "src/interpreter.ml" 121 4189 4270
+)
+"src/interpreter.ml" 12 149 157 "src/interpreter.ml" 12 149 158
+type(
+  Expr.t
+)
+ident(
+  int_ref e "src/interpreter.ml" 11 108 125 "src/interpreter.ml" 11 108 126
+)
+"src/interpreter.ml" 13 164 178 "src/interpreter.ml" 13 164 179
+type(
+  Ast.Expr.t.Lam
+)
+"src/interpreter.ml" 13 164 169 "src/interpreter.ml" 13 164 179
+type(
+  Expr.t
+)
+"src/interpreter.ml" 13 164 191 "src/interpreter.ml" 13 164 192
+type(
+  int
+)
+"src/interpreter.ml" 13 164 182 "src/interpreter.ml" 13 164 192
+type(
+  Expr.t
+)
+"src/interpreter.ml" 13 164 169 "src/interpreter.ml" 13 164 192
+type(
+  Expr.t
+)
+"src/interpreter.ml" 13 164 195 "src/interpreter.ml" 13 164 204
+type(
+  Expr.t
+)
+"src/interpreter.ml" 13 164 169 "src/interpreter.ml" 13 164 204
+type(
+  Expr.t
+)
+"src/interpreter.ml" 13 164 207 "src/interpreter.ml" 13 164 217
+type(
+  Expr.t
+)
+"src/interpreter.ml" 13 164 169 "src/interpreter.ml" 13 164 217
+type(
+  Expr.t
+)
+"src/interpreter.ml" 13 164 230 "src/interpreter.ml" 13 164 231
+type(
+  Ast.Expr.t.Pair
+)
+"src/interpreter.ml" 13 164 220 "src/interpreter.ml" 13 164 231
+type(
+  Expr.t
+)
+"src/interpreter.ml" 13 164 169 "src/interpreter.ml" 13 164 231
+type(
+  Expr.t
+)
+"src/interpreter.ml" 13 164 234 "src/interpreter.ml" 13 164 243
+type(
+  Expr.t
+)
+"src/interpreter.ml" 13 164 169 "src/interpreter.ml" 13 164 243
+type(
+  Expr.t
+)
+"src/interpreter.ml" 14 244 262 "src/interpreter.ml" 14 244 263
+type(
+  Ast.Expr.t.Inject
+)
+"src/interpreter.ml" 14 244 250 "src/interpreter.ml" 14 244 263
+type(
+  Expr.t
+)
+"src/interpreter.ml" 13 164 169 "src/interpreter.ml" 14 244 263
+type(
+  Expr.t
+)
+"src/interpreter.ml" 14 244 277 "src/interpreter.ml" 14 244 278
+type(
+  Ast.Expr.t.TyLam
+)
+"src/interpreter.ml" 14 244 266 "src/interpreter.ml" 14 244 278
+type(
+  Expr.t
+)
+"src/interpreter.ml" 13 164 169 "src/interpreter.ml" 14 244 278
+type(
+  Expr.t
+)
+"src/interpreter.ml" 14 244 293 "src/interpreter.ml" 14 244 294
+type(
+  Ast.Expr.t.Export
+)
+"src/interpreter.ml" 14 244 281 "src/interpreter.ml" 14 244 294
+type(
+  Expr.t
+)
+"src/interpreter.ml" 13 164 169 "src/interpreter.ml" 14 244 294
+type(
+  Expr.t
+)
+"src/interpreter.ml" 14 244 308 "src/interpreter.ml" 14 244 309
+type(
+  Ast.Expr.t.Fold_
+)
+"src/interpreter.ml" 14 244 297 "src/interpreter.ml" 14 244 309
+type(
+  Expr.t
+)
+"src/interpreter.ml" 13 164 168 "src/interpreter.ml" 14 244 310
+type(
+  Expr.t
+)
+"src/interpreter.ml" 14 244 314 "src/interpreter.ml" 14 244 317
+type(
+  outcome
+)
+"src/interpreter.ml" 17 343 359 "src/interpreter.ml" 17 343 364
+type(
+  Expr.binop
+)
+ident(
+  def binop "src/interpreter.ml" 18 382 386 "src/interpreter.ml" 27 734 764
+)
+"src/interpreter.ml" 17 343 366 "src/interpreter.ml" 17 343 370
+type(
+  Expr.t
+)
+ident(
+  def left "src/interpreter.ml" 18 382 386 "src/interpreter.ml" 27 734 764
+)
+"src/interpreter.ml" 17 343 372 "src/interpreter.ml" 17 343 377
+type(
+  Expr.t
+)
+ident(
+  def right "src/interpreter.ml" 18 382 386 "src/interpreter.ml" 27 734 764
+)
+"src/interpreter.ml" 17 343 358 "src/interpreter.ml" 17 343 378
+type(
+  Ast.Expr.t.Binop
+)
+"src/interpreter.ml" 17 343 347 "src/interpreter.ml" 17 343 378
+type(
+  Expr.t
+)
+"src/interpreter.ml" 18 382 387 "src/interpreter.ml" 18 382 391
+type(
+  Expr.t
+)
+ident(
+  int_ref left "src/interpreter.ml" 17 343 366 "src/interpreter.ml" 17 343 370
+)
+"src/interpreter.ml" 18 382 397 "src/interpreter.ml" 18 382 402
+type(
+  Expr.t
+)
+ident(
+  def left' "src/interpreter.ml" 18 382 406 "src/interpreter.ml" 18 382 446
+)
+"src/interpreter.ml" 18 382 425 "src/interpreter.ml" 18 382 430
+type(
+  Expr.t
+)
+ident(
+  int_ref left' "src/interpreter.ml" 18 382 397 "src/interpreter.ml" 18 382 402
+)
+"src/interpreter.ml" 18 382 432 "src/interpreter.ml" 18 382 437
+type(
+  Expr.binop
+)
+ident(
+  int_ref binop "src/interpreter.ml" 17 343 359 "src/interpreter.ml" 17 343 364
+)
+"src/interpreter.ml" 18 382 439 "src/interpreter.ml" 18 382 444
+type(
+  Expr.t
+)
+ident(
+  int_ref right "src/interpreter.ml" 17 343 372 "src/interpreter.ml" 17 343 377
+)
+"src/interpreter.ml" 18 382 417 "src/interpreter.ml" 18 382 446
+type(
+  Ast.Expr.t.Binop
+)
+"src/interpreter.ml" 18 382 406 "src/interpreter.ml" 18 382 446
+type(
+  Expr.t
+)
+"src/interpreter.ml" 18 382 393 "src/interpreter.ml" 18 382 446
+type(
+  Expr.t -> Expr.t
+)
+"src/interpreter.ml" 18 382 386 "src/interpreter.ml" 18 382 447
+type(
+  Expr.t * (Expr.t -> Expr.t)
+)
+"src/interpreter.ml" 18 382 448 "src/interpreter.ml" 18 382 451
+type(
+  Expr.t * (Expr.t -> Expr.t) -> (unit -> outcome) -> outcome
+)
+ident(
+  int_ref |-> "src/interpreter.ml" 123 4272 4276 "src/interpreter.ml" 123 4272 4281
+)
+"src/interpreter.ml" 18 382 456 "src/interpreter.ml" 18 382 458
+type(
+  unit
+)
+"src/interpreter.ml" 19 462 467 "src/interpreter.ml" 19 462 472
+type(
+  Expr.t
+)
+ident(
+  int_ref right "src/interpreter.ml" 17 343 372 "src/interpreter.ml" 17 343 377
+)
+"src/interpreter.ml" 19 462 479 "src/interpreter.ml" 19 462 485
+type(
+  Expr.t
+)
+ident(
+  def right' "src/interpreter.ml" 19 462 489 "src/interpreter.ml" 19 462 529
+)
+"src/interpreter.ml" 19 462 509 "src/interpreter.ml" 19 462 515
+type(
+  Expr.t
+)
+ident(
+  int_ref right' "src/interpreter.ml" 19 462 479 "src/interpreter.ml" 19 462 485
+)
+"src/interpreter.ml" 19 462 517 "src/interpreter.ml" 19 462 522
+type(
+  Expr.binop
+)
+ident(
+  int_ref binop "src/interpreter.ml" 17 343 359 "src/interpreter.ml" 17 343 364
+)
+"src/interpreter.ml" 19 462 524 "src/interpreter.ml" 19 462 528
+type(
+  Expr.t
+)
+ident(
+  int_ref left "src/interpreter.ml" 17 343 366 "src/interpreter.ml" 17 343 370
+)
+"src/interpreter.ml" 19 462 500 "src/interpreter.ml" 19 462 529
+type(
+  Ast.Expr.t.Binop
+)
+"src/interpreter.ml" 19 462 489 "src/interpreter.ml" 19 462 529
+type(
+  Expr.t
+)
+"src/interpreter.ml" 19 462 474 "src/interpreter.ml" 19 462 530
+type(
+  Expr.t -> Expr.t
+)
+"src/interpreter.ml" 19 462 466 "src/interpreter.ml" 19 462 531
+type(
+  Expr.t * (Expr.t -> Expr.t)
+)
+"src/interpreter.ml" 19 462 532 "src/interpreter.ml" 19 462 535
+type(
+  Expr.t * (Expr.t -> Expr.t) -> (unit -> outcome) -> outcome
+)
+ident(
+  int_ref |-> "src/interpreter.ml" 123 4272 4276 "src/interpreter.ml" 123 4272 4281
+)
+"src/interpreter.ml" 19 462 540 "src/interpreter.ml" 19 462 542
+type(
+  unit
+)
+"src/interpreter.ml" 20 546 564 "src/interpreter.ml" 20 546 566
+type(
+  int
+)
+ident(
+  def n1 "src/interpreter.ml" 21 600 604 "src/interpreter.ml" 27 734 764
+)
+"src/interpreter.ml" 20 546 555 "src/interpreter.ml" 20 546 566
+type(
+  Expr.t
+)
+"src/interpreter.ml" 20 546 577 "src/interpreter.ml" 20 546 579
+type(
+  int
+)
+ident(
+  def n2 "src/interpreter.ml" 21 600 604 "src/interpreter.ml" 27 734 764
+)
+"src/interpreter.ml" 20 546 568 "src/interpreter.ml" 20 546 579
+type(
+  Expr.t
+)
+"src/interpreter.ml" 20 546 554 "src/interpreter.ml" 20 546 580
+type(
+  Expr.t * Expr.t
+)
+"src/interpreter.ml" 20 546 584 "src/interpreter.ml" 20 546 588
+type(
+  Expr.t
+)
+ident(
+  int_ref left "src/interpreter.ml" 17 343 366 "src/interpreter.ml" 17 343 370
+)
+"src/interpreter.ml" 20 546 590 "src/interpreter.ml" 20 546 595
+type(
+  Expr.t
+)
+ident(
+  int_ref right "src/interpreter.ml" 17 343 372 "src/interpreter.ml" 17 343 377
+)
+"src/interpreter.ml" 20 546 583 "src/interpreter.ml" 20 546 596
+type(
+  Expr.t * Expr.t
+)
+"src/interpreter.ml" 21 600 608 "src/interpreter.ml" 21 600 609
+type(
+  int -> int -> int
+)
+ident(
+  def f "src/interpreter.ml" 27 734 738 "src/interpreter.ml" 27 734 764
+)
+"src/interpreter.ml" 21 600 618 "src/interpreter.ml" 21 600 623
+type(
+  Expr.binop
+)
+ident(
+  int_ref binop "src/interpreter.ml" 17 343 359 "src/interpreter.ml" 17 343 364
+)
+"src/interpreter.ml" 22 629 637 "src/interpreter.ml" 22 629 645
+type(
+  Expr.binop
+)
+"src/interpreter.ml" 22 629 649 "src/interpreter.ml" 22 629 652
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Core.( + ) "src/core_pervasives.mli" 212 8365 8365 "src/core_pervasives.mli" 212 8365 8411
+)
+"src/interpreter.ml" 23 653 661 "src/interpreter.ml" 23 653 669
+type(
+  Expr.binop
+)
+"src/interpreter.ml" 23 653 673 "src/interpreter.ml" 23 653 676
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Core.( - ) "src/core_pervasives.mli" 215 8438 8438 "src/core_pervasives.mli" 215 8438 8484
+)
+"src/interpreter.ml" 24 677 685 "src/interpreter.ml" 24 677 693
+type(
+  Expr.binop
+)
+"src/interpreter.ml" 24 677 697 "src/interpreter.ml" 24 677 702
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Core.( * ) "src/core_pervasives.mli" 218 8514 8514 "src/core_pervasives.mli" 218 8514 8560
+)
+"src/interpreter.ml" 25 703 711 "src/interpreter.ml" 25 703 719
+type(
+  Expr.binop
+)
+"src/interpreter.ml" 25 703 723 "src/interpreter.ml" 25 703 726
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Core.( / ) "src/core_pervasives.mli" 221 8593 8593 "src/core_pervasives.mli" 221 8593 8639
+)
+"src/interpreter.ml" 21 600 612 "src/interpreter.ml" 25 703 726
+type(
+  int -> int -> int
+)
+"src/interpreter.ml" 27 734 754 "src/interpreter.ml" 27 734 755
+type(
+  int -> int -> int
+)
+ident(
+  int_ref f "src/interpreter.ml" 21 600 608 "src/interpreter.ml" 21 600 609
+)
+"src/interpreter.ml" 27 734 756 "src/interpreter.ml" 27 734 758
+type(
+  int
+)
+ident(
+  int_ref n1 "src/interpreter.ml" 20 546 564 "src/interpreter.ml" 20 546 566
+)
+"src/interpreter.ml" 27 734 759 "src/interpreter.ml" 27 734 761
+type(
+  int
+)
+ident(
+  int_ref n2 "src/interpreter.ml" 20 546 577 "src/interpreter.ml" 20 546 579
+)
+"src/interpreter.ml" 27 734 753 "src/interpreter.ml" 27 734 762
+call(
+  stack
+)
+type(
+  int
+)
+"src/interpreter.ml" 27 734 743 "src/interpreter.ml" 27 734 764
+type(
+  Expr.t
+)
+"src/interpreter.ml" 27 734 738 "src/interpreter.ml" 27 734 764
+type(
+  outcome
+)
+"src/interpreter.ml" 21 600 604 "src/interpreter.ml" 27 734 764
+type(
+  outcome
+)
+"src/interpreter.ml" 20 546 550 "src/interpreter.ml" 27 734 764
+type(
+  outcome
+)
+"src/interpreter.ml" 19 462 536 "src/interpreter.ml" 27 734 764
+type(
+  unit -> outcome
+)
+"src/interpreter.ml" 19 462 466 "src/interpreter.ml" 27 734 764
+call(
+  tail
+)
+type(
+  outcome
+)
+"src/interpreter.ml" 18 382 452 "src/interpreter.ml" 27 734 764
+type(
+  unit -> outcome
+)
+"src/interpreter.ml" 18 382 386 "src/interpreter.ml" 27 734 764
+call(
+  tail
+)
+type(
+  outcome
+)
+"src/interpreter.ml" 32 878 891 "src/interpreter.ml" 32 878 895
+type(
+  Expr.t
+)
+ident(
+  def cond "src/interpreter.ml" 33 914 918 "src/interpreter.ml" 36 1042 1074
+)
+"src/interpreter.ml" 32 878 897 "src/interpreter.ml" 32 878 902
+type(
+  Expr.t
+)
+ident(
+  def then_ "src/interpreter.ml" 33 914 918 "src/interpreter.ml" 36 1042 1074
+)
+"src/interpreter.ml" 32 878 904 "src/interpreter.ml" 32 878 909
+type(
+  Expr.t
+)
+ident(
+  def else_ "src/interpreter.ml" 33 914 918 "src/interpreter.ml" 36 1042 1074
+)
+"src/interpreter.ml" 32 878 890 "src/interpreter.ml" 32 878 910
+type(
+  Ast.Expr.t.If
+)
+"src/interpreter.ml" 32 878 882 "src/interpreter.ml" 32 878 910
+type(
+  Expr.t
+)
+"src/interpreter.ml" 33 914 919 "src/interpreter.ml" 33 914 923
+type(
+  Expr.t
+)
+ident(
+  int_ref cond "src/interpreter.ml" 32 878 891 "src/interpreter.ml" 32 878 895
+)
+"src/interpreter.ml" 33 914 929 "src/interpreter.ml" 33 914 934
+type(
+  Expr.t
+)
+ident(
+  def cond' "src/interpreter.ml" 33 914 938 "src/interpreter.ml" 33 914 974
+)
+"src/interpreter.ml" 33 914 954 "src/interpreter.ml" 33 914 959
+type(
+  Expr.t
+)
+ident(
+  int_ref cond' "src/interpreter.ml" 33 914 929 "src/interpreter.ml" 33 914 934
+)
+"src/interpreter.ml" 33 914 961 "src/interpreter.ml" 33 914 966
+type(
+  Expr.t
+)
+ident(
+  int_ref then_ "src/interpreter.ml" 32 878 897 "src/interpreter.ml" 32 878 902
+)
+"src/interpreter.ml" 33 914 968 "src/interpreter.ml" 33 914 973
+type(
+  Expr.t
+)
+ident(
+  int_ref else_ "src/interpreter.ml" 32 878 904 "src/interpreter.ml" 32 878 909
+)
+"src/interpreter.ml" 33 914 946 "src/interpreter.ml" 33 914 974
+type(
+  Ast.Expr.t.If
+)
+"src/interpreter.ml" 33 914 938 "src/interpreter.ml" 33 914 974
+type(
+  Expr.t
+)
+"src/interpreter.ml" 33 914 925 "src/interpreter.ml" 33 914 974
+type(
+  Expr.t -> Expr.t
+)
+"src/interpreter.ml" 33 914 918 "src/interpreter.ml" 33 914 975
+type(
+  Expr.t * (Expr.t -> Expr.t)
+)
+"src/interpreter.ml" 33 914 976 "src/interpreter.ml" 33 914 979
+type(
+  Expr.t * (Expr.t -> Expr.t) -> (unit -> outcome) -> outcome
+)
+ident(
+  int_ref |-> "src/interpreter.ml" 123 4272 4276 "src/interpreter.ml" 123 4272 4281
+)
+"src/interpreter.ml" 33 914 984 "src/interpreter.ml" 33 914 986
+type(
+  unit
+)
+"src/interpreter.ml" 34 990 1001 "src/interpreter.ml" 34 990 1005
+type(
+  Expr.t
+)
+ident(
+  int_ref cond "src/interpreter.ml" 32 878 891 "src/interpreter.ml" 32 878 895
+)
+"src/interpreter.ml" 35 1011 1017 "src/interpreter.ml" 35 1011 1026
+type(
+  Expr.t
+)
+"src/interpreter.ml" 35 1011 1034 "src/interpreter.ml" 35 1011 1041
+type(
+  Expr.t
+)
+ident(
+  int_ref then_ "src/interpreter.ml" 32 878 897 "src/interpreter.ml" 32 878 902
+)
+"src/interpreter.ml" 35 1011 1030 "src/interpreter.ml" 35 1011 1041
+type(
+  outcome
+)
+"src/interpreter.ml" 36 1042 1048 "src/interpreter.ml" 36 1042 1058
+type(
+  Expr.t
+)
+"src/interpreter.ml" 36 1042 1066 "src/interpreter.ml" 36 1042 1073
+type(
+  Expr.t
+)
+ident(
+  int_ref else_ "src/interpreter.ml" 32 878 904 "src/interpreter.ml" 32 878 909
+)
+"src/interpreter.ml" 36 1042 1062 "src/interpreter.ml" 36 1042 1073
+type(
+  outcome
+)
+"src/interpreter.ml" 34 990 994 "src/interpreter.ml" 36 1042 1074
+type(
+  outcome
+)
+"src/interpreter.ml" 33 914 980 "src/interpreter.ml" 36 1042 1074
+type(
+  unit -> outcome
+)
+"src/interpreter.ml" 33 914 918 "src/interpreter.ml" 36 1042 1074
+call(
+  tail
+)
+type(
+  outcome
+)
+"src/interpreter.ml" 38 1076 1092 "src/interpreter.ml" 38 1076 1097
+type(
+  Expr.relop
+)
+ident(
+  def relop "src/interpreter.ml" 39 1115 1119 "src/interpreter.ml" 47 1440 1514
+)
+"src/interpreter.ml" 38 1076 1099 "src/interpreter.ml" 38 1076 1103
+type(
+  Expr.t
+)
+ident(
+  def left "src/interpreter.ml" 39 1115 1119 "src/interpreter.ml" 47 1440 1514
+)
+"src/interpreter.ml" 38 1076 1105 "src/interpreter.ml" 38 1076 1110
+type(
+  Expr.t
+)
+ident(
+  def right "src/interpreter.ml" 39 1115 1119 "src/interpreter.ml" 47 1440 1514
+)
+"src/interpreter.ml" 38 1076 1091 "src/interpreter.ml" 38 1076 1111
+type(
+  Ast.Expr.t.Relop
+)
+"src/interpreter.ml" 38 1076 1080 "src/interpreter.ml" 38 1076 1111
+type(
+  Expr.t
+)
+"src/interpreter.ml" 39 1115 1120 "src/interpreter.ml" 39 1115 1124
+type(
+  Expr.t
+)
+ident(
+  int_ref left "src/interpreter.ml" 38 1076 1099 "src/interpreter.ml" 38 1076 1103
+)
+"src/interpreter.ml" 39 1115 1130 "src/interpreter.ml" 39 1115 1135
+type(
+  Expr.t
+)
+ident(
+  def left' "src/interpreter.ml" 39 1115 1139 "src/interpreter.ml" 39 1115 1178
+)
+"src/interpreter.ml" 39 1115 1158 "src/interpreter.ml" 39 1115 1163
+type(
+  Expr.t
+)
+ident(
+  int_ref left' "src/interpreter.ml" 39 1115 1130 "src/interpreter.ml" 39 1115 1135
+)
+"src/interpreter.ml" 39 1115 1165 "src/interpreter.ml" 39 1115 1170
+type(
+  Expr.relop
+)
+ident(
+  int_ref relop "src/interpreter.ml" 38 1076 1092 "src/interpreter.ml" 38 1076 1097
+)
+"src/interpreter.ml" 39 1115 1172 "src/interpreter.ml" 39 1115 1177
+type(
+  Expr.t
+)
+ident(
+  int_ref right "src/interpreter.ml" 38 1076 1105 "src/interpreter.ml" 38 1076 1110
+)
+"src/interpreter.ml" 39 1115 1150 "src/interpreter.ml" 39 1115 1178
+type(
+  Ast.Expr.t.Relop
+)
+"src/interpreter.ml" 39 1115 1139 "src/interpreter.ml" 39 1115 1178
+type(
+  Expr.t
+)
+"src/interpreter.ml" 39 1115 1126 "src/interpreter.ml" 39 1115 1178
+type(
+  Expr.t -> Expr.t
+)
+"src/interpreter.ml" 39 1115 1119 "src/interpreter.ml" 39 1115 1179
+type(
+  Expr.t * (Expr.t -> Expr.t)
+)
+"src/interpreter.ml" 39 1115 1180 "src/interpreter.ml" 39 1115 1183
+type(
+  Expr.t * (Expr.t -> Expr.t) -> (unit -> outcome) -> outcome
+)
+ident(
+  int_ref |-> "src/interpreter.ml" 123 4272 4276 "src/interpreter.ml" 123 4272 4281
+)
+"src/interpreter.ml" 39 1115 1188 "src/interpreter.ml" 39 1115 1190
+type(
+  unit
+)
+"src/interpreter.ml" 40 1194 1199 "src/interpreter.ml" 40 1194 1204
+type(
+  Expr.t
+)
+ident(
+  int_ref right "src/interpreter.ml" 38 1076 1105 "src/interpreter.ml" 38 1076 1110
+)
+"src/interpreter.ml" 40 1194 1211 "src/interpreter.ml" 40 1194 1217
+type(
+  Expr.t
+)
+ident(
+  def right' "src/interpreter.ml" 40 1194 1221 "src/interpreter.ml" 40 1194 1261
+)
+"src/interpreter.ml" 40 1194 1241 "src/interpreter.ml" 40 1194 1247
+type(
+  Expr.t
+)
+ident(
+  int_ref right' "src/interpreter.ml" 40 1194 1211 "src/interpreter.ml" 40 1194 1217
+)
+"src/interpreter.ml" 40 1194 1249 "src/interpreter.ml" 40 1194 1254
+type(
+  Expr.relop
+)
+ident(
+  int_ref relop "src/interpreter.ml" 38 1076 1092 "src/interpreter.ml" 38 1076 1097
+)
+"src/interpreter.ml" 40 1194 1256 "src/interpreter.ml" 40 1194 1260
+type(
+  Expr.t
+)
+ident(
+  int_ref left "src/interpreter.ml" 38 1076 1099 "src/interpreter.ml" 38 1076 1103
+)
+"src/interpreter.ml" 40 1194 1232 "src/interpreter.ml" 40 1194 1261
+type(
+  Ast.Expr.t.Relop
+)
+"src/interpreter.ml" 40 1194 1221 "src/interpreter.ml" 40 1194 1261
+type(
+  Expr.t
+)
+"src/interpreter.ml" 40 1194 1206 "src/interpreter.ml" 40 1194 1262
+type(
+  Expr.t -> Expr.t
+)
+"src/interpreter.ml" 40 1194 1198 "src/interpreter.ml" 40 1194 1263
+type(
+  Expr.t * (Expr.t -> Expr.t)
+)
+"src/interpreter.ml" 40 1194 1264 "src/interpreter.ml" 40 1194 1267
+type(
+  Expr.t * (Expr.t -> Expr.t) -> (unit -> outcome) -> outcome
+)
+ident(
+  int_ref |-> "src/interpreter.ml" 123 4272 4276 "src/interpreter.ml" 123 4272 4281
+)
+"src/interpreter.ml" 40 1194 1272 "src/interpreter.ml" 40 1194 1274
+type(
+  unit
+)
+"src/interpreter.ml" 41 1278 1296 "src/interpreter.ml" 41 1278 1298
+type(
+  int
+)
+ident(
+  def n1 "src/interpreter.ml" 42 1332 1336 "src/interpreter.ml" 47 1440 1514
+)
+"src/interpreter.ml" 41 1278 1287 "src/interpreter.ml" 41 1278 1298
+type(
+  Expr.t
+)
+"src/interpreter.ml" 41 1278 1309 "src/interpreter.ml" 41 1278 1311
+type(
+  int
+)
+ident(
+  def n2 "src/interpreter.ml" 42 1332 1336 "src/interpreter.ml" 47 1440 1514
+)
+"src/interpreter.ml" 41 1278 1300 "src/interpreter.ml" 41 1278 1311
+type(
+  Expr.t
+)
+"src/interpreter.ml" 41 1278 1286 "src/interpreter.ml" 41 1278 1312
+type(
+  Expr.t * Expr.t
+)
+"src/interpreter.ml" 41 1278 1316 "src/interpreter.ml" 41 1278 1320
+type(
+  Expr.t
+)
+ident(
+  int_ref left "src/interpreter.ml" 38 1076 1099 "src/interpreter.ml" 38 1076 1103
+)
+"src/interpreter.ml" 41 1278 1322 "src/interpreter.ml" 41 1278 1327
+type(
+  Expr.t
+)
+ident(
+  int_ref right "src/interpreter.ml" 38 1076 1105 "src/interpreter.ml" 38 1076 1110
+)
+"src/interpreter.ml" 41 1278 1315 "src/interpreter.ml" 41 1278 1328
+type(
+  Expr.t * Expr.t
+)
+"src/interpreter.ml" 42 1332 1341 "src/interpreter.ml" 42 1332 1342
+type(
+  'a -> 'a -> bool
+)
+ident(
+  def f "src/interpreter.ml" 47 1440 1444 "src/interpreter.ml" 47 1440 1513
+)
+"src/interpreter.ml" 42 1332 1351 "src/interpreter.ml" 42 1332 1356
+type(
+  Expr.relop
+)
+ident(
+  int_ref relop "src/interpreter.ml" 38 1076 1092 "src/interpreter.ml" 38 1076 1097
+)
+"src/interpreter.ml" 43 1362 1370 "src/interpreter.ml" 43 1362 1377
+type(
+  Expr.relop
+)
+"src/interpreter.ml" 43 1362 1381 "src/interpreter.ml" 43 1362 1384
+type(
+  'a -> 'a -> bool
+)
+ident(
+  int_ref Core.( < ) "src/core_pervasives.mli" 48 1696 1696 "src/core_pervasives.mli" 48 1696 1743
+)
+"src/interpreter.ml" 44 1385 1393 "src/interpreter.ml" 44 1385 1400
+type(
+  Expr.relop
+)
+"src/interpreter.ml" 44 1385 1404 "src/interpreter.ml" 44 1385 1407
+type(
+  'a -> 'a -> bool
+)
+ident(
+  int_ref Core.( > ) "src/core_pervasives.mli" 51 1778 1778 "src/core_pervasives.mli" 51 1778 1828
+)
+"src/interpreter.ml" 45 1408 1416 "src/interpreter.ml" 45 1408 1423
+type(
+  Expr.relop
+)
+"src/interpreter.ml" 45 1408 1427 "src/interpreter.ml" 45 1408 1432
+type(
+  'a -> 'a -> bool
+)
+ident(
+  int_ref Core.( = ) "src/core_pervasives.mli" 37 1168 1168 "src/core_pervasives.mli" 37 1168 1212
+)
+"src/interpreter.ml" 42 1332 1345 "src/interpreter.ml" 45 1408 1432
+type(
+  'a -> 'a -> bool
+)
+"src/interpreter.ml" 47 1440 1457 "src/interpreter.ml" 47 1440 1458
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref f "src/interpreter.ml" 42 1332 1341 "src/interpreter.ml" 42 1332 1342
+)
+"src/interpreter.ml" 47 1440 1459 "src/interpreter.ml" 47 1440 1461
+type(
+  int
+)
+ident(
+  int_ref n1 "src/interpreter.ml" 41 1278 1296 "src/interpreter.ml" 41 1278 1298
+)
+"src/interpreter.ml" 47 1440 1462 "src/interpreter.ml" 47 1440 1464
+type(
+  int
+)
+ident(
+  int_ref n2 "src/interpreter.ml" 41 1278 1309 "src/interpreter.ml" 41 1278 1311
+)
+"src/interpreter.ml" 47 1440 1456 "src/interpreter.ml" 47 1440 1465
+call(
+  stack
+)
+type(
+  bool
+)
+"src/interpreter.ml" 47 1440 1473 "src/interpreter.ml" 47 1440 1477
+type(
+  bool
+)
+"src/interpreter.ml" 47 1440 1481 "src/interpreter.ml" 47 1440 1490
+type(
+  Expr.t
+)
+"src/interpreter.ml" 47 1440 1493 "src/interpreter.ml" 47 1440 1498
+type(
+  bool
+)
+"src/interpreter.ml" 47 1440 1502 "src/interpreter.ml" 47 1440 1512
+type(
+  Expr.t
+)
+"src/interpreter.ml" 47 1440 1449 "src/interpreter.ml" 47 1440 1513
+type(
+  Expr.t
+)
+"src/interpreter.ml" 47 1440 1444 "src/interpreter.ml" 47 1440 1513
+type(
+  outcome
+)
+"src/interpreter.ml" 42 1332 1336 "src/interpreter.ml" 47 1440 1514
+type(
+  outcome
+)
+"src/interpreter.ml" 41 1278 1282 "src/interpreter.ml" 47 1440 1514
+type(
+  outcome
+)
+"src/interpreter.ml" 40 1194 1268 "src/interpreter.ml" 47 1440 1514
+type(
+  unit -> outcome
+)
+"src/interpreter.ml" 40 1194 1198 "src/interpreter.ml" 47 1440 1514
+call(
+  tail
+)
+type(
+  outcome
+)
+"src/interpreter.ml" 39 1115 1184 "src/interpreter.ml" 47 1440 1514
+type(
+  unit -> outcome
+)
+"src/interpreter.ml" 39 1115 1119 "src/interpreter.ml" 47 1440 1514
+call(
+  tail
+)
+type(
+  outcome
+)
+"src/interpreter.ml" 49 1516 1530 "src/interpreter.ml" 49 1516 1534
+type(
+  Expr.t
+)
+ident(
+  def left "src/interpreter.ml" 50 1546 1550 "src/interpreter.ml" 55 1805 1853
+)
+"src/interpreter.ml" 49 1516 1536 "src/interpreter.ml" 49 1516 1541
+type(
+  Expr.t
+)
+ident(
+  def right "src/interpreter.ml" 50 1546 1550 "src/interpreter.ml" 55 1805 1853
+)
+"src/interpreter.ml" 49 1516 1529 "src/interpreter.ml" 49 1516 1542
+type(
+  Ast.Expr.t.And
+)
+"src/interpreter.ml" 49 1516 1520 "src/interpreter.ml" 49 1516 1542
+type(
+  Expr.t
+)
+"src/interpreter.ml" 50 1546 1551 "src/interpreter.ml" 50 1546 1555
+type(
+  Expr.t
+)
+ident(
+  int_ref left "src/interpreter.ml" 49 1516 1530 "src/interpreter.ml" 49 1516 1534
+)
+"src/interpreter.ml" 50 1546 1561 "src/interpreter.ml" 50 1546 1566
+type(
+  Expr.t
+)
+ident(
+  def left' "src/interpreter.ml" 50 1546 1570 "src/interpreter.ml" 50 1546 1600
+)
+"src/interpreter.ml" 50 1546 1587 "src/interpreter.ml" 50 1546 1592
+type(
+  Expr.t
+)
+ident(
+  int_ref left' "src/interpreter.ml" 50 1546 1561 "src/interpreter.ml" 50 1546 1566
+)
+"src/interpreter.ml" 50 1546 1594 "src/interpreter.ml" 50 1546 1599
+type(
+  Expr.t
+)
+ident(
+  int_ref right "src/interpreter.ml" 49 1516 1536 "src/interpreter.ml" 49 1516 1541
+)
+"src/interpreter.ml" 50 1546 1579 "src/interpreter.ml" 50 1546 1600
+type(
+  Ast.Expr.t.And
+)
+"src/interpreter.ml" 50 1546 1570 "src/interpreter.ml" 50 1546 1600
+type(
+  Expr.t
+)
+"src/interpreter.ml" 50 1546 1557 "src/interpreter.ml" 50 1546 1600
+type(
+  Expr.t -> Expr.t
+)
+"src/interpreter.ml" 50 1546 1550 "src/interpreter.ml" 50 1546 1601
+type(
+  Expr.t * (Expr.t -> Expr.t)
+)
+"src/interpreter.ml" 50 1546 1602 "src/interpreter.ml" 50 1546 1605
+type(
+  Expr.t * (Expr.t -> Expr.t) -> (unit -> outcome) -> outcome
+)
+ident(
+  int_ref |-> "src/interpreter.ml" 123 4272 4276 "src/interpreter.ml" 123 4272 4281
+)
+"src/interpreter.ml" 50 1546 1610 "src/interpreter.ml" 50 1546 1612
+type(
+  unit
+)
+"src/interpreter.ml" 51 1616 1621 "src/interpreter.ml" 51 1616 1626
+type(
+  Expr.t
+)
+ident(
+  int_ref right "src/interpreter.ml" 49 1516 1536 "src/interpreter.ml" 49 1516 1541
+)
+"src/interpreter.ml" 51 1616 1633 "src/interpreter.ml" 51 1616 1639
+type(
+  Expr.t
+)
+ident(
+  def right' "src/interpreter.ml" 51 1616 1643 "src/interpreter.ml" 51 1616 1674
+)
+"src/interpreter.ml" 51 1616 1661 "src/interpreter.ml" 51 1616 1667
+type(
+  Expr.t
+)
+ident(
+  int_ref right' "src/interpreter.ml" 51 1616 1633 "src/interpreter.ml" 51 1616 1639
+)
+"src/interpreter.ml" 51 1616 1669 "src/interpreter.ml" 51 1616 1673
+type(
+  Expr.t
+)
+ident(
+  int_ref left "src/interpreter.ml" 49 1516 1530 "src/interpreter.ml" 49 1516 1534
+)
+"src/interpreter.ml" 51 1616 1652 "src/interpreter.ml" 51 1616 1674
+type(
+  Ast.Expr.t.And
+)
+"src/interpreter.ml" 51 1616 1643 "src/interpreter.ml" 51 1616 1674
+type(
+  Expr.t
+)
+"src/interpreter.ml" 51 1616 1628 "src/interpreter.ml" 51 1616 1675
+type(
+  Expr.t -> Expr.t
+)
+"src/interpreter.ml" 51 1616 1620 "src/interpreter.ml" 51 1616 1676
+type(
+  Expr.t * (Expr.t -> Expr.t)
+)
+"src/interpreter.ml" 51 1616 1677 "src/interpreter.ml" 51 1616 1680
+type(
+  Expr.t * (Expr.t -> Expr.t) -> (unit -> outcome) -> outcome
+)
+ident(
+  int_ref |-> "src/interpreter.ml" 123 4272 4276 "src/interpreter.ml" 123 4272 4281
+)
+"src/interpreter.ml" 51 1616 1685 "src/interpreter.ml" 51 1616 1687
+type(
+  unit
+)
+"src/interpreter.ml" 52 1691 1703 "src/interpreter.ml" 52 1691 1707
+type(
+  Expr.t
+)
+ident(
+  int_ref left "src/interpreter.ml" 49 1516 1530 "src/interpreter.ml" 49 1516 1534
+)
+"src/interpreter.ml" 52 1691 1709 "src/interpreter.ml" 52 1691 1714
+type(
+  Expr.t
+)
+ident(
+  int_ref right "src/interpreter.ml" 49 1516 1536 "src/interpreter.ml" 49 1516 1541
+)
+"src/interpreter.ml" 52 1691 1702 "src/interpreter.ml" 52 1691 1715
+type(
+  Expr.t * Expr.t
+)
+"src/interpreter.ml" 53 1721 1728 "src/interpreter.ml" 53 1721 1738
+type(
+  Expr.t
+)
+"src/interpreter.ml" 53 1721 1740 "src/interpreter.ml" 53 1721 1741
+type(
+  Expr.t
+)
+"src/interpreter.ml" 53 1721 1727 "src/interpreter.ml" 53 1721 1742
+type(
+  Expr.t * Expr.t
+)
+"src/interpreter.ml" 53 1721 1750 "src/interpreter.ml" 53 1721 1762
+type(
+  Expr.t
+)
+"src/interpreter.ml" 53 1721 1746 "src/interpreter.ml" 53 1721 1762
+type(
+  outcome
+)
+"src/interpreter.ml" 54 1763 1770 "src/interpreter.ml" 54 1763 1771
+type(
+  Expr.t
+)
+"src/interpreter.ml" 54 1763 1773 "src/interpreter.ml" 54 1763 1783
+type(
+  Expr.t
+)
+"src/interpreter.ml" 54 1763 1769 "src/interpreter.ml" 54 1763 1784
+type(
+  Expr.t * Expr.t
+)
+"src/interpreter.ml" 54 1763 1792 "src/interpreter.ml" 54 1763 1804
+type(
+  Expr.t
+)
+"src/interpreter.ml" 54 1763 1788 "src/interpreter.ml" 54 1763 1804
+type(
+  outcome
+)
+"src/interpreter.ml" 55 1805 1812 "src/interpreter.ml" 55 1805 1821
+type(
+  Expr.t
+)
+"src/interpreter.ml" 55 1805 1823 "src/interpreter.ml" 55 1805 1832
+type(
+  Expr.t
+)
+"src/interpreter.ml" 55 1805 1811 "src/interpreter.ml" 55 1805 1833
+type(
+  Expr.t * Expr.t
+)
+"src/interpreter.ml" 55 1805 1841 "src/interpreter.ml" 55 1805 1852
+type(
+  Expr.t
+)
+"src/interpreter.ml" 55 1805 1837 "src/interpreter.ml" 55 1805 1852
+type(
+  outcome
+)
+"src/interpreter.ml" 52 1691 1695 "src/interpreter.ml" 55 1805 1853
+type(
+  outcome
+)
+"src/interpreter.ml" 51 1616 1681 "src/interpreter.ml" 55 1805 1853
+type(
+  unit -> outcome
+)
+"src/interpreter.ml" 51 1616 1620 "src/interpreter.ml" 55 1805 1853
+call(
+  tail
+)
+type(
+  outcome
+)
+"src/interpreter.ml" 50 1546 1606 "src/interpreter.ml" 55 1805 1853
+type(
+  unit -> outcome
+)
+"src/interpreter.ml" 50 1546 1550 "src/interpreter.ml" 55 1805 1853
+call(
+  tail
+)
+type(
+  outcome
+)
+"src/interpreter.ml" 57 1855 1868 "src/interpreter.ml" 57 1855 1872
+type(
+  Expr.t
+)
+ident(
+  def left "src/interpreter.ml" 58 1884 1888 "src/interpreter.ml" 63 2137 2188
+)
+"src/interpreter.ml" 57 1855 1874 "src/interpreter.ml" 57 1855 1879
+type(
+  Expr.t
+)
+ident(
+  def right "src/interpreter.ml" 58 1884 1888 "src/interpreter.ml" 63 2137 2188
+)
+"src/interpreter.ml" 57 1855 1867 "src/interpreter.ml" 57 1855 1880
+type(
+  Ast.Expr.t.Or
+)
+"src/interpreter.ml" 57 1855 1859 "src/interpreter.ml" 57 1855 1880
+type(
+  Expr.t
+)
+"src/interpreter.ml" 58 1884 1889 "src/interpreter.ml" 58 1884 1893
+type(
+  Expr.t
+)
+ident(
+  int_ref left "src/interpreter.ml" 57 1855 1868 "src/interpreter.ml" 57 1855 1872
+)
+"src/interpreter.ml" 58 1884 1899 "src/interpreter.ml" 58 1884 1904
+type(
+  Expr.t
+)
+ident(
+  def left' "src/interpreter.ml" 58 1884 1908 "src/interpreter.ml" 58 1884 1937
+)
+"src/interpreter.ml" 58 1884 1924 "src/interpreter.ml" 58 1884 1929
+type(
+  Expr.t
+)
+ident(
+  int_ref left' "src/interpreter.ml" 58 1884 1899 "src/interpreter.ml" 58 1884 1904
+)
+"src/interpreter.ml" 58 1884 1931 "src/interpreter.ml" 58 1884 1936
+type(
+  Expr.t
+)
+ident(
+  int_ref right "src/interpreter.ml" 57 1855 1874 "src/interpreter.ml" 57 1855 1879
+)
+"src/interpreter.ml" 58 1884 1916 "src/interpreter.ml" 58 1884 1937
+type(
+  Ast.Expr.t.Or
+)
+"src/interpreter.ml" 58 1884 1908 "src/interpreter.ml" 58 1884 1937
+type(
+  Expr.t
+)
+"src/interpreter.ml" 58 1884 1895 "src/interpreter.ml" 58 1884 1937
+type(
+  Expr.t -> Expr.t
+)
+"src/interpreter.ml" 58 1884 1888 "src/interpreter.ml" 58 1884 1938
+type(
+  Expr.t * (Expr.t -> Expr.t)
+)
+"src/interpreter.ml" 58 1884 1939 "src/interpreter.ml" 58 1884 1942
+type(
+  Expr.t * (Expr.t -> Expr.t) -> (unit -> outcome) -> outcome
+)
+ident(
+  int_ref |-> "src/interpreter.ml" 123 4272 4276 "src/interpreter.ml" 123 4272 4281
+)
+"src/interpreter.ml" 58 1884 1947 "src/interpreter.ml" 58 1884 1949
+type(
+  unit
+)
+"src/interpreter.ml" 59 1953 1958 "src/interpreter.ml" 59 1953 1963
+type(
+  Expr.t
+)
+ident(
+  int_ref right "src/interpreter.ml" 57 1855 1874 "src/interpreter.ml" 57 1855 1879
+)
+"src/interpreter.ml" 59 1953 1970 "src/interpreter.ml" 59 1953 1976
+type(
+  Expr.t
+)
+ident(
+  def right' "src/interpreter.ml" 59 1953 1980 "src/interpreter.ml" 59 1953 2010
+)
+"src/interpreter.ml" 59 1953 1997 "src/interpreter.ml" 59 1953 2003
+type(
+  Expr.t
+)
+ident(
+  int_ref right' "src/interpreter.ml" 59 1953 1970 "src/interpreter.ml" 59 1953 1976
+)
+"src/interpreter.ml" 59 1953 2005 "src/interpreter.ml" 59 1953 2009
+type(
+  Expr.t
+)
+ident(
+  int_ref left "src/interpreter.ml" 57 1855 1868 "src/interpreter.ml" 57 1855 1872
+)
+"src/interpreter.ml" 59 1953 1988 "src/interpreter.ml" 59 1953 2010
+type(
+  Ast.Expr.t.Or
+)
+"src/interpreter.ml" 59 1953 1980 "src/interpreter.ml" 59 1953 2010
+type(
+  Expr.t
+)
+"src/interpreter.ml" 59 1953 1965 "src/interpreter.ml" 59 1953 2011
+type(
+  Expr.t -> Expr.t
+)
+"src/interpreter.ml" 59 1953 1957 "src/interpreter.ml" 59 1953 2012
+type(
+  Expr.t * (Expr.t -> Expr.t)
+)
+"src/interpreter.ml" 59 1953 2013 "src/interpreter.ml" 59 1953 2016
+type(
+  Expr.t * (Expr.t -> Expr.t) -> (unit -> outcome) -> outcome
+)
+ident(
+  int_ref |-> "src/interpreter.ml" 123 4272 4276 "src/interpreter.ml" 123 4272 4281
+)
+"src/interpreter.ml" 59 1953 2021 "src/interpreter.ml" 59 1953 2023
+type(
+  unit
+)
+"src/interpreter.ml" 60 2027 2039 "src/interpreter.ml" 60 2027 2043
+type(
+  Expr.t
+)
+ident(
+  int_ref left "src/interpreter.ml" 57 1855 1868 "src/interpreter.ml" 57 1855 1872
+)
+"src/interpreter.ml" 60 2027 2045 "src/interpreter.ml" 60 2027 2050
+type(
+  Expr.t
+)
+ident(
+  int_ref right "src/interpreter.ml" 57 1855 1874 "src/interpreter.ml" 57 1855 1879
+)
+"src/interpreter.ml" 60 2027 2038 "src/interpreter.ml" 60 2027 2051
+type(
+  Expr.t * Expr.t
+)
+"src/interpreter.ml" 61 2057 2064 "src/interpreter.ml" 61 2057 2073
+type(
+  Expr.t
+)
+"src/interpreter.ml" 61 2057 2075 "src/interpreter.ml" 61 2057 2076
+type(
+  Expr.t
+)
+"src/interpreter.ml" 61 2057 2063 "src/interpreter.ml" 61 2057 2077
+type(
+  Expr.t * Expr.t
+)
+"src/interpreter.ml" 61 2057 2085 "src/interpreter.ml" 61 2057 2096
+type(
+  Expr.t
+)
+"src/interpreter.ml" 61 2057 2081 "src/interpreter.ml" 61 2057 2096
+type(
+  outcome
+)
+"src/interpreter.ml" 62 2097 2104 "src/interpreter.ml" 62 2097 2105
+type(
+  Expr.t
+)
+"src/interpreter.ml" 62 2097 2107 "src/interpreter.ml" 62 2097 2116
+type(
+  Expr.t
+)
+"src/interpreter.ml" 62 2097 2103 "src/interpreter.ml" 62 2097 2117
+type(
+  Expr.t * Expr.t
+)
+"src/interpreter.ml" 62 2097 2125 "src/interpreter.ml" 62 2097 2136
+type(
+  Expr.t
+)
+"src/interpreter.ml" 62 2097 2121 "src/interpreter.ml" 62 2097 2136
+type(
+  outcome
+)
+"src/interpreter.ml" 63 2137 2144 "src/interpreter.ml" 63 2137 2154
+type(
+  Expr.t
+)
+"src/interpreter.ml" 63 2137 2156 "src/interpreter.ml" 63 2137 2166
+type(
+  Expr.t
+)
+"src/interpreter.ml" 63 2137 2143 "src/interpreter.ml" 63 2137 2167
+type(
+  Expr.t * Expr.t
+)
+"src/interpreter.ml" 63 2137 2175 "src/interpreter.ml" 63 2137 2187
+type(
+  Expr.t
+)
+"src/interpreter.ml" 63 2137 2171 "src/interpreter.ml" 63 2137 2187
+type(
+  outcome
+)
+"src/interpreter.ml" 60 2027 2031 "src/interpreter.ml" 63 2137 2188
+type(
+  outcome
+)
+"src/interpreter.ml" 59 1953 2017 "src/interpreter.ml" 63 2137 2188
+type(
+  unit -> outcome
+)
+"src/interpreter.ml" 59 1953 1957 "src/interpreter.ml" 63 2137 2188
+call(
+  tail
+)
+type(
+  outcome
+)
+"src/interpreter.ml" 58 1884 1943 "src/interpreter.ml" 63 2137 2188
+type(
+  unit -> outcome
+)
+"src/interpreter.ml" 58 1884 1888 "src/interpreter.ml" 63 2137 2188
+call(
+  tail
+)
+type(
+  outcome
+)
+"src/interpreter.ml" 68 2289 2303 "src/interpreter.ml" 68 2289 2306
+type(
+  Expr.t
+)
+ident(
+  def lam "src/interpreter.ml" 69 2316 2320 "src/interpreter.ml" 71 2400 2465
+)
+"src/interpreter.ml" 68 2289 2308 "src/interpreter.ml" 68 2289 2311
+type(
+  Expr.t
+)
+ident(
+  def arg "src/interpreter.ml" 69 2316 2320 "src/interpreter.ml" 71 2400 2465
+)
+"src/interpreter.ml" 68 2289 2302 "src/interpreter.ml" 68 2289 2312
+type(
+  Ast.Expr.t.App
+)
+"src/interpreter.ml" 68 2289 2293 "src/interpreter.ml" 68 2289 2312
+type(
+  Expr.t
+)
+"src/interpreter.ml" 69 2316 2321 "src/interpreter.ml" 69 2316 2324
+type(
+  Expr.t
+)
+ident(
+  int_ref lam "src/interpreter.ml" 68 2289 2303 "src/interpreter.ml" 68 2289 2306
+)
+"src/interpreter.ml" 69 2316 2330 "src/interpreter.ml" 69 2316 2334
+type(
+  Expr.t
+)
+ident(
+  def lam' "src/interpreter.ml" 69 2316 2338 "src/interpreter.ml" 69 2316 2364
+)
+"src/interpreter.ml" 69 2316 2354 "src/interpreter.ml" 69 2316 2358
+type(
+  Expr.t
+)
+ident(
+  int_ref lam' "src/interpreter.ml" 69 2316 2330 "src/interpreter.ml" 69 2316 2334
+)
+"src/interpreter.ml" 69 2316 2360 "src/interpreter.ml" 69 2316 2363
+type(
+  Expr.t
+)
+ident(
+  int_ref arg "src/interpreter.ml" 68 2289 2308 "src/interpreter.ml" 68 2289 2311
+)
+"src/interpreter.ml" 69 2316 2347 "src/interpreter.ml" 69 2316 2364
+type(
+  Ast.Expr.t.App
+)
+"src/interpreter.ml" 69 2316 2338 "src/interpreter.ml" 69 2316 2364
+type(
+  Expr.t
+)
+"src/interpreter.ml" 69 2316 2326 "src/interpreter.ml" 69 2316 2364
+type(
+  Expr.t -> Expr.t
+)
+"src/interpreter.ml" 69 2316 2320 "src/interpreter.ml" 69 2316 2365
+type(
+  Expr.t * (Expr.t -> Expr.t)
+)
+"src/interpreter.ml" 69 2316 2366 "src/interpreter.ml" 69 2316 2369
+type(
+  Expr.t * (Expr.t -> Expr.t) -> (unit -> outcome) -> outcome
+)
+ident(
+  int_ref |-> "src/interpreter.ml" 123 4272 4276 "src/interpreter.ml" 123 4272 4281
+)
+"src/interpreter.ml" 69 2316 2374 "src/interpreter.ml" 69 2316 2376
+type(
+  unit
+)
+"src/interpreter.ml" 70 2380 2391 "src/interpreter.ml" 70 2380 2394
+type(
+  Expr.t
+)
+ident(
+  int_ref lam "src/interpreter.ml" 68 2289 2303 "src/interpreter.ml" 68 2289 2306
+)
+"src/interpreter.ml" 71 2400 2412 "src/interpreter.ml" 71 2400 2413
+type(
+  string
+)
+ident(
+  def x "src/interpreter.ml" 71 2400 2426 "src/interpreter.ml" 71 2400 2464
+)
+"src/interpreter.ml" 71 2400 2415 "src/interpreter.ml" 71 2400 2418
+type(
+  Type.t
+)
+ident(
+  def tau "src/interpreter.ml" 71 2400 2426 "src/interpreter.ml" 71 2400 2464
+)
+"src/interpreter.ml" 71 2400 2420 "src/interpreter.ml" 71 2400 2421
+type(
+  Expr.t
+)
+ident(
+  def e "src/interpreter.ml" 71 2400 2426 "src/interpreter.ml" 71 2400 2464
+)
+"src/interpreter.ml" 71 2400 2411 "src/interpreter.ml" 71 2400 2422
+type(
+  Ast.Expr.t.Lam
+)
+"src/interpreter.ml" 71 2400 2407 "src/interpreter.ml" 71 2400 2422
+type(
+  Expr.t
+)
+"src/interpreter.ml" 71 2400 2431 "src/interpreter.ml" 71 2400 2455
+type(
+  string -> Expr.t -> Expr.t -> Expr.t
+)
+ident(
+  int_ref Ast_util.Expr.substitute "src/ast_util.mli" 18 234 236 "src/ast_util.mli" 18 234 274
+)
+"src/interpreter.ml" 71 2400 2456 "src/interpreter.ml" 71 2400 2457
+type(
+  string
+)
+ident(
+  int_ref x "src/interpreter.ml" 71 2400 2412 "src/interpreter.ml" 71 2400 2413
+)
+"src/interpreter.ml" 71 2400 2458 "src/interpreter.ml" 71 2400 2461
+type(
+  Expr.t
+)
+ident(
+  int_ref arg "src/interpreter.ml" 68 2289 2308 "src/interpreter.ml" 68 2289 2311
+)
+"src/interpreter.ml" 71 2400 2462 "src/interpreter.ml" 71 2400 2463
+type(
+  Expr.t
+)
+ident(
+  int_ref e "src/interpreter.ml" 71 2400 2420 "src/interpreter.ml" 71 2400 2421
+)
+"src/interpreter.ml" 71 2400 2430 "src/interpreter.ml" 71 2400 2464
+call(
+  stack
+)
+type(
+  Expr.t
+)
+"src/interpreter.ml" 71 2400 2426 "src/interpreter.ml" 71 2400 2464
+type(
+  outcome
+)
+"src/interpreter.ml" 70 2380 2384 "src/interpreter.ml" 71 2400 2465
+type(
+  outcome
+)
+"src/interpreter.ml" 69 2316 2370 "src/interpreter.ml" 71 2400 2465
+type(
+  unit -> outcome
+)
+"src/interpreter.ml" 69 2316 2320 "src/interpreter.ml" 71 2400 2465
+call(
+  tail
+)
+type(
+  outcome
+)
+"src/interpreter.ml" 76 2564 2582 "src/interpreter.ml" 76 2564 2583
+type(
+  Expr.t
+)
+ident(
+  def e "src/interpreter.ml" 77 2591 2595 "src/interpreter.ml" 79 2667 2750
+)
+"src/interpreter.ml" 76 2564 2585 "src/interpreter.ml" 76 2564 2586
+type(
+  Expr.direction
+)
+ident(
+  def d "src/interpreter.ml" 77 2591 2595 "src/interpreter.ml" 79 2667 2750
+)
+"src/interpreter.ml" 76 2564 2581 "src/interpreter.ml" 76 2564 2587
+type(
+  Ast.Expr.t.Project
+)
+"src/interpreter.ml" 76 2564 2568 "src/interpreter.ml" 76 2564 2587
+type(
+  Expr.t
+)
+"src/interpreter.ml" 77 2591 2596 "src/interpreter.ml" 77 2591 2597
+type(
+  Expr.t
+)
+ident(
+  int_ref e "src/interpreter.ml" 76 2564 2582 "src/interpreter.ml" 76 2564 2583
+)
+"src/interpreter.ml" 77 2591 2603 "src/interpreter.ml" 77 2591 2605
+type(
+  Expr.t
+)
+ident(
+  def e' "src/interpreter.ml" 77 2591 2609 "src/interpreter.ml" 77 2591 2633
+)
+"src/interpreter.ml" 77 2591 2627 "src/interpreter.ml" 77 2591 2629
+type(
+  Expr.t
+)
+ident(
+  int_ref e' "src/interpreter.ml" 77 2591 2603 "src/interpreter.ml" 77 2591 2605
+)
+"src/interpreter.ml" 77 2591 2631 "src/interpreter.ml" 77 2591 2632
+type(
+  Expr.direction
+)
+ident(
+  int_ref d "src/interpreter.ml" 76 2564 2585 "src/interpreter.ml" 76 2564 2586
+)
+"src/interpreter.ml" 77 2591 2622 "src/interpreter.ml" 77 2591 2633
+type(
+  Ast.Expr.t.Project
+)
+"src/interpreter.ml" 77 2591 2609 "src/interpreter.ml" 77 2591 2633
+type(
+  Expr.t
+)
+"src/interpreter.ml" 77 2591 2599 "src/interpreter.ml" 77 2591 2633
+type(
+  Expr.t -> Expr.t
+)
+"src/interpreter.ml" 77 2591 2595 "src/interpreter.ml" 77 2591 2634
+type(
+  Expr.t * (Expr.t -> Expr.t)
+)
+"src/interpreter.ml" 77 2591 2635 "src/interpreter.ml" 77 2591 2638
+type(
+  Expr.t * (Expr.t -> Expr.t) -> (unit -> outcome) -> outcome
+)
+ident(
+  int_ref |-> "src/interpreter.ml" 123 4272 4276 "src/interpreter.ml" 123 4272 4281
+)
+"src/interpreter.ml" 77 2591 2643 "src/interpreter.ml" 77 2591 2645
+type(
+  unit
+)
+"src/interpreter.ml" 78 2649 2660 "src/interpreter.ml" 78 2649 2661
+type(
+  Expr.t
+)
+ident(
+  int_ref e "src/interpreter.ml" 76 2564 2582 "src/interpreter.ml" 76 2564 2583
+)
+"src/interpreter.ml" 79 2667 2684 "src/interpreter.ml" 79 2667 2688
+type(
+  Expr.t
+)
+ident(
+  def left "src/interpreter.ml" 79 2667 2700 "src/interpreter.ml" 79 2667 2749
+)
+"src/interpreter.ml" 79 2667 2690 "src/interpreter.ml" 79 2667 2695
+type(
+  Expr.t
+)
+ident(
+  def right "src/interpreter.ml" 79 2667 2700 "src/interpreter.ml" 79 2667 2749
+)
+"src/interpreter.ml" 79 2667 2683 "src/interpreter.ml" 79 2667 2696
+type(
+  Ast.Expr.t.Pair
+)
+"src/interpreter.ml" 79 2667 2673 "src/interpreter.ml" 79 2667 2696
+type(
+  Expr.t
+)
+"src/interpreter.ml" 79 2667 2703 "src/interpreter.ml" 79 2667 2704
+type(
+  Expr.direction
+)
+ident(
+  int_ref d "src/interpreter.ml" 76 2564 2585 "src/interpreter.ml" 76 2564 2586
+)
+"src/interpreter.ml" 79 2667 2705 "src/interpreter.ml" 79 2667 2706
+type(
+  Expr.direction -> Expr.direction -> bool
+)
+ident(
+  int_ref Core.( = ) "src/core_pervasives.mli" 37 1168 1168 "src/core_pervasives.mli" 37 1168 1212
+)
+"src/interpreter.ml" 79 2667 2707 "src/interpreter.ml" 79 2667 2716
+type(
+  Expr.direction
+)
+"src/interpreter.ml" 79 2667 2703 "src/interpreter.ml" 79 2667 2716
+type(
+  bool
+)
+"src/interpreter.ml" 79 2667 2726 "src/interpreter.ml" 79 2667 2732
+type(
+  Expr.t
+)
+ident(
+  int_ref left "src/interpreter.ml" 79 2667 2684 "src/interpreter.ml" 79 2667 2688
+)
+"src/interpreter.ml" 79 2667 2722 "src/interpreter.ml" 79 2667 2732
+type(
+  outcome
+)
+"src/interpreter.ml" 79 2667 2742 "src/interpreter.ml" 79 2667 2749
+type(
+  Expr.t
+)
+ident(
+  int_ref right "src/interpreter.ml" 79 2667 2690 "src/interpreter.ml" 79 2667 2695
+)
+"src/interpreter.ml" 79 2667 2738 "src/interpreter.ml" 79 2667 2749
+type(
+  outcome
+)
+"src/interpreter.ml" 79 2667 2700 "src/interpreter.ml" 79 2667 2749
+type(
+  outcome
+)
+"src/interpreter.ml" 78 2649 2653 "src/interpreter.ml" 79 2667 2750
+type(
+  outcome
+)
+"src/interpreter.ml" 77 2591 2639 "src/interpreter.ml" 79 2667 2750
+type(
+  unit -> outcome
+)
+"src/interpreter.ml" 77 2591 2595 "src/interpreter.ml" 79 2667 2750
+call(
+  tail
+)
+type(
+  outcome
+)
+"src/interpreter.ml" 84 2845 2860 "src/interpreter.ml" 84 2845 2861
+type(
+  Expr.t
+)
+ident(
+  def e "src/interpreter.ml" 85 2896 2900 "src/interpreter.ml" 89 3104 3163
+)
+"src/interpreter.ml" 84 2845 2863 "src/interpreter.ml" 84 2845 2868
+type(
+  string
+)
+ident(
+  def xleft "src/interpreter.ml" 85 2896 2900 "src/interpreter.ml" 89 3104 3163
+)
+"src/interpreter.ml" 84 2845 2870 "src/interpreter.ml" 84 2845 2875
+type(
+  Expr.t
+)
+ident(
+  def eleft "src/interpreter.ml" 85 2896 2900 "src/interpreter.ml" 89 3104 3163
+)
+"src/interpreter.ml" 84 2845 2877 "src/interpreter.ml" 84 2845 2883
+type(
+  string
+)
+ident(
+  def xright "src/interpreter.ml" 85 2896 2900 "src/interpreter.ml" 89 3104 3163
+)
+"src/interpreter.ml" 84 2845 2885 "src/interpreter.ml" 84 2845 2891
+type(
+  Expr.t
+)
+ident(
+  def eright "src/interpreter.ml" 85 2896 2900 "src/interpreter.ml" 89 3104 3163
+)
+"src/interpreter.ml" 84 2845 2859 "src/interpreter.ml" 84 2845 2892
+type(
+  Ast.Expr.t.Case
+)
+"src/interpreter.ml" 84 2845 2849 "src/interpreter.ml" 84 2845 2892
+type(
+  Expr.t
+)
+"src/interpreter.ml" 85 2896 2901 "src/interpreter.ml" 85 2896 2902
+type(
+  Expr.t
+)
+ident(
+  int_ref e "src/interpreter.ml" 84 2845 2860 "src/interpreter.ml" 84 2845 2861
+)
+"src/interpreter.ml" 85 2896 2908 "src/interpreter.ml" 85 2896 2910
+type(
+  Expr.t
+)
+ident(
+  def e' "src/interpreter.ml" 85 2896 2914 "src/interpreter.ml" 85 2896 2962
+)
+"src/interpreter.ml" 85 2896 2929 "src/interpreter.ml" 85 2896 2931
+type(
+  Expr.t
+)
+ident(
+  int_ref e' "src/interpreter.ml" 85 2896 2908 "src/interpreter.ml" 85 2896 2910
+)
+"src/interpreter.ml" 85 2896 2933 "src/interpreter.ml" 85 2896 2938
+type(
+  string
+)
+ident(
+  int_ref xleft "src/interpreter.ml" 84 2845 2863 "src/interpreter.ml" 84 2845 2868
+)
+"src/interpreter.ml" 85 2896 2940 "src/interpreter.ml" 85 2896 2945
+type(
+  Expr.t
+)
+ident(
+  int_ref eleft "src/interpreter.ml" 84 2845 2870 "src/interpreter.ml" 84 2845 2875
+)
+"src/interpreter.ml" 85 2896 2947 "src/interpreter.ml" 85 2896 2953
+type(
+  string
+)
+ident(
+  int_ref xright "src/interpreter.ml" 84 2845 2877 "src/interpreter.ml" 84 2845 2883
+)
+"src/interpreter.ml" 85 2896 2955 "src/interpreter.ml" 85 2896 2961
+type(
+  Expr.t
+)
+ident(
+  int_ref eright "src/interpreter.ml" 84 2845 2885 "src/interpreter.ml" 84 2845 2891
+)
+"src/interpreter.ml" 85 2896 2924 "src/interpreter.ml" 85 2896 2962
+type(
+  Ast.Expr.t.Case
+)
+"src/interpreter.ml" 85 2896 2914 "src/interpreter.ml" 85 2896 2962
+type(
+  Expr.t
+)
+"src/interpreter.ml" 85 2896 2904 "src/interpreter.ml" 85 2896 2962
+type(
+  Expr.t -> Expr.t
+)
+"src/interpreter.ml" 85 2896 2900 "src/interpreter.ml" 85 2896 2963
+type(
+  Expr.t * (Expr.t -> Expr.t)
+)
+"src/interpreter.ml" 85 2896 2964 "src/interpreter.ml" 85 2896 2967
+type(
+  Expr.t * (Expr.t -> Expr.t) -> (unit -> outcome) -> outcome
+)
+ident(
+  int_ref |-> "src/interpreter.ml" 123 4272 4276 "src/interpreter.ml" 123 4272 4281
+)
+"src/interpreter.ml" 85 2896 2972 "src/interpreter.ml" 85 2896 2974
+type(
+  unit
+)
+"src/interpreter.ml" 86 2978 2989 "src/interpreter.ml" 86 2978 2990
+type(
+  Expr.t
+)
+ident(
+  int_ref e "src/interpreter.ml" 84 2845 2860 "src/interpreter.ml" 84 2845 2861
+)
+"src/interpreter.ml" 87 2996 3015 "src/interpreter.ml" 87 2996 3016
+type(
+  Expr.t
+)
+ident(
+  def e "src/interpreter.ml" 87 2996 3029 "src/interpreter.ml" 89 3104 3162
+)
+"src/interpreter.ml" 87 2996 3018 "src/interpreter.ml" 87 2996 3019
+type(
+  Expr.direction
+)
+ident(
+  def d "src/interpreter.ml" 87 2996 3029 "src/interpreter.ml" 89 3104 3162
+)
+"src/interpreter.ml" 87 2996 3021 "src/interpreter.ml" 87 2996 3024
+type(
+  Type.t
+)
+ident(
+  def tau "src/interpreter.ml" 87 2996 3029 "src/interpreter.ml" 89 3104 3162
+)
+"src/interpreter.ml" 87 2996 3014 "src/interpreter.ml" 87 2996 3025
+type(
+  Ast.Expr.t.Inject
+)
+"src/interpreter.ml" 87 2996 3002 "src/interpreter.ml" 87 2996 3025
+type(
+  Expr.t
+)
+"src/interpreter.ml" 88 3031 3040 "src/interpreter.ml" 88 3031 3041
+type(
+  Expr.direction
+)
+ident(
+  int_ref d "src/interpreter.ml" 87 2996 3018 "src/interpreter.ml" 87 2996 3019
+)
+"src/interpreter.ml" 88 3031 3042 "src/interpreter.ml" 88 3031 3043
+type(
+  Expr.direction -> Expr.direction -> bool
+)
+ident(
+  int_ref Core.( = ) "src/core_pervasives.mli" 37 1168 1168 "src/core_pervasives.mli" 37 1168 1212
+)
+"src/interpreter.ml" 88 3031 3044 "src/interpreter.ml" 88 3031 3053
+type(
+  Expr.direction
+)
+"src/interpreter.ml" 88 3031 3040 "src/interpreter.ml" 88 3031 3053
+type(
+  bool
+)
+"src/interpreter.ml" 88 3031 3064 "src/interpreter.ml" 88 3031 3088
+type(
+  string -> Expr.t -> Expr.t -> Expr.t
+)
+ident(
+  int_ref Ast_util.Expr.substitute "src/ast_util.mli" 18 234 236 "src/ast_util.mli" 18 234 274
+)
+"src/interpreter.ml" 88 3031 3089 "src/interpreter.ml" 88 3031 3094
+type(
+  string
+)
+ident(
+  int_ref xleft "src/interpreter.ml" 84 2845 2863 "src/interpreter.ml" 84 2845 2868
+)
+"src/interpreter.ml" 88 3031 3095 "src/interpreter.ml" 88 3031 3096
+type(
+  Expr.t
+)
+ident(
+  int_ref e "src/interpreter.ml" 87 2996 3015 "src/interpreter.ml" 87 2996 3016
+)
+"src/interpreter.ml" 88 3031 3097 "src/interpreter.ml" 88 3031 3102
+type(
+  Expr.t
+)
+ident(
+  int_ref eleft "src/interpreter.ml" 84 2845 2870 "src/interpreter.ml" 84 2845 2875
+)
+"src/interpreter.ml" 88 3031 3063 "src/interpreter.ml" 88 3031 3103
+call(
+  stack
+)
+type(
+  Expr.t
+)
+"src/interpreter.ml" 88 3031 3059 "src/interpreter.ml" 88 3031 3103
+type(
+  outcome
+)
+"src/interpreter.ml" 89 3104 3120 "src/interpreter.ml" 89 3104 3144
+type(
+  string -> Expr.t -> Expr.t -> Expr.t
+)
+ident(
+  int_ref Ast_util.Expr.substitute "src/ast_util.mli" 18 234 236 "src/ast_util.mli" 18 234 274
+)
+"src/interpreter.ml" 89 3104 3145 "src/interpreter.ml" 89 3104 3151
+type(
+  string
+)
+ident(
+  int_ref xright "src/interpreter.ml" 84 2845 2877 "src/interpreter.ml" 84 2845 2883
+)
+"src/interpreter.ml" 89 3104 3152 "src/interpreter.ml" 89 3104 3153
+type(
+  Expr.t
+)
+ident(
+  int_ref e "src/interpreter.ml" 87 2996 3015 "src/interpreter.ml" 87 2996 3016
+)
+"src/interpreter.ml" 89 3104 3154 "src/interpreter.ml" 89 3104 3160
+type(
+  Expr.t
+)
+ident(
+  int_ref eright "src/interpreter.ml" 84 2845 2885 "src/interpreter.ml" 84 2845 2891
+)
+"src/interpreter.ml" 89 3104 3119 "src/interpreter.ml" 89 3104 3161
+call(
+  stack
+)
+type(
+  Expr.t
+)
+"src/interpreter.ml" 89 3104 3115 "src/interpreter.ml" 89 3104 3161
+type(
+  outcome
+)
+"src/interpreter.ml" 87 2996 3029 "src/interpreter.ml" 89 3104 3162
+type(
+  outcome
+)
+"src/interpreter.ml" 86 2978 2982 "src/interpreter.ml" 89 3104 3163
+type(
+  outcome
+)
+"src/interpreter.ml" 85 2896 2968 "src/interpreter.ml" 89 3104 3163
+type(
+  unit -> outcome
+)
+"src/interpreter.ml" 85 2896 2900 "src/interpreter.ml" 89 3104 3163
+call(
+  tail
+)
+type(
+  outcome
+)
+"src/interpreter.ml" 94 3252 3266 "src/interpreter.ml" 94 3252 3267
+type(
+  string
+)
+ident(
+  def x "src/interpreter.ml" 94 3252 3285 "src/interpreter.ml" 94 3252 3324
+)
+"src/interpreter.ml" 94 3252 3269 "src/interpreter.ml" 94 3252 3272
+type(
+  Type.t
+)
+ident(
+  def tau "src/interpreter.ml" 94 3252 3285 "src/interpreter.ml" 94 3252 3324
+)
+"src/interpreter.ml" 94 3252 3276 "src/interpreter.ml" 94 3252 3280
+type(
+  Expr.t
+)
+ident(
+  def in_e "src/interpreter.ml" 94 3252 3285 "src/interpreter.ml" 94 3252 3324
+)
+"src/interpreter.ml" 94 3252 3265 "src/interpreter.ml" 94 3252 3281
+type(
+  Ast.Expr.t.Fix
+)
+"src/interpreter.ml" 94 3252 3256 "src/interpreter.ml" 94 3252 3281
+type(
+  Expr.t
+)
+"src/interpreter.ml" 94 3252 3290 "src/interpreter.ml" 94 3252 3314
+type(
+  string -> Expr.t -> Expr.t -> Expr.t
+)
+ident(
+  int_ref Ast_util.Expr.substitute "src/ast_util.mli" 18 234 236 "src/ast_util.mli" 18 234 274
+)
+"src/interpreter.ml" 94 3252 3315 "src/interpreter.ml" 94 3252 3316
+type(
+  string
+)
+ident(
+  int_ref x "src/interpreter.ml" 94 3252 3266 "src/interpreter.ml" 94 3252 3267
+)
+"src/interpreter.ml" 94 3252 3317 "src/interpreter.ml" 94 3252 3318
+type(
+  Expr.t
+)
+ident(
+  int_ref e "src/interpreter.ml" 11 108 125 "src/interpreter.ml" 11 108 126
+)
+"src/interpreter.ml" 94 3252 3319 "src/interpreter.ml" 94 3252 3323
+type(
+  Expr.t
+)
+ident(
+  int_ref in_e "src/interpreter.ml" 94 3252 3276 "src/interpreter.ml" 94 3252 3280
+)
+"src/interpreter.ml" 94 3252 3289 "src/interpreter.ml" 94 3252 3324
+call(
+  stack
+)
+type(
+  Expr.t
+)
+"src/interpreter.ml" 94 3252 3285 "src/interpreter.ml" 94 3252 3324
+type(
+  outcome
+)
+"src/interpreter.ml" 99 3422 3438 "src/interpreter.ml" 99 3422 3439
+type(
+  Expr.t
+)
+ident(
+  def e "src/interpreter.ml" 100 3449 3453 "src/interpreter.ml" 101 3513 3574
+)
+"src/interpreter.ml" 99 3422 3441 "src/interpreter.ml" 99 3422 3444
+type(
+  Type.t
+)
+ident(
+  def tau "src/interpreter.ml" 100 3449 3453 "src/interpreter.ml" 101 3513 3574
+)
+"src/interpreter.ml" 99 3422 3437 "src/interpreter.ml" 99 3422 3445
+type(
+  Ast.Expr.t.TyApp
+)
+"src/interpreter.ml" 99 3422 3426 "src/interpreter.ml" 99 3422 3445
+type(
+  Expr.t
+)
+"src/interpreter.ml" 100 3449 3454 "src/interpreter.ml" 100 3449 3455
+type(
+  Expr.t
+)
+ident(
+  int_ref e "src/interpreter.ml" 99 3422 3438 "src/interpreter.ml" 99 3422 3439
+)
+"src/interpreter.ml" 100 3449 3461 "src/interpreter.ml" 100 3449 3463
+type(
+  Expr.t
+)
+ident(
+  def e' "src/interpreter.ml" 100 3449 3467 "src/interpreter.ml" 100 3449 3497
+)
+"src/interpreter.ml" 100 3449 3483 "src/interpreter.ml" 100 3449 3485
+type(
+  Expr.t
+)
+ident(
+  int_ref e' "src/interpreter.ml" 100 3449 3461 "src/interpreter.ml" 100 3449 3463
+)
+"src/interpreter.ml" 100 3449 3493 "src/interpreter.ml" 100 3449 3496
+type(
+  Type.t
+)
+ident(
+  int_ref tau "src/interpreter.ml" 99 3422 3441 "src/interpreter.ml" 99 3422 3444
+)
+"src/interpreter.ml" 100 3449 3478 "src/interpreter.ml" 100 3449 3497
+type(
+  Ast.Expr.t.TyApp
+)
+"src/interpreter.ml" 100 3449 3467 "src/interpreter.ml" 100 3449 3497
+type(
+  Expr.t
+)
+"src/interpreter.ml" 100 3449 3457 "src/interpreter.ml" 100 3449 3497
+type(
+  Expr.t -> Expr.t
+)
+"src/interpreter.ml" 100 3449 3453 "src/interpreter.ml" 100 3449 3498
+type(
+  Expr.t * (Expr.t -> Expr.t)
+)
+"src/interpreter.ml" 100 3449 3499 "src/interpreter.ml" 100 3449 3502
+type(
+  Expr.t * (Expr.t -> Expr.t) -> (unit -> outcome) -> outcome
+)
+ident(
+  int_ref |-> "src/interpreter.ml" 123 4272 4276 "src/interpreter.ml" 123 4272 4281
+)
+"src/interpreter.ml" 100 3449 3507 "src/interpreter.ml" 100 3449 3509
+type(
+  unit
+)
+"src/interpreter.ml" 101 3513 3524 "src/interpreter.ml" 101 3513 3525
+type(
+  Expr.t
+)
+ident(
+  int_ref e "src/interpreter.ml" 99 3422 3438 "src/interpreter.ml" 99 3422 3439
+)
+"src/interpreter.ml" 101 3513 3545 "src/interpreter.ml" 101 3513 3546
+type(
+  string
+)
+ident(
+  def a "src/interpreter.ml" 101 3513 3561 "src/interpreter.ml" 101 3513 3573
+)
+"src/interpreter.ml" 101 3513 3550 "src/interpreter.ml" 101 3513 3556
+type(
+  Expr.t
+)
+ident(
+  def e_body "src/interpreter.ml" 101 3513 3561 "src/interpreter.ml" 101 3513 3573
+)
+"src/interpreter.ml" 101 3513 3544 "src/interpreter.ml" 101 3513 3557
+type(
+  Ast.Expr.t.TyLam
+)
+"src/interpreter.ml" 101 3513 3533 "src/interpreter.ml" 101 3513 3557
+type(
+  Expr.t
+)
+"src/interpreter.ml" 101 3513 3565 "src/interpreter.ml" 101 3513 3573
+type(
+  Expr.t
+)
+ident(
+  int_ref e_body "src/interpreter.ml" 101 3513 3550 "src/interpreter.ml" 101 3513 3556
+)
+"src/interpreter.ml" 101 3513 3561 "src/interpreter.ml" 101 3513 3573
+type(
+  outcome
+)
+"src/interpreter.ml" 101 3513 3517 "src/interpreter.ml" 101 3513 3574
+type(
+  outcome
+)
+"src/interpreter.ml" 100 3449 3503 "src/interpreter.ml" 101 3513 3574
+type(
+  unit -> outcome
+)
+"src/interpreter.ml" 100 3449 3453 "src/interpreter.ml" 101 3513 3574
+call(
+  tail
+)
+type(
+  outcome
+)
+"src/interpreter.ml" 106 3675 3691 "src/interpreter.ml" 106 3675 3692
+type(
+  Expr.t
+)
+ident(
+  def e "src/interpreter.ml" 107 3696 3700 "src/interpreter.ml" 108 3745 3796
+)
+"src/interpreter.ml" 106 3675 3679 "src/interpreter.ml" 106 3675 3692
+type(
+  Expr.t
+)
+"src/interpreter.ml" 107 3696 3701 "src/interpreter.ml" 107 3696 3702
+type(
+  Expr.t
+)
+ident(
+  int_ref e "src/interpreter.ml" 106 3675 3691 "src/interpreter.ml" 106 3675 3692
+)
+"src/interpreter.ml" 107 3696 3708 "src/interpreter.ml" 107 3696 3710
+type(
+  Expr.t
+)
+ident(
+  def e' "src/interpreter.ml" 107 3696 3714 "src/interpreter.ml" 107 3696 3729
+)
+"src/interpreter.ml" 107 3696 3725 "src/interpreter.ml" 107 3696 3729
+type(
+  Expr.t
+)
+ident(
+  int_ref e' "src/interpreter.ml" 107 3696 3708 "src/interpreter.ml" 107 3696 3710
+)
+"src/interpreter.ml" 107 3696 3714 "src/interpreter.ml" 107 3696 3729
+type(
+  Expr.t
+)
+"src/interpreter.ml" 107 3696 3704 "src/interpreter.ml" 107 3696 3729
+type(
+  Expr.t -> Expr.t
+)
+"src/interpreter.ml" 107 3696 3700 "src/interpreter.ml" 107 3696 3730
+type(
+  Expr.t * (Expr.t -> Expr.t)
+)
+"src/interpreter.ml" 107 3696 3731 "src/interpreter.ml" 107 3696 3734
+type(
+  Expr.t * (Expr.t -> Expr.t) -> (unit -> outcome) -> outcome
+)
+ident(
+  int_ref |-> "src/interpreter.ml" 123 4272 4276 "src/interpreter.ml" 123 4272 4281
+)
+"src/interpreter.ml" 107 3696 3739 "src/interpreter.ml" 107 3696 3741
+type(
+  unit
+)
+"src/interpreter.ml" 108 3745 3756 "src/interpreter.ml" 108 3745 3757
+type(
+  Expr.t
+)
+ident(
+  int_ref e "src/interpreter.ml" 106 3675 3691 "src/interpreter.ml" 106 3675 3692
+)
+"src/interpreter.ml" 108 3745 3777 "src/interpreter.ml" 108 3745 3778
+type(
+  Expr.t
+)
+ident(
+  def e "src/interpreter.ml" 108 3745 3788 "src/interpreter.ml" 108 3745 3795
+)
+"src/interpreter.ml" 108 3745 3780 "src/interpreter.ml" 108 3745 3783
+type(
+  Type.t
+)
+ident(
+  def tau "src/interpreter.ml" 108 3745 3788 "src/interpreter.ml" 108 3745 3795
+)
+"src/interpreter.ml" 108 3745 3776 "src/interpreter.ml" 108 3745 3784
+type(
+  Ast.Expr.t.Fold_
+)
+"src/interpreter.ml" 108 3745 3765 "src/interpreter.ml" 108 3745 3784
+type(
+  Expr.t
+)
+"src/interpreter.ml" 108 3745 3792 "src/interpreter.ml" 108 3745 3795
+type(
+  Expr.t
+)
+ident(
+  int_ref e "src/interpreter.ml" 108 3745 3777 "src/interpreter.ml" 108 3745 3778
+)
+"src/interpreter.ml" 108 3745 3788 "src/interpreter.ml" 108 3745 3795
+type(
+  outcome
+)
+"src/interpreter.ml" 108 3745 3749 "src/interpreter.ml" 108 3745 3796
+type(
+  outcome
+)
+"src/interpreter.ml" 107 3696 3735 "src/interpreter.ml" 108 3745 3796
+type(
+  unit -> outcome
+)
+"src/interpreter.ml" 107 3696 3700 "src/interpreter.ml" 108 3745 3796
+call(
+  tail
+)
+type(
+  outcome
+)
+"src/interpreter.ml" 113 3893 3910 "src/interpreter.ml" 113 3893 3911
+type(
+  string
+)
+ident(
+  def x "src/interpreter.ml" 114 3934 3938 "src/interpreter.ml" 116 4040 4126
+)
+"src/interpreter.ml" 113 3893 3913 "src/interpreter.ml" 113 3893 3914
+type(
+  string
+)
+ident(
+  def a "src/interpreter.ml" 114 3934 3938 "src/interpreter.ml" 116 4040 4126
+)
+"src/interpreter.ml" 113 3893 3916 "src/interpreter.ml" 113 3893 3921
+type(
+  Expr.t
+)
+ident(
+  def e_mod "src/interpreter.ml" 114 3934 3938 "src/interpreter.ml" 116 4040 4126
+)
+"src/interpreter.ml" 113 3893 3923 "src/interpreter.ml" 113 3893 3929
+type(
+  Expr.t
+)
+ident(
+  def e_body "src/interpreter.ml" 114 3934 3938 "src/interpreter.ml" 116 4040 4126
+)
+"src/interpreter.ml" 113 3893 3909 "src/interpreter.ml" 113 3893 3930
+type(
+  Ast.Expr.t.Import
+)
+"src/interpreter.ml" 113 3893 3897 "src/interpreter.ml" 113 3893 3930
+type(
+  Expr.t
+)
+"src/interpreter.ml" 114 3934 3939 "src/interpreter.ml" 114 3934 3944
+type(
+  Expr.t
+)
+ident(
+  int_ref e_mod "src/interpreter.ml" 113 3893 3916 "src/interpreter.ml" 113 3893 3921
+)
+"src/interpreter.ml" 114 3934 3950 "src/interpreter.ml" 114 3934 3956
+type(
+  Expr.t
+)
+ident(
+  def e_mod' "src/interpreter.ml" 114 3934 3960 "src/interpreter.ml" 114 3934 4002
+)
+"src/interpreter.ml" 114 3934 3973 "src/interpreter.ml" 114 3934 3974
+type(
+  string
+)
+ident(
+  int_ref x "src/interpreter.ml" 113 3893 3910 "src/interpreter.ml" 113 3893 3911
+)
+"src/interpreter.ml" 114 3934 3976 "src/interpreter.ml" 114 3934 3977
+type(
+  string
+)
+ident(
+  int_ref a "src/interpreter.ml" 113 3893 3913 "src/interpreter.ml" 113 3893 3914
+)
+"src/interpreter.ml" 114 3934 3987 "src/interpreter.ml" 114 3934 3993
+type(
+  Expr.t
+)
+ident(
+  int_ref e_mod' "src/interpreter.ml" 114 3934 3950 "src/interpreter.ml" 114 3934 3956
+)
+"src/interpreter.ml" 114 3934 3995 "src/interpreter.ml" 114 3934 4001
+type(
+  Expr.t
+)
+ident(
+  int_ref e_body "src/interpreter.ml" 113 3893 3923 "src/interpreter.ml" 113 3893 3929
+)
+"src/interpreter.ml" 114 3934 3972 "src/interpreter.ml" 114 3934 4002
+type(
+  Ast.Expr.t.Import
+)
+"src/interpreter.ml" 114 3934 3960 "src/interpreter.ml" 114 3934 4002
+type(
+  Expr.t
+)
+"src/interpreter.ml" 114 3934 3946 "src/interpreter.ml" 114 3934 4002
+type(
+  Expr.t -> Expr.t
+)
+"src/interpreter.ml" 114 3934 3938 "src/interpreter.ml" 114 3934 4003
+type(
+  Expr.t * (Expr.t -> Expr.t)
+)
+"src/interpreter.ml" 114 3934 4004 "src/interpreter.ml" 114 3934 4007
+type(
+  Expr.t * (Expr.t -> Expr.t) -> (unit -> outcome) -> outcome
+)
+ident(
+  int_ref |-> "src/interpreter.ml" 123 4272 4276 "src/interpreter.ml" 123 4272 4281
+)
+"src/interpreter.ml" 114 3934 4012 "src/interpreter.ml" 114 3934 4014
+type(
+  unit
+)
+"src/interpreter.ml" 115 4018 4029 "src/interpreter.ml" 115 4018 4034
+type(
+  Expr.t
+)
+ident(
+  int_ref e_mod "src/interpreter.ml" 113 3893 3916 "src/interpreter.ml" 113 3893 3921
+)
+"src/interpreter.ml" 116 4040 4060 "src/interpreter.ml" 116 4040 4061
+type(
+  Expr.t
+)
+ident(
+  def e "src/interpreter.ml" 116 4040 4084 "src/interpreter.ml" 116 4040 4125
+)
+"src/interpreter.ml" 116 4040 4063 "src/interpreter.ml" 116 4040 4070
+type(
+  Type.t
+)
+ident(
+  def tau_adt "src/interpreter.ml" 116 4040 4084 "src/interpreter.ml" 116 4040 4125
+)
+"src/interpreter.ml" 116 4040 4072 "src/interpreter.ml" 116 4040 4079
+type(
+  Type.t
+)
+ident(
+  def tau_mod "src/interpreter.ml" 116 4040 4084 "src/interpreter.ml" 116 4040 4125
+)
+"src/interpreter.ml" 116 4040 4059 "src/interpreter.ml" 116 4040 4080
+type(
+  Ast.Expr.t.Export
+)
+"src/interpreter.ml" 116 4040 4047 "src/interpreter.ml" 116 4040 4080
+type(
+  Expr.t
+)
+"src/interpreter.ml" 116 4040 4089 "src/interpreter.ml" 116 4040 4113
+type(
+  string -> Expr.t -> Expr.t -> Expr.t
+)
+ident(
+  int_ref Ast_util.Expr.substitute "src/ast_util.mli" 18 234 236 "src/ast_util.mli" 18 234 274
+)
+"src/interpreter.ml" 116 4040 4114 "src/interpreter.ml" 116 4040 4115
+type(
+  string
+)
+ident(
+  int_ref x "src/interpreter.ml" 113 3893 3910 "src/interpreter.ml" 113 3893 3911
+)
+"src/interpreter.ml" 116 4040 4116 "src/interpreter.ml" 116 4040 4117
+type(
+  Expr.t
+)
+ident(
+  int_ref e "src/interpreter.ml" 116 4040 4060 "src/interpreter.ml" 116 4040 4061
+)
+"src/interpreter.ml" 116 4040 4118 "src/interpreter.ml" 116 4040 4124
+type(
+  Expr.t
+)
+ident(
+  int_ref e_body "src/interpreter.ml" 113 3893 3923 "src/interpreter.ml" 113 3893 3929
+)
+"src/interpreter.ml" 116 4040 4088 "src/interpreter.ml" 116 4040 4125
+call(
+  stack
+)
+type(
+  Expr.t
+)
+"src/interpreter.ml" 116 4040 4084 "src/interpreter.ml" 116 4040 4125
+type(
+  outcome
+)
+"src/interpreter.ml" 115 4018 4022 "src/interpreter.ml" 116 4040 4126
+type(
+  outcome
+)
+"src/interpreter.ml" 114 3934 4008 "src/interpreter.ml" 116 4040 4126
+type(
+  unit -> outcome
+)
+"src/interpreter.ml" 114 3934 3938 "src/interpreter.ml" 116 4040 4126
+call(
+  tail
+)
+type(
+  outcome
+)
+"src/interpreter.ml" 120 4158 4162 "src/interpreter.ml" 120 4158 4163
+type(
+  Expr.t
+)
+"src/interpreter.ml" 120 4158 4167 "src/interpreter.ml" 120 4158 4172
+type(
+  exn -> outcome
+)
+ident(
+  int_ref Core.raise "src/core_pervasives.mli" 16 610 610 "src/core_pervasives.mli" 16 610 649
+)
+"src/interpreter.ml" 121 4189 4193 "src/interpreter.ml" 121 4189 4207
+type(
+  (string -> string, unit, string) Base.format -> string -> string
+)
+ident(
+  int_ref Core.Printf.sprintf "src/printf.mli" 7 128 128 "src/printf.mli" 7 128 199
+)
+"src/interpreter.ml" 121 4189 4208 "src/interpreter.ml" 121 4189 4249
+type(
+  (string -> string, unit, string) Base.format
+)
+"src/interpreter.ml" 121 4189 4251 "src/interpreter.ml" 121 4189 4265
+type(
+  Expr.t -> string
+)
+ident(
+  int_ref Ast.Expr.to_string "src/ast.mli" 68 1716 1718 "src/ast.mli" 68 1716 1745
+)
+"src/interpreter.ml" 121 4189 4266 "src/interpreter.ml" 121 4189 4267
+type(
+  Expr.t
+)
+ident(
+  int_ref e "src/interpreter.ml" 11 108 125 "src/interpreter.ml" 11 108 126
+)
+"src/interpreter.ml" 121 4189 4250 "src/interpreter.ml" 121 4189 4268
+call(
+  stack
+)
+type(
+  string
+)
+"src/interpreter.ml" 120 4158 4187 "src/interpreter.ml" 121 4189 4269
+call(
+  stack
+)
+type(
+  string
+)
+"src/interpreter.ml" 120 4158 4173 "src/interpreter.ml" 121 4189 4270
+type(
+  exn
+)
+"src/interpreter.ml" 120 4158 4167 "src/interpreter.ml" 121 4189 4270
+type(
+  outcome
+)
+"src/interpreter.ml" 12 149 151 "src/interpreter.ml" 121 4189 4270
+type(
+  outcome
+)
+type(
+  outcome
+)
+"src/interpreter.ml" 123 4272 4276 "src/interpreter.ml" 123 4272 4281
+type(
+  Expr.t * (Expr.t -> Expr.t) -> (unit -> outcome) -> outcome
+)
+ident(
+  def |-> "src/interpreter.ml" 11 108 108 "src/interpreter.ml" 1 0 -1
+)
+"src/interpreter.ml" 123 4272 4284 "src/interpreter.ml" 123 4272 4285
+type(
+  Expr.t
+)
+ident(
+  def e "src/interpreter.ml" 123 4272 4324 "src/interpreter.ml" 125 4363 4428
+)
+"src/interpreter.ml" 123 4272 4287 "src/interpreter.ml" 123 4272 4291
+type(
+  Expr.t -> Expr.t
+)
+ident(
+  def hole "src/interpreter.ml" 123 4272 4324 "src/interpreter.ml" 125 4363 4428
+)
+"src/interpreter.ml" 123 4272 4283 "src/interpreter.ml" 123 4272 4292
+type(
+  Expr.t * (Expr.t -> Expr.t)
+)
+"src/interpreter.ml" 123 4272 4325 "src/interpreter.ml" 123 4272 4329
+type(
+  unit -> outcome
+)
+ident(
+  def next "src/interpreter.ml" 124 4349 4351 "src/interpreter.ml" 125 4363 4428
+)
+"src/interpreter.ml" 125 4363 4371 "src/interpreter.ml" 125 4363 4378
+type(
+  Expr.t -> outcome
+)
+ident(
+  int_ref trystep "src/interpreter.ml" 11 108 116 "src/interpreter.ml" 11 108 123
+)
+"src/interpreter.ml" 125 4363 4379 "src/interpreter.ml" 125 4363 4380
+type(
+  Expr.t
+)
+ident(
+  int_ref e "src/interpreter.ml" 123 4272 4284 "src/interpreter.ml" 123 4272 4285
+)
+"src/interpreter.ml" 125 4363 4371 "src/interpreter.ml" 125 4363 4380
+call(
+  stack
+)
+type(
+  outcome
+)
+"src/interpreter.ml" 125 4363 4391 "src/interpreter.ml" 125 4363 4393
+type(
+  Expr.t
+)
+ident(
+  def e' "src/interpreter.ml" 125 4363 4397 "src/interpreter.ml" 125 4363 4411
+)
+"src/interpreter.ml" 125 4363 4386 "src/interpreter.ml" 125 4363 4393
+type(
+  outcome
+)
+"src/interpreter.ml" 125 4363 4403 "src/interpreter.ml" 125 4363 4407
+type(
+  Expr.t -> Expr.t
+)
+ident(
+  int_ref hole "src/interpreter.ml" 123 4272 4287 "src/interpreter.ml" 123 4272 4291
+)
+"src/interpreter.ml" 125 4363 4408 "src/interpreter.ml" 125 4363 4410
+type(
+  Expr.t
+)
+ident(
+  int_ref e' "src/interpreter.ml" 125 4363 4391 "src/interpreter.ml" 125 4363 4393
+)
+"src/interpreter.ml" 125 4363 4402 "src/interpreter.ml" 125 4363 4411
+call(
+  stack
+)
+type(
+  Expr.t
+)
+"src/interpreter.ml" 125 4363 4397 "src/interpreter.ml" 125 4363 4411
+type(
+  outcome
+)
+"src/interpreter.ml" 125 4363 4414 "src/interpreter.ml" 125 4363 4417
+type(
+  outcome
+)
+"src/interpreter.ml" 125 4363 4421 "src/interpreter.ml" 125 4363 4425
+type(
+  unit -> outcome
+)
+ident(
+  int_ref next "src/interpreter.ml" 123 4272 4325 "src/interpreter.ml" 123 4272 4329
+)
+"src/interpreter.ml" 125 4363 4426 "src/interpreter.ml" 125 4363 4428
+type(
+  unit
+)
+"src/interpreter.ml" 125 4363 4421 "src/interpreter.ml" 125 4363 4428
+call(
+  tail
+)
+type(
+  outcome
+)
+"src/interpreter.ml" 125 4363 4365 "src/interpreter.ml" 125 4363 4428
+type(
+  outcome
+)
+type(
+  outcome
+)
+"src/interpreter.ml" 127 4430 4438 "src/interpreter.ml" 127 4430 4442
+type(
+  Expr.t -> (Expr.t, 'a) result
+)
+ident(
+  def eval "src/interpreter.ml" 127 4430 4430 "src/interpreter.ml" 1 0 -1
+)
+"src/interpreter.ml" 127 4430 4443 "src/interpreter.ml" 127 4430 4444
+type(
+  Expr.t
+)
+ident(
+  def e "src/interpreter.ml" 128 4447 4449 "src/interpreter.ml" 134 4626 4641
+)
+"src/interpreter.ml" 128 4447 4455 "src/interpreter.ml" 128 4447 4462
+type(
+  Expr.t -> outcome
+)
+ident(
+  int_ref trystep "src/interpreter.ml" 11 108 116 "src/interpreter.ml" 11 108 123
+)
+"src/interpreter.ml" 128 4447 4463 "src/interpreter.ml" 128 4447 4464
+type(
+  Expr.t
+)
+ident(
+  int_ref e "src/interpreter.ml" 127 4430 4443 "src/interpreter.ml" 127 4430 4444
+)
+"src/interpreter.ml" 128 4447 4455 "src/interpreter.ml" 128 4447 4464
+call(
+  stack
+)
+type(
+  outcome
+)
+"src/interpreter.ml" 129 4470 4479 "src/interpreter.ml" 129 4470 4481
+type(
+  Expr.t
+)
+ident(
+  def e' "src/interpreter.ml" 130 4485 4489 "src/interpreter.ml" 133 4614 4625
+)
+"src/interpreter.ml" 129 4470 4474 "src/interpreter.ml" 129 4470 4481
+type(
+  outcome
+)
+"src/interpreter.ml" 130 4485 4493 "src/interpreter.ml" 130 4485 4506
+type(
+  unit -> bool
+)
+ident(
+  int_ref Flags.extra_verbose "src/flags.mli" 5 96 96 "src/flags.mli" 5 96 128
+)
+"src/interpreter.ml" 130 4485 4507 "src/interpreter.ml" 130 4485 4509
+type(
+  unit
+)
+"src/interpreter.ml" 130 4485 4493 "src/interpreter.ml" 130 4485 4509
+call(
+  stack
+)
+type(
+  bool
+)
+"src/interpreter.ml" 131 4515 4522 "src/interpreter.ml" 131 4515 4535
+type(
+  (string -> string -> unit, Stdio.Out_channel.t, unit) Base.format ->
+  string -> string -> unit
+)
+ident(
+  int_ref Core.Printf.printf "src/printf.ml" 10 231 235 "src/printf.ml" 10 231 241
+)
+"src/interpreter.ml" 131 4515 4536 "src/interpreter.ml" 131 4515 4563
+type(
+  (string -> string -> unit, Stdio.Out_channel.t, unit) Base.format
+)
+"src/interpreter.ml" 132 4564 4574 "src/interpreter.ml" 132 4564 4588
+type(
+  Expr.t -> string
+)
+ident(
+  int_ref Ast.Expr.to_string "src/ast.mli" 68 1716 1718 "src/ast.mli" 68 1716 1745
+)
+"src/interpreter.ml" 132 4564 4589 "src/interpreter.ml" 132 4564 4590
+type(
+  Expr.t
+)
+ident(
+  int_ref e "src/interpreter.ml" 127 4430 4443 "src/interpreter.ml" 127 4430 4444
+)
+"src/interpreter.ml" 132 4564 4573 "src/interpreter.ml" 132 4564 4591
+call(
+  stack
+)
+type(
+  string
+)
+"src/interpreter.ml" 132 4564 4593 "src/interpreter.ml" 132 4564 4607
+type(
+  Expr.t -> string
+)
+ident(
+  int_ref Ast.Expr.to_string "src/ast.mli" 68 1716 1718 "src/ast.mli" 68 1716 1745
+)
+"src/interpreter.ml" 132 4564 4608 "src/interpreter.ml" 132 4564 4610
+type(
+  Expr.t
+)
+ident(
+  int_ref e' "src/interpreter.ml" 129 4470 4479 "src/interpreter.ml" 129 4470 4481
+)
+"src/interpreter.ml" 132 4564 4592 "src/interpreter.ml" 132 4564 4611
+call(
+  stack
+)
+type(
+  string
+)
+"src/interpreter.ml" 131 4515 4522 "src/interpreter.ml" 132 4564 4611
+call(
+  stack
+)
+type(
+  unit
+)
+"src/interpreter.ml" 130 4485 4489 "src/interpreter.ml" 132 4564 4612
+type(
+  unit
+)
+"src/interpreter.ml" 133 4614 4618 "src/interpreter.ml" 133 4614 4622
+type(
+  Expr.t -> (Expr.t, 'a) result
+)
+ident(
+  int_ref eval "src/interpreter.ml" 127 4430 4438 "src/interpreter.ml" 127 4430 4442
+)
+"src/interpreter.ml" 133 4614 4623 "src/interpreter.ml" 133 4614 4625
+type(
+  Expr.t
+)
+ident(
+  int_ref e' "src/interpreter.ml" 129 4470 4479 "src/interpreter.ml" 129 4470 4481
+)
+"src/interpreter.ml" 133 4614 4618 "src/interpreter.ml" 133 4614 4625
+call(
+  tail
+)
+type(
+  (Expr.t, 'a) result
+)
+"src/interpreter.ml" 130 4485 4489 "src/interpreter.ml" 133 4614 4625
+type(
+  (Expr.t, 'a) result
+)
+"src/interpreter.ml" 134 4626 4630 "src/interpreter.ml" 134 4626 4633
+type(
+  outcome
+)
+"src/interpreter.ml" 134 4626 4640 "src/interpreter.ml" 134 4626 4641
+type(
+  Expr.t
+)
+ident(
+  int_ref e "src/interpreter.ml" 127 4430 4443 "src/interpreter.ml" 127 4430 4444
+)
+"src/interpreter.ml" 134 4626 4637 "src/interpreter.ml" 134 4626 4641
+type(
+  (Expr.t, 'a) result
+)
+"src/interpreter.ml" 128 4447 4449 "src/interpreter.ml" 134 4626 4641
+type(
+  (Expr.t, 'a) result
+)
+"src/interpreter.ml" 136 4643 4647 "src/interpreter.ml" 136 4643 4659
+type(
+  unit -> unit
+)
+ident(
+  def inline_tests "src/interpreter.ml" 145 4920 4920 "src/interpreter.ml" 1 0 -1
+)
+"src/interpreter.ml" 136 4643 4660 "src/interpreter.ml" 136 4643 4662
+type(
+  unit
+)
+"src/interpreter.ml" 137 4665 4671 "src/interpreter.ml" 137 4665 4672
+type(
+  string -> Expr.t
+)
+ident(
+  def p "src/interpreter.ml" 138 4700 4702 "src/interpreter.ml" 142 4808 4848
+)
+"src/interpreter.ml" 137 4665 4675 "src/interpreter.ml" 137 4665 4696
+type(
+  string -> Expr.t
+)
+ident(
+  int_ref Parser.parse_expr_exn "src/parser.ml" 26 663 667 "src/parser.ml" 26 663 681
+)
+"src/interpreter.ml" 138 4700 4706 "src/interpreter.ml" 138 4700 4708
+type(
+  Expr.t
+)
+ident(
+  def e1 "src/interpreter.ml" 139 4724 4726 "src/interpreter.ml" 142 4808 4848
+)
+"src/interpreter.ml" 138 4700 4711 "src/interpreter.ml" 138 4700 4712
+type(
+  string -> Expr.t
+)
+ident(
+  int_ref p "src/interpreter.ml" 137 4665 4671 "src/interpreter.ml" 137 4665 4672
+)
+"src/interpreter.ml" 138 4700 4713 "src/interpreter.ml" 138 4700 4720
+type(
+  string
+)
+"src/interpreter.ml" 138 4700 4711 "src/interpreter.ml" 138 4700 4720
+call(
+  stack
+)
+type(
+  Expr.t
+)
+"src/interpreter.ml" 139 4724 4734 "src/interpreter.ml" 139 4724 4741
+type(
+  Expr.t -> outcome
+)
+ident(
+  int_ref trystep "src/interpreter.ml" 11 108 116 "src/interpreter.ml" 11 108 123
+)
+"src/interpreter.ml" 139 4724 4742 "src/interpreter.ml" 139 4724 4744
+type(
+  Expr.t
+)
+ident(
+  int_ref e1 "src/interpreter.ml" 138 4700 4706 "src/interpreter.ml" 138 4700 4708
+)
+"src/interpreter.ml" 139 4724 4734 "src/interpreter.ml" 139 4724 4744
+call(
+  stack
+)
+type(
+  outcome
+)
+"src/interpreter.ml" 139 4724 4745 "src/interpreter.ml" 139 4724 4746
+type(
+  outcome -> outcome -> bool
+)
+ident(
+  int_ref Core.( = ) "src/core_pervasives.mli" 37 1168 1168 "src/core_pervasives.mli" 37 1168 1212
+)
+"src/interpreter.ml" 139 4724 4761 "src/interpreter.ml" 139 4724 4762
+type(
+  int
+)
+"src/interpreter.ml" 139 4724 4751 "src/interpreter.ml" 139 4724 4763
+type(
+  Expr.t
+)
+"src/interpreter.ml" 139 4724 4747 "src/interpreter.ml" 139 4724 4763
+type(
+  outcome
+)
+"src/interpreter.ml" 139 4724 4733 "src/interpreter.ml" 139 4724 4764
+type(
+  bool
+)
+"src/interpreter.ml" 139 4724 4726 "src/interpreter.ml" 139 4724 4764
+type(
+  unit
+)
+"src/interpreter.ml" 141 4767 4773 "src/interpreter.ml" 141 4767 4775
+type(
+  Expr.t
+)
+ident(
+  def e2 "src/interpreter.ml" 142 4808 4810 "src/interpreter.ml" 142 4808 4848
+)
+"src/interpreter.ml" 141 4767 4778 "src/interpreter.ml" 141 4767 4779
+type(
+  string -> Expr.t
+)
+ident(
+  int_ref p "src/interpreter.ml" 137 4665 4671 "src/interpreter.ml" 137 4665 4672
+)
+"src/interpreter.ml" 141 4767 4780 "src/interpreter.ml" 141 4767 4804
+type(
+  string
+)
+"src/interpreter.ml" 141 4767 4778 "src/interpreter.ml" 141 4767 4804
+call(
+  stack
+)
+type(
+  Expr.t
+)
+"src/interpreter.ml" 142 4808 4818 "src/interpreter.ml" 142 4808 4825
+type(
+  Expr.t -> outcome
+)
+ident(
+  int_ref trystep "src/interpreter.ml" 11 108 116 "src/interpreter.ml" 11 108 123
+)
+"src/interpreter.ml" 142 4808 4826 "src/interpreter.ml" 142 4808 4828
+type(
+  Expr.t
+)
+ident(
+  int_ref e2 "src/interpreter.ml" 141 4767 4773 "src/interpreter.ml" 141 4767 4775
+)
+"src/interpreter.ml" 142 4808 4818 "src/interpreter.ml" 142 4808 4828
+call(
+  stack
+)
+type(
+  outcome
+)
+"src/interpreter.ml" 142 4808 4829 "src/interpreter.ml" 142 4808 4830
+type(
+  outcome -> outcome -> bool
+)
+ident(
+  int_ref Core.( = ) "src/core_pervasives.mli" 37 1168 1168 "src/core_pervasives.mli" 37 1168 1212
+)
+"src/interpreter.ml" 142 4808 4845 "src/interpreter.ml" 142 4808 4846
+type(
+  int
+)
+"src/interpreter.ml" 142 4808 4835 "src/interpreter.ml" 142 4808 4847
+type(
+  Expr.t
+)
+"src/interpreter.ml" 142 4808 4831 "src/interpreter.ml" 142 4808 4847
+type(
+  outcome
+)
+"src/interpreter.ml" 142 4808 4817 "src/interpreter.ml" 142 4808 4848
+type(
+  bool
+)
+"src/interpreter.ml" 142 4808 4810 "src/interpreter.ml" 142 4808 4848
+type(
+  unit
+)
+"src/interpreter.ml" 141 4767 4769 "src/interpreter.ml" 142 4808 4848
+type(
+  unit
+)
+"src/interpreter.ml" 139 4724 4726 "src/interpreter.ml" 142 4808 4848
+type(
+  unit
+)
+"src/interpreter.ml" 138 4700 4702 "src/interpreter.ml" 142 4808 4848
+type(
+  unit
+)
+"src/interpreter.ml" 137 4665 4667 "src/interpreter.ml" 142 4808 4848
+type(
+  unit
+)
+"src/interpreter.ml" 145 4920 4924 "src/interpreter.ml" 145 4920 4926
+type(
+  unit
+)
+"src/interpreter.ml" 145 4920 4929 "src/interpreter.ml" 145 4920 4941
+type(
+  unit -> unit
+)
+ident(
+  int_ref inline_tests "src/interpreter.ml" 136 4643 4647 "src/interpreter.ml" 136 4643 4659
+)
+"src/interpreter.ml" 145 4920 4942 "src/interpreter.ml" 145 4920 4944
+type(
+  unit
+)
+"src/interpreter.ml" 145 4920 4929 "src/interpreter.ml" 145 4920 4944
+call(
+  stack
+)
+type(
+  unit
+)

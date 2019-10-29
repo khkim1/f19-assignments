@@ -1,0 +1,279 @@
+"src/flags.ml" 1 0 4 "src/flags.ml" 1 0 12
+type(
+  bool ref
+)
+ident(
+  def _verbose "src/flags.ml" 2 36 36 "src/flags.ml" 1 0 -1
+)
+"src/flags.ml" 1 0 26 "src/flags.ml" 1 0 29
+type(
+  bool -> bool ref
+)
+ident(
+  int_ref Pervasives.ref "pervasives.mli" 1063 41160 41160 "pervasives.mli" 1063 41160 41204
+)
+"src/flags.ml" 1 0 30 "src/flags.ml" 1 0 35
+type(
+  bool
+)
+"src/flags.ml" 1 0 26 "src/flags.ml" 1 0 35
+type(
+  bool ref
+)
+type(
+  bool ref
+)
+"src/flags.ml" 2 36 40 "src/flags.ml" 2 36 47
+type(
+  unit -> bool
+)
+ident(
+  def verbose "src/flags.ml" 3 63 63 "src/flags.ml" 1 0 -1
+)
+"src/flags.ml" 2 36 48 "src/flags.ml" 2 36 50
+type(
+  unit
+)
+"src/flags.ml" 2 36 53 "src/flags.ml" 2 36 54
+type(
+  bool ref -> bool
+)
+ident(
+  int_ref Pervasives.( ! ) "pervasives.mli" 1066 41266 41266 "pervasives.mli" 1066 41266 41307
+)
+"src/flags.ml" 2 36 54 "src/flags.ml" 2 36 62
+type(
+  bool ref
+)
+ident(
+  int_ref _verbose "src/flags.ml" 1 0 4 "src/flags.ml" 1 0 12
+)
+"src/flags.ml" 2 36 53 "src/flags.ml" 2 36 62
+type(
+  bool
+)
+"src/flags.ml" 3 63 67 "src/flags.ml" 3 63 78
+type(
+  bool -> unit
+)
+ident(
+  def set_verbose "src/flags.ml" 5 98 98 "src/flags.ml" 1 0 -1
+)
+"src/flags.ml" 3 63 79 "src/flags.ml" 3 63 80
+type(
+  bool
+)
+ident(
+  def b "src/flags.ml" 3 63 83 "src/flags.ml" 3 63 96
+)
+"src/flags.ml" 3 63 83 "src/flags.ml" 3 63 91
+type(
+  bool ref
+)
+ident(
+  int_ref _verbose "src/flags.ml" 1 0 4 "src/flags.ml" 1 0 12
+)
+"src/flags.ml" 3 63 92 "src/flags.ml" 3 63 94
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  int_ref Pervasives.( := ) "pervasives.mli" 1071 41452 41452 "pervasives.mli" 1071 41452 41505
+)
+"src/flags.ml" 3 63 95 "src/flags.ml" 3 63 96
+type(
+  bool
+)
+ident(
+  int_ref b "src/flags.ml" 3 63 79 "src/flags.ml" 3 63 80
+)
+"src/flags.ml" 3 63 83 "src/flags.ml" 3 63 96
+type(
+  unit
+)
+"src/flags.ml" 5 98 102 "src/flags.ml" 5 98 116
+type(
+  bool ref
+)
+ident(
+  def _extra_verbose "src/flags.ml" 6 140 140 "src/flags.ml" 1 0 -1
+)
+"src/flags.ml" 5 98 130 "src/flags.ml" 5 98 133
+type(
+  bool -> bool ref
+)
+ident(
+  int_ref Pervasives.ref "pervasives.mli" 1063 41160 41160 "pervasives.mli" 1063 41160 41204
+)
+"src/flags.ml" 5 98 134 "src/flags.ml" 5 98 139
+type(
+  bool
+)
+"src/flags.ml" 5 98 130 "src/flags.ml" 5 98 139
+type(
+  bool ref
+)
+type(
+  bool ref
+)
+"src/flags.ml" 6 140 144 "src/flags.ml" 6 140 157
+type(
+  unit -> bool
+)
+ident(
+  def extra_verbose "src/flags.ml" 7 179 179 "src/flags.ml" 1 0 -1
+)
+"src/flags.ml" 6 140 158 "src/flags.ml" 6 140 160
+type(
+  unit
+)
+"src/flags.ml" 6 140 163 "src/flags.ml" 6 140 164
+type(
+  bool ref -> bool
+)
+ident(
+  int_ref Pervasives.( ! ) "pervasives.mli" 1066 41266 41266 "pervasives.mli" 1066 41266 41307
+)
+"src/flags.ml" 6 140 164 "src/flags.ml" 6 140 178
+type(
+  bool ref
+)
+ident(
+  int_ref _extra_verbose "src/flags.ml" 5 98 102 "src/flags.ml" 5 98 116
+)
+"src/flags.ml" 6 140 163 "src/flags.ml" 6 140 178
+type(
+  bool
+)
+"src/flags.ml" 7 179 183 "src/flags.ml" 7 179 200
+type(
+  bool -> unit
+)
+ident(
+  def set_extra_verbose "src/flags.ml" 9 226 226 "src/flags.ml" 1 0 -1
+)
+"src/flags.ml" 7 179 201 "src/flags.ml" 7 179 202
+type(
+  bool
+)
+ident(
+  def b "src/flags.ml" 7 179 205 "src/flags.ml" 7 179 224
+)
+"src/flags.ml" 7 179 205 "src/flags.ml" 7 179 219
+type(
+  bool ref
+)
+ident(
+  int_ref _extra_verbose "src/flags.ml" 5 98 102 "src/flags.ml" 5 98 116
+)
+"src/flags.ml" 7 179 220 "src/flags.ml" 7 179 222
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  int_ref Pervasives.( := ) "pervasives.mli" 1071 41452 41452 "pervasives.mli" 1071 41452 41505
+)
+"src/flags.ml" 7 179 223 "src/flags.ml" 7 179 224
+type(
+  bool
+)
+ident(
+  int_ref b "src/flags.ml" 7 179 201 "src/flags.ml" 7 179 202
+)
+"src/flags.ml" 7 179 205 "src/flags.ml" 7 179 224
+type(
+  unit
+)
+"src/flags.ml" 9 226 230 "src/flags.ml" 9 226 238
+type(
+  bool ref
+)
+ident(
+  def _testing "src/flags.ml" 10 262 262 "src/flags.ml" 1 0 -1
+)
+"src/flags.ml" 9 226 252 "src/flags.ml" 9 226 255
+type(
+  bool -> bool ref
+)
+ident(
+  int_ref Pervasives.ref "pervasives.mli" 1063 41160 41160 "pervasives.mli" 1063 41160 41204
+)
+"src/flags.ml" 9 226 256 "src/flags.ml" 9 226 261
+type(
+  bool
+)
+"src/flags.ml" 9 226 252 "src/flags.ml" 9 226 261
+type(
+  bool ref
+)
+type(
+  bool ref
+)
+"src/flags.ml" 10 262 266 "src/flags.ml" 10 262 273
+type(
+  unit -> bool
+)
+ident(
+  def testing "src/flags.ml" 11 289 289 "src/flags.ml" 1 0 -1
+)
+"src/flags.ml" 10 262 274 "src/flags.ml" 10 262 276
+type(
+  unit
+)
+"src/flags.ml" 10 262 279 "src/flags.ml" 10 262 280
+type(
+  bool ref -> bool
+)
+ident(
+  int_ref Pervasives.( ! ) "pervasives.mli" 1066 41266 41266 "pervasives.mli" 1066 41266 41307
+)
+"src/flags.ml" 10 262 280 "src/flags.ml" 10 262 288
+type(
+  bool ref
+)
+ident(
+  int_ref _testing "src/flags.ml" 9 226 230 "src/flags.ml" 9 226 238
+)
+"src/flags.ml" 10 262 279 "src/flags.ml" 10 262 288
+type(
+  bool
+)
+"src/flags.ml" 11 289 293 "src/flags.ml" 11 289 304
+type(
+  bool -> unit
+)
+ident(
+  def set_testing "src/flags.ml" 11 289 322 "src/flags.ml" 1 0 -1
+)
+"src/flags.ml" 11 289 305 "src/flags.ml" 11 289 306
+type(
+  bool
+)
+ident(
+  def b "src/flags.ml" 11 289 309 "src/flags.ml" 11 289 322
+)
+"src/flags.ml" 11 289 309 "src/flags.ml" 11 289 317
+type(
+  bool ref
+)
+ident(
+  int_ref _testing "src/flags.ml" 9 226 230 "src/flags.ml" 9 226 238
+)
+"src/flags.ml" 11 289 318 "src/flags.ml" 11 289 320
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  int_ref Pervasives.( := ) "pervasives.mli" 1071 41452 41452 "pervasives.mli" 1071 41452 41505
+)
+"src/flags.ml" 11 289 321 "src/flags.ml" 11 289 322
+type(
+  bool
+)
+ident(
+  int_ref b "src/flags.ml" 11 289 305 "src/flags.ml" 11 289 306
+)
+"src/flags.ml" 11 289 309 "src/flags.ml" 11 289 322
+type(
+  unit
+)
