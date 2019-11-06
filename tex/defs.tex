@@ -40,6 +40,7 @@
 % Typed lambda calculus - expressions
 \newcommand{\funt}[3]{\lambda ~ ({#1} : {#2}) ~ . ~ {#3}}
 \newcommand{\ift}[3]{\msf{if} ~ {#1} ~ \msf{then} ~ {#2} ~ \msf{else} ~ {#3}}
+\newcommand{\ifnt}[2]{\msf{if} ~ {#1} ~ \msf{else} ~ {#2}}
 \newcommand{\rec}[5]{\msf{rec}(#1; ~ #2.#3.#4)(#5)}
 \newcommand{\lett}[4]{\msf{let} ~ \hasType{#1}{#2} = {#3} ~ \msf{in} ~ {#4}}
 \newcommand{\falset}{\msf{false}}
@@ -122,6 +123,7 @@
 \newcommand{\dynJC}[1]{\dynJ{\ctx}{#1}}
 \newcommand{\typeJ}[3]{#1 \proves \hasType{#2}{#3}}
 \newcommand{\typeJC}[2]{\typeJ{\ctx}{#1}{#2}}
+\newcommand{\typeJCM}[3]{\typeJ{\{#1\}}{#2}{#3}}
 \newcommand{\hasType}[2]{#1 : #2}
 \newcommand{\val}[1]{#1~\msf{val}}
 \newcommand{\num}[1]{\msf{Int}(#1)}
