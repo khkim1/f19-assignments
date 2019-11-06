@@ -30,83 +30,151 @@
 
 \hwtitle
   {Assignment 5}
-  {Will Crichton (wcrichto)} %% REPLACE THIS WITH YOUR NAME/ID
+  {Kun Ho Kim (khkim1)} %% REPLACE THIS WITH YOUR NAME/ID
 
 % Here's some complete examples of Latexing with WebAssembly.
 % Please delete this before submitting your homework.
 
-\begin{mathpar}
-\ir{D-Const}
-  {\ }
-  {\wsteps
-    {\wcs{:}~n^*; ~\wci{:}~(\wconst{n'}),e^*}
-    {\wcs{:}~n',n^*; ~\wci{:}~e^*}}
-
-\ir{D-Binop}
-  {n' = n_L~\oplus~n_R}
-  {\wsteps
-    {\wcs{:}~n_L,n_R; ~\wci{:}~\wbinop{\oplus}}
-    {\wcs{:}~n'}}
-
-\ir{D-Label-Step}
-  {\wsteps
-    {C~\with~\wci{:}~e_\msf{body}^*; ~\wcs{:}~n^*}
-    {C'~\with~\wci{:}~e_\msf{body}'^*; ~\wcs{:}~n'^*}}
-  {\wsteps
-    {C~\with~\wci{:}~\wlabel{e_\msf{cont}^*}{(n^*;~e_\msf{body}^*)}}
-    {C'~\with~\wci{:}~\wlabel{e_\msf{cont}^*}{(n'^*;~e_\msf{body}'^*)}}}
-
-\ir{T-Const}
-  {\ }
-  {\typeJC{\wconst{n}}{\tfun{\eps}{\msf{i32}}}}
-
-\ir{T-Binop}
-  {\ }
-  {\typeJC{\wbinop{\oplus}}{\tfun{\msf{i32}, \msf{i32}}{\msf{i32}}}}
-
-\ir{T-Loop}
-  {\typeJC{e^*}{\tfun{\eps}{\eps}}}
-  {\typeJC{\wloop{e^*}}{\tfun{\eps}{\eps}}}
-
-\ir{T-Block}
-  {\typeJC{e^*}{\tfun{\eps}{\eps}}}
-  {\typeJC{\wblock{e^*}}{\tfun{\eps}{\eps}}}
-\end{mathpar}
 
 \problem{Problem 2}
 
 Part 1:
 
 \begin{mathpar}
-% Your answer here
+
+\ir{T-If}
+  {\typeJC{e_{\msf{body}}^*}{\rho} ~~ \typeJC{e_{\msf{else}}^*}{\rho}}
+  {\typeJC{\ifnt{e_\msf{body}^*}{e_\msf{else}^*}}{\tfun{\msf{i32}}{\rho}}}
+
+\\
+\ir{D-If-True}
+  {n \neq 0}
+  {\wsteps
+    {\wcs{:}~n; ~\wci{:}~\ifnt{e_\msf{body}^*}{e_\msf{else}^*}}
+    {\wci{:}~e_\msf{body}^*}
+  }
+\\
+\ir{D-If-False}
+  {n = 0}
+  {\wsteps
+    {\wcs{:}~n; ~\wci{:}~\ifnt{e_\msf{body}^*}{e_\msf{else}^*}}
+    {\wci{:}~e_\msf{else}^*}
+  }
 \end{mathpar}
 
 Part 2:
 
 \begin{mathpar}
-% Your answer here
+\ir{T-For}
+  {\typeJC{e_{\msf{init}}^*}{\eps \rightarrow \eps} ~~ 
+   \typeJC{e_{\msf{cond}}^*}{\eps \rightarrow \msf{i32}} ~~
+   \typeJC{e_{\msf{post}}^*}{\eps \rightarrow \eps} ~~
+   \typeJC{e_{\msf{body}}^*}{\eps \rightarrow \eps}
+   }
+  {\typeJC{\wfor{e_{\msf{init}}^*}{e_{\msf{cond}}^*}{e_{\msf{post}}^*}{e_{\msf{body}}^*}}{\eps \rightarrow \eps}}
+\\
+
+\ir{D-For}
+  {\ }
+  { \{\wci{:}~\wfor{e_{\msf{init}}^*}{e_{\msf{cond}}^*}{e_{\msf{post}}^*}{e_{\msf{body}}^*}\} \mapsto \\
+  \{\wci{:}~\wblock{e_{\msf{init}}^*, (\wloop{(\wblock{e_{\msf{cond}}^*, (\wbrif{0}), (\wbr{2})}), e_{\msf{body}}^*, e_{\msf{post}}^*, (\wbr{0}))}}\}}
+  
+
 \end{mathpar}
 
+\newpage
 Part 3:
 
+\begin{comment}
+\ir{T-Try}
+  {\typeJCM{\ctx~\with~\msf{labels}:~\ctx.\msf{labels}+1}{e_{\msf{try}}^*}{\eps \rightarrow \eps} ~~ 
+   \typeJCM{\ctx~\with~\msf{labels}:~\ctx.\msf{labels}+1}{e_{\msf{raise}}^*}{\msf{i32} \rightarrow \eps}}
+  {\typeJC{\wtry{e_{\msf{try}}^*}{e_{\msf{raise}}^*}}{\eps \rightarrow \eps}}
+\end{comment} 
+
 \begin{mathpar}
-% Your answer here
+\ir{T-Try}
+  {\typeJC{e_{\msf{try}}^*}{\eps \rightarrow \eps} ~~ 
+   \typeJC{e_{\msf{raise}}^*}{\msf{i32} \rightarrow \eps}}
+  {\typeJC{\wtry{e_{\msf{try}}^*}{e_{\msf{raise}}^*}}{\eps \rightarrow \eps}}
+\\
+\ir{T-Raise}
+  {\ }
+  {\typeJC{\wraise}{\msf{i32} \rightarrow \msf{i32}}}
+\\
+\ir{D-Try-Step}
+  { \wsteps{C~\with~\msf{stack}:n^*;~\msf{instrs}:e_{\msf{try}}^*}
+           {C'~\with~\msf{stack}:n'^*;~\msf{instrs}:e_{\msf{try}}'^*} }
+  { \wsteps{C~\with~\wci{:}~\wtry{e_{\msf{try}}^*}{e_{\msf{raise}}^*};~\msf{stack}:n^*}
+           {C'~\with~\wci{:}~\wtry{e_{\msf{try}}'^*}{e_{\msf{raise}}^*};~\msf{stack}:n^*'} 
+  }
+\\
+\ir{D-Try-Done}
+  { \ }
+  { \wsteps{\wci{:}~\wtry{\eps}{e_{\msf{raise}}^*}}
+           {\wci{:}~\eps} 
+  }
+\\
+\ir{D-Raise-Try}
+  { \ }
+  { \wsteps{ \wci{:}~\wtry{ \wraise, \_ }{e_{\msf{raise}}^*} }
+           { \wci{:}~e_{\msf{raise}}^* } 
+  }
+\\
+\ir{D-Raise-Label}
+  { }
+  { \wsteps{\wci{:}~\wlabel{\_}{(n; \wraise, \_)}}
+           {\msf{stack}:n;~\wci{:}~\wraise}
+  }
+\\
+\ir{D-Raise-Frame}
+  { }
+  { \wsteps{\wci{:}~\wframe{\_}{\{\wci{:}~\wraise, \_;~\msf{stack}:n\}}} 
+           {\msf{stack}:n;~\wci{:}~\wraise}
+  }
+\\
+\ir{D-Raise-Val}
+  {\ }
+  { \val{\{\wci{:}~\wraise\}} }
+\\
+\ir{D-Return-Try}
+  { \ }
+  { \wsteps{ \wci{:}~\wtry{ \wreturn, \_ }{e_{\msf{raise}}^*} }
+           { \wci{:}~\wreturn } 
+  }
+\\
+\ir{D-Branch-Try}
+  { \ }
+  { \wsteps{ \wci{:}~\wtry{ (\wbr i), \_ }{e_{\msf{raise}}^*} }
+           { \wci{:}~\wbr i } 
+  }
 \end{mathpar}
+
+\newpage
 
 \problem{Problem 3}
 
 Part 1:
 
 \begin{enumerate}
-\item \textbf{Undefined behavior:} % Your answer here
-\item \textbf{Private function call:} % Your answer here
+\item \textbf{Undefined behavior:} No. The initial memory can only affect the specific values pushed onto the stack during run time which do not influence the static compile time typecheck of $C$. Therefore, since $\typeJC{C}{\tau^*}$ was shown agnostic of the runtime stack values, it follows that $\typeJC{C'}{\tau^*}$ even if different stack values are observed at run time. 
+
+\item \textbf{Private function call:} No. Assuming that $C.\msf{instrs}$ doesn't contain any administrative instructions, the private function can never be called in $C'$. This is because a function can only be called via the $\wcall{i}$ instruction and $i$ cannot be manipulated by the memory to be a different value since it is embedded in the instruction (and not taken from the value stack).  
 \end{enumerate}
 
 Part 2:
 
 \begin{enumerate}
-\item \textbf{Undefined behavior:} % Your answer here
-\item \textbf{Private function call:} % Your answer here
+\item \textbf{Undefined behavior:} No. The reason is the same as the reason for Part 1. Typechecking occurs agonistic to the stack values. The function index passed to $\msf{call\_indirect}$ is the only aspect the memory can influence. Regardless of the function index popped off the stack to be fed into $\msf{call\_indirect}$, it will always step to either a trap instruction or a function call both of which are proper behaviors. 
+
+
+\item \textbf{Private function call:} Yes. Consider the following sequence of instructions 
+\begin{align*}
+&(\msf{i32.const~2})\\
+&(\msf{i32.load})\\
+&(\msf{call\_indirect~(param~i32)~(result~i32)})
+\end{align*}
+Let's say the original memory was initialized with all 1s and the $\msf{i32.load}$ was intended to load a $1$ so function 1 would've been called. An adversary could manipulate the memory to be all 0s such that $0$ is loaded from the $\msf{i32.load}$ instruction onto the stack. Then as long as $\wcall{0}$ has the type $\msf{i32} \rightarrow \msf{i32}$, it follows that $\msf{call\_indirect~i32} \rightarrow \msf{i32}$ will step to $\msf{call~0}$. The key issue with $\msf{call\_indirect}$ is that the function index $i$ is no longer embedded into the instruction, but taken from the stack whose values can be manipulated by changing the memory. 
 \end{enumerate}
 
 
