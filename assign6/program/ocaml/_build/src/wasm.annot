@@ -1,0 +1,894 @@
+"src/wasm.ml" 20 342 346 "src/wasm.ml" 20 342 352
+type(
+  string list -> string
+)
+ident(
+  def concat "src/wasm.ml" 22 379 379 "src/wasm.ml" 1 0 -1
+)
+"src/wasm.ml" 20 342 355 "src/wasm.ml" 20 342 368
+type(
+  ?sep:string -> string list -> string
+)
+ident(
+  int_ref Core.String.concat "src/string.mli" 85 3219 3219 "src/string.mli" 85 3219 3253
+)
+"src/wasm.ml" 20 342 374 "src/wasm.ml" 20 342 377
+type(
+  string
+)
+"src/wasm.ml" 20 342 355 "src/wasm.ml" 20 342 377
+call(
+  stack
+)
+type(
+  string list -> string
+)
+"src/wasm.ml" 22 379 383 "src/wasm.ml" 22 379 398
+type(
+  instr -> string
+)
+ident(
+  def instr_to_string "src/wasm.ml" 38 890 890 "src/wasm.ml" 1 0 -1
+)
+"src/wasm.ml" 22 379 399 "src/wasm.ml" 22 379 400
+type(
+  instr
+)
+ident(
+  def i "src/wasm.ml" 23 403 405 "src/wasm.ml" 36 870 888
+)
+"src/wasm.ml" 23 403 411 "src/wasm.ml" 23 403 412
+type(
+  instr
+)
+ident(
+  int_ref i "src/wasm.ml" 22 379 399 "src/wasm.ml" 22 379 400
+)
+"src/wasm.ml" 24 418 428 "src/wasm.ml" 24 418 432
+type(
+  [ `Add | `Mul | `Sub ]
+)
+"src/wasm.ml" 24 418 422 "src/wasm.ml" 24 418 432
+type(
+  instr
+)
+"src/wasm.ml" 24 418 436 "src/wasm.ml" 24 418 445
+type(
+  string
+)
+"src/wasm.ml" 25 446 456 "src/wasm.ml" 25 446 460
+type(
+  [ `Add | `Mul | `Sub ]
+)
+"src/wasm.ml" 25 446 450 "src/wasm.ml" 25 446 460
+type(
+  instr
+)
+"src/wasm.ml" 25 446 464 "src/wasm.ml" 25 446 473
+type(
+  string
+)
+"src/wasm.ml" 26 474 484 "src/wasm.ml" 26 474 488
+type(
+  [ `Add | `Mul | `Sub ]
+)
+"src/wasm.ml" 26 474 478 "src/wasm.ml" 26 474 488
+type(
+  instr
+)
+"src/wasm.ml" 26 474 492 "src/wasm.ml" 26 474 501
+type(
+  string
+)
+"src/wasm.ml" 27 502 512 "src/wasm.ml" 27 502 513
+type(
+  int
+)
+ident(
+  def n "src/wasm.ml" 27 502 517 "src/wasm.ml" 27 502 548
+)
+"src/wasm.ml" 27 502 506 "src/wasm.ml" 27 502 513
+type(
+  instr
+)
+"src/wasm.ml" 27 502 517 "src/wasm.ml" 27 502 531
+type(
+  (int -> string, unit, string) Base.format -> int -> string
+)
+ident(
+  int_ref Core.Printf.sprintf "src/printf.mli" 7 128 128 "src/printf.mli" 7 128 199
+)
+"src/wasm.ml" 27 502 532 "src/wasm.ml" 27 502 546
+type(
+  (int -> string, unit, string) Base.format
+)
+"src/wasm.ml" 27 502 547 "src/wasm.ml" 27 502 548
+type(
+  int
+)
+ident(
+  int_ref n "src/wasm.ml" 27 502 512 "src/wasm.ml" 27 502 513
+)
+"src/wasm.ml" 27 502 517 "src/wasm.ml" 27 502 548
+call(
+  tail
+)
+type(
+  string
+)
+"src/wasm.ml" 28 549 553 "src/wasm.ml" 28 549 558
+type(
+  instr
+)
+"src/wasm.ml" 28 549 562 "src/wasm.ml" 28 549 573
+type(
+  string
+)
+"src/wasm.ml" 29 574 578 "src/wasm.ml" 29 574 582
+type(
+  instr
+)
+"src/wasm.ml" 29 574 586 "src/wasm.ml" 29 574 596
+type(
+  string
+)
+"src/wasm.ml" 30 597 606 "src/wasm.ml" 30 597 607
+type(
+  string
+)
+ident(
+  def s "src/wasm.ml" 30 597 611 "src/wasm.ml" 30 597 638
+)
+"src/wasm.ml" 30 597 601 "src/wasm.ml" 30 597 607
+type(
+  instr
+)
+"src/wasm.ml" 30 597 611 "src/wasm.ml" 30 597 625
+type(
+  (string -> string, unit, string) Base.format -> string -> string
+)
+ident(
+  int_ref Core.Printf.sprintf "src/printf.mli" 7 128 128 "src/printf.mli" 7 128 199
+)
+"src/wasm.ml" 30 597 626 "src/wasm.ml" 30 597 636
+type(
+  (string -> string, unit, string) Base.format
+)
+"src/wasm.ml" 30 597 637 "src/wasm.ml" 30 597 638
+type(
+  string
+)
+ident(
+  int_ref s "src/wasm.ml" 30 597 606 "src/wasm.ml" 30 597 607
+)
+"src/wasm.ml" 30 597 611 "src/wasm.ml" 30 597 638
+call(
+  tail
+)
+type(
+  string
+)
+"src/wasm.ml" 31 639 652 "src/wasm.ml" 31 639 653
+type(
+  string
+)
+ident(
+  def s "src/wasm.ml" 31 639 657 "src/wasm.ml" 31 639 689
+)
+"src/wasm.ml" 31 639 643 "src/wasm.ml" 31 639 653
+type(
+  instr
+)
+"src/wasm.ml" 31 639 657 "src/wasm.ml" 31 639 671
+type(
+  (string -> string, unit, string) Base.format -> string -> string
+)
+ident(
+  int_ref Core.Printf.sprintf "src/printf.mli" 7 128 128 "src/printf.mli" 7 128 199
+)
+"src/wasm.ml" 31 639 672 "src/wasm.ml" 31 639 687
+type(
+  (string -> string, unit, string) Base.format
+)
+"src/wasm.ml" 31 639 688 "src/wasm.ml" 31 639 689
+type(
+  string
+)
+ident(
+  int_ref s "src/wasm.ml" 31 639 652 "src/wasm.ml" 31 639 653
+)
+"src/wasm.ml" 31 639 657 "src/wasm.ml" 31 639 689
+call(
+  tail
+)
+type(
+  string
+)
+"src/wasm.ml" 32 690 703 "src/wasm.ml" 32 690 704
+type(
+  string
+)
+ident(
+  def s "src/wasm.ml" 32 690 708 "src/wasm.ml" 32 690 740
+)
+"src/wasm.ml" 32 690 694 "src/wasm.ml" 32 690 704
+type(
+  instr
+)
+"src/wasm.ml" 32 690 708 "src/wasm.ml" 32 690 722
+type(
+  (string -> string, unit, string) Base.format -> string -> string
+)
+ident(
+  int_ref Core.Printf.sprintf "src/printf.mli" 7 128 128 "src/printf.mli" 7 128 199
+)
+"src/wasm.ml" 32 690 723 "src/wasm.ml" 32 690 738
+type(
+  (string -> string, unit, string) Base.format
+)
+"src/wasm.ml" 32 690 739 "src/wasm.ml" 32 690 740
+type(
+  string
+)
+ident(
+  int_ref s "src/wasm.ml" 32 690 703 "src/wasm.ml" 32 690 704
+)
+"src/wasm.ml" 32 690 708 "src/wasm.ml" 32 690 740
+call(
+  tail
+)
+type(
+  string
+)
+"src/wasm.ml" 33 741 755 "src/wasm.ml" 33 741 756
+type(
+  string
+)
+ident(
+  def s "src/wasm.ml" 33 741 760 "src/wasm.ml" 33 741 793
+)
+"src/wasm.ml" 33 741 745 "src/wasm.ml" 33 741 756
+type(
+  instr
+)
+"src/wasm.ml" 33 741 760 "src/wasm.ml" 33 741 774
+type(
+  (string -> string, unit, string) Base.format -> string -> string
+)
+ident(
+  int_ref Core.Printf.sprintf "src/printf.mli" 7 128 128 "src/printf.mli" 7 128 199
+)
+"src/wasm.ml" 33 741 775 "src/wasm.ml" 33 741 791
+type(
+  (string -> string, unit, string) Base.format
+)
+"src/wasm.ml" 33 741 792 "src/wasm.ml" 33 741 793
+type(
+  string
+)
+ident(
+  int_ref s "src/wasm.ml" 33 741 755 "src/wasm.ml" 33 741 756
+)
+"src/wasm.ml" 33 741 760 "src/wasm.ml" 33 741 793
+call(
+  tail
+)
+type(
+  string
+)
+"src/wasm.ml" 34 794 808 "src/wasm.ml" 34 794 809
+type(
+  string
+)
+ident(
+  def s "src/wasm.ml" 34 794 813 "src/wasm.ml" 34 794 846
+)
+"src/wasm.ml" 34 794 798 "src/wasm.ml" 34 794 809
+type(
+  instr
+)
+"src/wasm.ml" 34 794 813 "src/wasm.ml" 34 794 827
+type(
+  (string -> string, unit, string) Base.format -> string -> string
+)
+ident(
+  int_ref Core.Printf.sprintf "src/printf.mli" 7 128 128 "src/printf.mli" 7 128 199
+)
+"src/wasm.ml" 34 794 828 "src/wasm.ml" 34 794 844
+type(
+  (string -> string, unit, string) Base.format
+)
+"src/wasm.ml" 34 794 845 "src/wasm.ml" 34 794 846
+type(
+  string
+)
+ident(
+  int_ref s "src/wasm.ml" 34 794 808 "src/wasm.ml" 34 794 809
+)
+"src/wasm.ml" 34 794 813 "src/wasm.ml" 34 794 846
+call(
+  tail
+)
+type(
+  string
+)
+"src/wasm.ml" 35 847 851 "src/wasm.ml" 35 847 857
+type(
+  instr
+)
+"src/wasm.ml" 35 847 861 "src/wasm.ml" 35 847 869
+type(
+  string
+)
+"src/wasm.ml" 36 870 874 "src/wasm.ml" 36 870 878
+type(
+  instr
+)
+"src/wasm.ml" 36 870 882 "src/wasm.ml" 36 870 888
+type(
+  string
+)
+"src/wasm.ml" 23 403 405 "src/wasm.ml" 36 870 888
+type(
+  string
+)
+"src/wasm.ml" 38 890 894 "src/wasm.ml" 38 890 904
+type(
+  instr -> instr list
+)
+ident(
+  def change_mem "src/wasm.ml" 44 1079 1079 "src/wasm.ml" 1 0 -1
+)
+"src/wasm.ml" 38 890 906 "src/wasm.ml" 38 890 907
+type(
+  instr
+)
+ident(
+  def i "src/wasm.ml" 38 890 917 "src/wasm.ml" 42 1065 1077
+)
+"src/wasm.ml" 39 932 940 "src/wasm.ml" 39 932 941
+type(
+  instr
+)
+ident(
+  int_ref i "src/wasm.ml" 38 890 906 "src/wasm.ml" 38 890 907
+)
+"src/wasm.ml" 40 947 951 "src/wasm.ml" 40 947 956
+type(
+  instr
+)
+"src/wasm.ml" 40 947 970 "src/wasm.ml" 40 947 977
+type(
+  string
+)
+"src/wasm.ml" 40 947 961 "src/wasm.ml" 40 947 977
+type(
+  instr
+)
+"src/wasm.ml" 40 947 985 "src/wasm.ml" 40 947 986
+type(
+  int
+)
+"src/wasm.ml" 40 947 979 "src/wasm.ml" 40 947 986
+type(
+  instr
+)
+"src/wasm.ml" 40 947 994 "src/wasm.ml" 40 947 998
+type(
+  [ `Add | `Mul | `Sub ]
+)
+"src/wasm.ml" 40 947 988 "src/wasm.ml" 40 947 998
+type(
+  instr
+)
+"src/wasm.ml" 40 947 1009 "src/wasm.ml" 40 947 1016
+type(
+  string
+)
+"src/wasm.ml" 40 947 1000 "src/wasm.ml" 40 947 1016
+type(
+  instr
+)
+"src/wasm.ml" 40 947 1018 "src/wasm.ml" 40 947 1023
+type(
+  instr
+)
+"src/wasm.ml" 40 947 960 "src/wasm.ml" 40 947 1024
+type(
+  instr list
+)
+"src/wasm.ml" 41 1025 1029 "src/wasm.ml" 41 1025 1033
+type(
+  instr
+)
+"src/wasm.ml" 41 1025 1044 "src/wasm.ml" 41 1025 1045
+type(
+  int
+)
+"src/wasm.ml" 41 1025 1038 "src/wasm.ml" 41 1025 1045
+type(
+  instr
+)
+"src/wasm.ml" 41 1025 1053 "src/wasm.ml" 41 1025 1057
+type(
+  [ `Add | `Mul | `Sub ]
+)
+"src/wasm.ml" 41 1025 1047 "src/wasm.ml" 41 1025 1057
+type(
+  instr
+)
+"src/wasm.ml" 41 1025 1059 "src/wasm.ml" 41 1025 1063
+type(
+  instr
+)
+"src/wasm.ml" 41 1025 1037 "src/wasm.ml" 41 1025 1064
+type(
+  instr list
+)
+"src/wasm.ml" 42 1065 1069 "src/wasm.ml" 42 1065 1070
+type(
+  instr
+)
+"src/wasm.ml" 42 1065 1075 "src/wasm.ml" 42 1065 1076
+type(
+  instr
+)
+ident(
+  int_ref i "src/wasm.ml" 38 890 906 "src/wasm.ml" 38 890 907
+)
+"src/wasm.ml" 42 1065 1074 "src/wasm.ml" 42 1065 1077
+type(
+  instr list
+)
+"src/wasm.ml" 39 932 934 "src/wasm.ml" 42 1065 1077
+type(
+  instr list
+)
+type(
+  instr list
+)
+"src/wasm.ml" 44 1079 1083 "src/wasm.ml" 44 1079 1097
+type(
+  func -> string
+)
+ident(
+  def func_to_string "src/wasm.ml" 55 1545 1545 "src/wasm.ml" 1 0 -1
+)
+"src/wasm.ml" 44 1079 1098 "src/wasm.ml" 44 1079 1099
+type(
+  func
+)
+ident(
+  def f "src/wasm.ml" 45 1102 1104 "src/wasm.ml" 53 1533 1543
+)
+"src/wasm.ml" 45 1102 1104 "src/wasm.ml" 45 1102 1118
+type(
+  (string -> string -> string -> string -> string -> string -> string, 
+   unit, string)
+  Base.format ->
+  string -> string -> string -> string -> string -> string -> string
+)
+ident(
+  int_ref Core.Printf.sprintf "src/printf.mli" 7 128 128 "src/printf.mli" 7 128 199
+)
+"src/wasm.ml" 46 1119 1123 "src/wasm.ml" 46 1119 1203
+type(
+  (string -> string -> string -> string -> string -> string -> string, 
+   unit, string)
+  Base.format
+)
+"src/wasm.ml" 47 1204 1208 "src/wasm.ml" 47 1204 1209
+type(
+  func
+)
+ident(
+  int_ref f "src/wasm.ml" 44 1079 1098 "src/wasm.ml" 44 1079 1099
+)
+"src/wasm.ml" 47 1204 1208 "src/wasm.ml" 47 1204 1214
+type(
+  string
+)
+"src/wasm.ml" 48 1215 1220 "src/wasm.ml" 48 1215 1226
+type(
+  string list -> string
+)
+ident(
+  int_ref concat "src/wasm.ml" 20 342 346 "src/wasm.ml" 20 342 352
+)
+"src/wasm.ml" 48 1215 1228 "src/wasm.ml" 48 1215 1236
+type(
+  string list -> f:(string -> string) -> string list
+)
+ident(
+  int_ref Core.List.map "src/list.mli" 191 8217 8217 "src/list.mli" 191 8217 8255
+)
+"src/wasm.ml" 48 1215 1245 "src/wasm.ml" 48 1215 1246
+type(
+  string
+)
+ident(
+  def p "src/wasm.ml" 48 1215 1250 "src/wasm.ml" 48 1215 1284
+)
+"src/wasm.ml" 48 1215 1250 "src/wasm.ml" 48 1215 1264
+type(
+  (string -> string, unit, string) Base.format -> string -> string
+)
+ident(
+  int_ref Core.Printf.sprintf "src/printf.mli" 7 128 128 "src/printf.mli" 7 128 199
+)
+"src/wasm.ml" 48 1215 1265 "src/wasm.ml" 48 1215 1282
+type(
+  (string -> string, unit, string) Base.format
+)
+"src/wasm.ml" 48 1215 1283 "src/wasm.ml" 48 1215 1284
+type(
+  string
+)
+ident(
+  int_ref p "src/wasm.ml" 48 1215 1245 "src/wasm.ml" 48 1215 1246
+)
+"src/wasm.ml" 48 1215 1250 "src/wasm.ml" 48 1215 1284
+call(
+  tail
+)
+type(
+  string
+)
+"src/wasm.ml" 48 1215 1240 "src/wasm.ml" 48 1215 1285
+type(
+  string -> string
+)
+"src/wasm.ml" 48 1215 1286 "src/wasm.ml" 48 1215 1287
+type(
+  func
+)
+ident(
+  int_ref f "src/wasm.ml" 44 1079 1098 "src/wasm.ml" 44 1079 1099
+)
+"src/wasm.ml" 48 1215 1286 "src/wasm.ml" 48 1215 1294
+type(
+  string list
+)
+"src/wasm.ml" 48 1215 1227 "src/wasm.ml" 48 1215 1295
+call(
+  stack
+)
+type(
+  string list
+)
+"src/wasm.ml" 48 1215 1219 "src/wasm.ml" 48 1215 1296
+call(
+  stack
+)
+type(
+  string
+)
+"src/wasm.ml" 49 1297 1302 "src/wasm.ml" 49 1297 1308
+type(
+  string list -> string
+)
+ident(
+  int_ref concat "src/wasm.ml" 20 342 346 "src/wasm.ml" 20 342 352
+)
+"src/wasm.ml" 49 1297 1310 "src/wasm.ml" 49 1297 1318
+type(
+  string list -> f:(string -> string) -> string list
+)
+ident(
+  int_ref Core.List.map "src/list.mli" 191 8217 8217 "src/list.mli" 191 8217 8255
+)
+"src/wasm.ml" 49 1297 1327 "src/wasm.ml" 49 1297 1328
+type(
+  string
+)
+ident(
+  def p "src/wasm.ml" 49 1297 1332 "src/wasm.ml" 49 1297 1366
+)
+"src/wasm.ml" 49 1297 1332 "src/wasm.ml" 49 1297 1346
+type(
+  (string -> string, unit, string) Base.format -> string -> string
+)
+ident(
+  int_ref Core.Printf.sprintf "src/printf.mli" 7 128 128 "src/printf.mli" 7 128 199
+)
+"src/wasm.ml" 49 1297 1347 "src/wasm.ml" 49 1297 1364
+type(
+  (string -> string, unit, string) Base.format
+)
+"src/wasm.ml" 49 1297 1365 "src/wasm.ml" 49 1297 1366
+type(
+  string
+)
+ident(
+  int_ref p "src/wasm.ml" 49 1297 1327 "src/wasm.ml" 49 1297 1328
+)
+"src/wasm.ml" 49 1297 1332 "src/wasm.ml" 49 1297 1366
+call(
+  tail
+)
+type(
+  string
+)
+"src/wasm.ml" 49 1297 1322 "src/wasm.ml" 49 1297 1367
+type(
+  string -> string
+)
+"src/wasm.ml" 49 1297 1368 "src/wasm.ml" 49 1297 1369
+type(
+  func
+)
+ident(
+  int_ref f "src/wasm.ml" 44 1079 1098 "src/wasm.ml" 44 1079 1099
+)
+"src/wasm.ml" 49 1297 1368 "src/wasm.ml" 49 1297 1376
+type(
+  string list
+)
+"src/wasm.ml" 49 1297 1309 "src/wasm.ml" 49 1297 1377
+call(
+  stack
+)
+type(
+  string list
+)
+"src/wasm.ml" 49 1297 1301 "src/wasm.ml" 49 1297 1378
+call(
+  stack
+)
+type(
+  string
+)
+"src/wasm.ml" 50 1379 1384 "src/wasm.ml" 50 1379 1390
+type(
+  string list -> string
+)
+ident(
+  int_ref concat "src/wasm.ml" 20 342 346 "src/wasm.ml" 20 342 352
+)
+"src/wasm.ml" 50 1379 1392 "src/wasm.ml" 50 1379 1400
+type(
+  instr list -> f:(instr -> instr list) -> instr list list
+)
+ident(
+  int_ref Core.List.map "src/list.mli" 191 8217 8217 "src/list.mli" 191 8217 8255
+)
+"src/wasm.ml" 50 1379 1404 "src/wasm.ml" 50 1379 1414
+type(
+  instr -> instr list
+)
+ident(
+  int_ref change_mem "src/wasm.ml" 38 890 894 "src/wasm.ml" 38 890 904
+)
+"src/wasm.ml" 50 1379 1415 "src/wasm.ml" 50 1379 1416
+type(
+  func
+)
+ident(
+  int_ref f "src/wasm.ml" 44 1079 1098 "src/wasm.ml" 44 1079 1099
+)
+"src/wasm.ml" 50 1379 1415 "src/wasm.ml" 50 1379 1421
+type(
+  instr list
+)
+"src/wasm.ml" 50 1379 1392 "src/wasm.ml" 50 1379 1421
+call(
+  stack
+)
+type(
+  instr list list
+)
+"src/wasm.ml" 50 1379 1425 "src/wasm.ml" 50 1379 1436
+type(
+  instr list list -> instr list
+)
+ident(
+  int_ref Core.List.concat "src/list.mli" 461 20014 20014 "src/list.mli" 461 20014 20041
+)
+"src/wasm.ml" 50 1379 1392 "src/wasm.ml" 50 1379 1436
+call(
+  stack
+)
+type(
+  instr list
+)
+"src/wasm.ml" 51 1440 1454 "src/wasm.ml" 51 1440 1462
+type(
+  instr list -> f:(instr -> string) -> string list
+)
+ident(
+  int_ref Core.List.map "src/list.mli" 191 8217 8217 "src/list.mli" 191 8217 8255
+)
+"src/wasm.ml" 51 1440 1471 "src/wasm.ml" 51 1440 1472
+type(
+  instr
+)
+ident(
+  def i "src/wasm.ml" 51 1440 1476 "src/wasm.ml" 51 1440 1517
+)
+"src/wasm.ml" 51 1440 1476 "src/wasm.ml" 51 1440 1490
+type(
+  (string -> string, unit, string) Base.format -> string -> string
+)
+ident(
+  int_ref Core.Printf.sprintf "src/printf.mli" 7 128 128 "src/printf.mli" 7 128 199
+)
+"src/wasm.ml" 51 1440 1491 "src/wasm.ml" 51 1440 1497
+type(
+  (string -> string, unit, string) Base.format
+)
+"src/wasm.ml" 51 1440 1499 "src/wasm.ml" 51 1440 1514
+type(
+  instr -> string
+)
+ident(
+  int_ref instr_to_string "src/wasm.ml" 22 379 383 "src/wasm.ml" 22 379 398
+)
+"src/wasm.ml" 51 1440 1515 "src/wasm.ml" 51 1440 1516
+type(
+  instr
+)
+ident(
+  int_ref i "src/wasm.ml" 51 1440 1471 "src/wasm.ml" 51 1440 1472
+)
+"src/wasm.ml" 51 1440 1498 "src/wasm.ml" 51 1440 1517
+call(
+  stack
+)
+type(
+  string
+)
+"src/wasm.ml" 51 1440 1476 "src/wasm.ml" 51 1440 1517
+call(
+  tail
+)
+type(
+  string
+)
+"src/wasm.ml" 51 1440 1466 "src/wasm.ml" 51 1440 1518
+type(
+  instr -> string
+)
+"src/wasm.ml" 50 1379 1391 "src/wasm.ml" 51 1440 1520
+call(
+  stack
+)
+type(
+  string list
+)
+"src/wasm.ml" 50 1379 1383 "src/wasm.ml" 51 1440 1521
+call(
+  stack
+)
+type(
+  string
+)
+"src/wasm.ml" 52 1522 1526 "src/wasm.ml" 52 1522 1527
+type(
+  func
+)
+ident(
+  int_ref f "src/wasm.ml" 44 1079 1098 "src/wasm.ml" 44 1079 1099
+)
+"src/wasm.ml" 52 1522 1526 "src/wasm.ml" 52 1522 1532
+type(
+  string
+)
+"src/wasm.ml" 53 1533 1537 "src/wasm.ml" 53 1533 1538
+type(
+  func
+)
+ident(
+  int_ref f "src/wasm.ml" 44 1079 1098 "src/wasm.ml" 44 1079 1099
+)
+"src/wasm.ml" 53 1533 1537 "src/wasm.ml" 53 1533 1543
+type(
+  string
+)
+"src/wasm.ml" 45 1102 1104 "src/wasm.ml" 53 1533 1543
+call(
+  tail
+)
+type(
+  string
+)
+"src/wasm.ml" 55 1545 1549 "src/wasm.ml" 55 1545 1565
+type(
+  func list -> string
+)
+ident(
+  def module_to_string "src/wasm.ml" 65 1937 1996 "src/wasm.ml" 1 0 -1
+)
+"src/wasm.ml" 55 1545 1566 "src/wasm.ml" 55 1545 1567
+type(
+  func list
+)
+ident(
+  def m "src/wasm.ml" 56 1570 1572 "src/wasm.ml" 65 1937 1996
+)
+"src/wasm.ml" 56 1570 1576 "src/wasm.ml" 56 1570 1583
+type(
+  string
+)
+ident(
+  def imports "src/wasm.ml" 63 1891 1893 "src/wasm.ml" 65 1937 1996
+)
+"src/wasm.ml" 56 1570 1586 "src/wasm.ml" 62 1885 1887
+type(
+  string
+)
+"src/wasm.ml" 63 1891 1893 "src/wasm.ml" 63 1891 1907
+type(
+  (string -> string -> string, unit, string) Base.format ->
+  string -> string -> string
+)
+ident(
+  int_ref Core.Printf.sprintf "src/printf.mli" 7 128 128 "src/printf.mli" 7 128 199
+)
+"src/wasm.ml" 63 1891 1908 "src/wasm.ml" 63 1891 1924
+type(
+  (string -> string -> string, unit, string) Base.format
+)
+"src/wasm.ml" 64 1925 1929 "src/wasm.ml" 64 1925 1936
+type(
+  string
+)
+ident(
+  int_ref imports "src/wasm.ml" 56 1570 1576 "src/wasm.ml" 56 1570 1583
+)
+"src/wasm.ml" 65 1937 1942 "src/wasm.ml" 65 1937 1955
+type(
+  ?sep:string -> string list -> string
+)
+ident(
+  int_ref Core.String.concat "src/string.mli" 85 3219 3219 "src/string.mli" 85 3219 3253
+)
+"src/wasm.ml" 65 1937 1961 "src/wasm.ml" 65 1937 1964
+type(
+  string
+)
+"src/wasm.ml" 65 1937 1966 "src/wasm.ml" 65 1937 1974
+type(
+  func list -> f:(func -> string) -> string list
+)
+ident(
+  int_ref Core.List.map "src/list.mli" 191 8217 8217 "src/list.mli" 191 8217 8255
+)
+"src/wasm.ml" 65 1937 1978 "src/wasm.ml" 65 1937 1992
+type(
+  func -> string
+)
+ident(
+  int_ref func_to_string "src/wasm.ml" 44 1079 1083 "src/wasm.ml" 44 1079 1097
+)
+"src/wasm.ml" 65 1937 1993 "src/wasm.ml" 65 1937 1994
+type(
+  func list
+)
+ident(
+  int_ref m "src/wasm.ml" 55 1545 1566 "src/wasm.ml" 55 1545 1567
+)
+"src/wasm.ml" 65 1937 1965 "src/wasm.ml" 65 1937 1995
+call(
+  stack
+)
+type(
+  string list
+)
+"src/wasm.ml" 65 1937 1941 "src/wasm.ml" 65 1937 1996
+call(
+  stack
+)
+type(
+  string
+)
+"src/wasm.ml" 63 1891 1893 "src/wasm.ml" 65 1937 1996
+call(
+  tail
+)
+type(
+  string
+)
+"src/wasm.ml" 56 1570 1572 "src/wasm.ml" 65 1937 1996
+type(
+  string
+)

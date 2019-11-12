@@ -1,4 +1,8 @@
-// mod part1;
+//mod part1;
 // mod part2;
 
-fn main() {}
+fn main() {
+    println!("{}", true && true && false);
+}
+
+

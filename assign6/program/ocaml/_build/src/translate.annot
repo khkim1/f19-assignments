@@ -1,0 +1,1517 @@
+"src/translate.ml" 5 36 40 "src/translate.ml" 5 36 54
+type(
+  string list
+)
+ident(
+  def runtime_locals "src/translate.ml" 7 119 119 "src/translate.ml" 1 0 -1
+)
+"src/translate.ml" 5 36 58 "src/translate.ml" 5 36 61
+type(
+  string
+)
+"src/translate.ml" 5 36 63 "src/translate.ml" 5 36 67
+type(
+  string
+)
+"src/translate.ml" 5 36 69 "src/translate.ml" 5 36 73
+type(
+  string
+)
+"src/translate.ml" 5 36 75 "src/translate.ml" 5 36 79
+type(
+  string
+)
+"src/translate.ml" 5 36 81 "src/translate.ml" 5 36 85
+type(
+  string
+)
+"src/translate.ml" 5 36 87 "src/translate.ml" 5 36 94
+type(
+  string
+)
+"src/translate.ml" 5 36 96 "src/translate.ml" 5 36 103
+type(
+  string
+)
+"src/translate.ml" 5 36 105 "src/translate.ml" 5 36 116
+type(
+  string
+)
+"src/translate.ml" 5 36 57 "src/translate.ml" 5 36 117
+type(
+  string list
+)
+"src/translate.ml" 7 119 127 "src/translate.ml" 7 119 141
+type(
+  Slang.expr -> Wasm.instr list
+)
+ident(
+  def translate_expr "src/translate.ml" 7 119 119 "src/translate.ml" 1 0 -1
+)
+"src/translate.ml" 7 119 143 "src/translate.ml" 7 119 144
+type(
+  Slang.expr
+)
+ident(
+  def e "src/translate.ml" 7 119 159 "src/translate.ml" 41 1315 1353
+)
+"src/translate.ml" 9 198 206 "src/translate.ml" 9 198 207
+type(
+  Slang.expr
+)
+ident(
+  int_ref e "src/translate.ml" 7 119 143 "src/translate.ml" 7 119 144
+)
+"src/translate.ml" 10 213 230 "src/translate.ml" 10 213 231
+type(
+  string
+)
+ident(
+  def s "src/translate.ml" 11 235 239 "src/translate.ml" 22 554 581
+)
+"src/translate.ml" 10 213 217 "src/translate.ml" 10 213 231
+type(
+  Slang.expr
+)
+"src/translate.ml" 11 235 243 "src/translate.ml" 11 235 244
+type(
+  int
+)
+ident(
+  def n "src/translate.ml" 12 272 276 "src/translate.ml" 22 554 581
+)
+"src/translate.ml" 11 235 253 "src/translate.ml" 11 235 266
+type(
+  string -> int
+)
+ident(
+  int_ref Core.String.length "src/string.mli" 57 2003 2003 "src/string.mli" 57 2003 2048
+)
+"src/translate.ml" 11 235 267 "src/translate.ml" 11 235 268
+type(
+  string
+)
+ident(
+  int_ref s "src/translate.ml" 10 213 230 "src/translate.ml" 10 213 231
+)
+"src/translate.ml" 11 235 253 "src/translate.ml" 11 235 268
+type(
+  int
+)
+type(
+  int
+)
+"src/translate.ml" 12 272 280 "src/translate.ml" 12 272 286
+type(
+  instr list
+)
+ident(
+  def stores "src/translate.ml" 20 497 501 "src/translate.ml" 22 554 581
+)
+"src/translate.ml" 13 302 308 "src/translate.ml" 13 302 322
+type(
+  string -> char list
+)
+ident(
+  int_ref Core.String.to_list "src/container_intf.ml" 84 3181 3183 "src/container_intf.ml" 84 3181 3211
+)
+"src/translate.ml" 13 302 323 "src/translate.ml" 13 302 324
+type(
+  string
+)
+ident(
+  int_ref s "src/translate.ml" 10 213 230 "src/translate.ml" 10 213 231
+)
+"src/translate.ml" 13 302 308 "src/translate.ml" 13 302 324
+call(
+  stack
+)
+type(
+  char list
+)
+"src/translate.ml" 14 325 334 "src/translate.ml" 14 325 343
+type(
+  char list -> f:(int -> char -> instr list) -> instr list list
+)
+ident(
+  int_ref Core.List.mapi "src/list.mli" 250 10807 10807 "src/list.mli" 250 10807 10853
+)
+"src/translate.ml" 14 325 353 "src/translate.ml" 14 325 354
+type(
+  int
+)
+ident(
+  def i "src/translate.ml" 14 325 362 "src/translate.ml" 17 452 467
+)
+"src/translate.ml" 14 325 363 "src/translate.ml" 14 325 364
+type(
+  char
+)
+ident(
+  def c "src/translate.ml" 15 376 384 "src/translate.ml" 17 452 467
+)
+"src/translate.ml" 15 376 394 "src/translate.ml" 15 376 397
+type(
+  string
+)
+"src/translate.ml" 15 376 385 "src/translate.ml" 15 376 397
+type(
+  instr
+)
+"src/translate.ml" 15 376 405 "src/translate.ml" 15 376 406
+type(
+  int
+)
+ident(
+  int_ref i "src/translate.ml" 14 325 353 "src/translate.ml" 14 325 354
+)
+"src/translate.ml" 15 376 399 "src/translate.ml" 15 376 406
+type(
+  instr
+)
+"src/translate.ml" 15 376 414 "src/translate.ml" 15 376 418
+type(
+  [ `Add | `Mul | `Sub ]
+)
+"src/translate.ml" 15 376 408 "src/translate.ml" 15 376 418
+type(
+  instr
+)
+"src/translate.ml" 16 420 436 "src/translate.ml" 16 420 447
+type(
+  char -> int
+)
+ident(
+  int_ref Core.Char.to_int "src/char.mli" 24 595 595 "src/char.mli" 24 595 616
+)
+"src/translate.ml" 16 420 448 "src/translate.ml" 16 420 449
+type(
+  char
+)
+ident(
+  int_ref c "src/translate.ml" 14 325 363 "src/translate.ml" 14 325 364
+)
+"src/translate.ml" 16 420 435 "src/translate.ml" 16 420 450
+call(
+  stack
+)
+type(
+  int
+)
+"src/translate.ml" 16 420 429 "src/translate.ml" 16 420 450
+type(
+  instr
+)
+"src/translate.ml" 17 452 461 "src/translate.ml" 17 452 466
+type(
+  instr
+)
+"src/translate.ml" 15 376 384 "src/translate.ml" 17 452 467
+type(
+  instr list
+)
+"src/translate.ml" 14 325 347 "src/translate.ml" 17 452 468
+type(
+  int -> char -> instr list
+)
+"src/translate.ml" 13 302 308 "src/translate.ml" 17 452 468
+call(
+  stack
+)
+type(
+  instr list list
+)
+"src/translate.ml" 18 469 478 "src/translate.ml" 18 469 489
+type(
+  instr list list -> instr list
+)
+ident(
+  int_ref Core.List.concat "src/list.mli" 461 20014 20014 "src/list.mli" 461 20014 20041
+)
+"src/translate.ml" 13 302 308 "src/translate.ml" 18 469 489
+call(
+  stack
+)
+type(
+  instr list
+)
+type(
+  instr list
+)
+"src/translate.ml" 20 497 508 "src/translate.ml" 20 497 509
+type(
+  int
+)
+ident(
+  int_ref n "src/translate.ml" 11 235 243 "src/translate.ml" 11 235 244
+)
+"src/translate.ml" 20 497 502 "src/translate.ml" 20 497 509
+type(
+  instr
+)
+"src/translate.ml" 20 497 516 "src/translate.ml" 20 497 523
+type(
+  string
+)
+"src/translate.ml" 20 497 511 "src/translate.ml" 20 497 523
+type(
+  instr
+)
+"src/translate.ml" 20 497 534 "src/translate.ml" 20 497 537
+type(
+  string
+)
+"src/translate.ml" 20 497 525 "src/translate.ml" 20 497 537
+type(
+  instr
+)
+"src/translate.ml" 20 497 501 "src/translate.ml" 20 497 538
+type(
+  instr list
+)
+"src/translate.ml" 21 539 543 "src/translate.ml" 21 539 544
+type(
+  instr list -> instr list -> instr list
+)
+ident(
+  int_ref Core.( @ ) "src/list.mli" 497 21588 21590 "src/list.mli" 497 21588 21622
+)
+"src/translate.ml" 21 539 545 "src/translate.ml" 21 539 551
+type(
+  instr list
+)
+ident(
+  int_ref stores "src/translate.ml" 12 272 280 "src/translate.ml" 12 272 286
+)
+"src/translate.ml" 21 539 552 "src/translate.ml" 21 539 553
+type(
+  instr list -> instr list -> instr list
+)
+ident(
+  int_ref Core.( @ ) "src/list.mli" 497 21588 21590 "src/list.mli" 497 21588 21622
+)
+"src/translate.ml" 22 554 568 "src/translate.ml" 22 554 571
+type(
+  string
+)
+"src/translate.ml" 22 554 559 "src/translate.ml" 22 554 571
+type(
+  instr
+)
+"src/translate.ml" 22 554 579 "src/translate.ml" 22 554 580
+type(
+  int
+)
+ident(
+  int_ref n "src/translate.ml" 11 235 243 "src/translate.ml" 11 235 244
+)
+"src/translate.ml" 22 554 573 "src/translate.ml" 22 554 580
+type(
+  instr
+)
+"src/translate.ml" 22 554 558 "src/translate.ml" 22 554 581
+type(
+  instr list
+)
+"src/translate.ml" 21 539 545 "src/translate.ml" 22 554 581
+call(
+  stack
+)
+type(
+  instr list
+)
+"src/translate.ml" 20 497 501 "src/translate.ml" 22 554 581
+call(
+  tail
+)
+type(
+  instr list
+)
+"src/translate.ml" 12 272 276 "src/translate.ml" 22 554 581
+type(
+  instr list
+)
+"src/translate.ml" 11 235 239 "src/translate.ml" 22 554 581
+type(
+  instr list
+)
+"src/translate.ml" 24 583 601 "src/translate.ml" 24 583 603
+type(
+  Slang.expr
+)
+ident(
+  def e1 "src/translate.ml" 25 612 616 "src/translate.ml" 34 1140 1182
+)
+"src/translate.ml" 24 583 605 "src/translate.ml" 24 583 607
+type(
+  Slang.expr
+)
+ident(
+  def e2 "src/translate.ml" 25 612 616 "src/translate.ml" 34 1140 1182
+)
+"src/translate.ml" 24 583 587 "src/translate.ml" 24 583 608
+type(
+  Slang.expr
+)
+"src/translate.ml" 25 612 617 "src/translate.ml" 25 612 631
+type(
+  Slang.expr -> instr list
+)
+ident(
+  int_ref translate_expr "src/translate.ml" 7 119 127 "src/translate.ml" 7 119 141
+)
+"src/translate.ml" 25 612 632 "src/translate.ml" 25 612 634
+type(
+  Slang.expr
+)
+ident(
+  int_ref e1 "src/translate.ml" 24 583 601 "src/translate.ml" 24 583 603
+)
+"src/translate.ml" 25 612 616 "src/translate.ml" 25 612 635
+call(
+  stack
+)
+type(
+  instr list
+)
+"src/translate.ml" 26 636 640 "src/translate.ml" 26 636 641
+type(
+  instr list -> instr list -> instr list
+)
+ident(
+  int_ref Core.( @ ) "src/list.mli" 497 21588 21590 "src/list.mli" 497 21588 21622
+)
+"src/translate.ml" 26 636 643 "src/translate.ml" 26 636 657
+type(
+  Slang.expr -> instr list
+)
+ident(
+  int_ref translate_expr "src/translate.ml" 7 119 127 "src/translate.ml" 7 119 141
+)
+"src/translate.ml" 26 636 658 "src/translate.ml" 26 636 660
+type(
+  Slang.expr
+)
+ident(
+  int_ref e2 "src/translate.ml" 24 583 605 "src/translate.ml" 24 583 607
+)
+"src/translate.ml" 26 636 642 "src/translate.ml" 26 636 661
+call(
+  stack
+)
+type(
+  instr list
+)
+"src/translate.ml" 27 662 666 "src/translate.ml" 27 662 667
+type(
+  instr list -> instr list -> instr list
+)
+ident(
+  int_ref Core.( @ ) "src/list.mli" 497 21588 21590 "src/list.mli" 497 21588 21622
+)
+"src/translate.ml" 27 662 678 "src/translate.ml" 27 662 682
+type(
+  string
+)
+"src/translate.ml" 27 662 669 "src/translate.ml" 27 662 682
+type(
+  instr
+)
+"src/translate.ml" 27 662 693 "src/translate.ml" 27 662 697
+type(
+  string
+)
+"src/translate.ml" 27 662 684 "src/translate.ml" 27 662 697
+type(
+  instr
+)
+"src/translate.ml" 27 662 708 "src/translate.ml" 27 662 712
+type(
+  string
+)
+"src/translate.ml" 27 662 699 "src/translate.ml" 27 662 712
+type(
+  instr
+)
+"src/translate.ml" 27 662 723 "src/translate.ml" 27 662 727
+type(
+  string
+)
+"src/translate.ml" 27 662 714 "src/translate.ml" 27 662 727
+type(
+  instr
+)
+"src/translate.ml" 27 662 668 "src/translate.ml" 27 662 728
+type(
+  instr list
+)
+"src/translate.ml" 28 729 733 "src/translate.ml" 28 729 734
+type(
+  instr list -> instr list -> instr list
+)
+ident(
+  int_ref Core.( @ ) "src/list.mli" 497 21588 21590 "src/list.mli" 497 21588 21622
+)
+"src/translate.ml" 28 729 745 "src/translate.ml" 28 729 749
+type(
+  string
+)
+"src/translate.ml" 28 729 736 "src/translate.ml" 28 729 749
+type(
+  instr
+)
+"src/translate.ml" 28 729 760 "src/translate.ml" 28 729 764
+type(
+  string
+)
+"src/translate.ml" 28 729 751 "src/translate.ml" 28 729 764
+type(
+  instr
+)
+"src/translate.ml" 28 729 772 "src/translate.ml" 28 729 776
+type(
+  [ `Add | `Mul | `Sub ]
+)
+"src/translate.ml" 28 729 766 "src/translate.ml" 28 729 776
+type(
+  instr
+)
+"src/translate.ml" 28 729 787 "src/translate.ml" 28 729 794
+type(
+  string
+)
+"src/translate.ml" 28 729 778 "src/translate.ml" 28 729 794
+type(
+  instr
+)
+"src/translate.ml" 28 729 735 "src/translate.ml" 28 729 795
+type(
+  instr list
+)
+"src/translate.ml" 29 796 800 "src/translate.ml" 29 796 801
+type(
+  instr list -> instr list -> instr list
+)
+ident(
+  int_ref Core.( @ ) "src/list.mli" 497 21588 21590 "src/list.mli" 497 21588 21622
+)
+"src/translate.ml" 29 796 812 "src/translate.ml" 29 796 819
+type(
+  string
+)
+"src/translate.ml" 29 796 803 "src/translate.ml" 29 796 819
+type(
+  instr
+)
+"src/translate.ml" 29 796 826 "src/translate.ml" 29 796 833
+type(
+  string
+)
+"src/translate.ml" 29 796 821 "src/translate.ml" 29 796 833
+type(
+  instr
+)
+"src/translate.ml" 29 796 844 "src/translate.ml" 29 796 851
+type(
+  string
+)
+"src/translate.ml" 29 796 835 "src/translate.ml" 29 796 851
+type(
+  instr
+)
+"src/translate.ml" 29 796 802 "src/translate.ml" 29 796 852
+type(
+  instr list
+)
+"src/translate.ml" 30 853 857 "src/translate.ml" 30 853 858
+type(
+  instr list -> instr list -> instr list
+)
+ident(
+  int_ref Core.( @ ) "src/list.mli" 497 21588 21590 "src/list.mli" 497 21588 21622
+)
+"src/translate.ml" 30 853 869 "src/translate.ml" 30 853 876
+type(
+  string
+)
+"src/translate.ml" 30 853 860 "src/translate.ml" 30 853 876
+type(
+  instr
+)
+"src/translate.ml" 30 853 887 "src/translate.ml" 30 853 891
+type(
+  string
+)
+"src/translate.ml" 30 853 878 "src/translate.ml" 30 853 891
+type(
+  instr
+)
+"src/translate.ml" 30 853 899 "src/translate.ml" 30 853 903
+type(
+  [ `Add | `Mul | `Sub ]
+)
+"src/translate.ml" 30 853 893 "src/translate.ml" 30 853 903
+type(
+  instr
+)
+"src/translate.ml" 30 853 914 "src/translate.ml" 30 853 925
+type(
+  string
+)
+"src/translate.ml" 30 853 905 "src/translate.ml" 30 853 925
+type(
+  instr
+)
+"src/translate.ml" 30 853 859 "src/translate.ml" 30 853 926
+type(
+  instr list
+)
+"src/translate.ml" 31 927 931 "src/translate.ml" 31 927 932
+type(
+  instr list -> instr list -> instr list
+)
+ident(
+  int_ref Core.( @ ) "src/list.mli" 497 21588 21590 "src/list.mli" 497 21588 21622
+)
+"src/translate.ml" 31 927 943 "src/translate.ml" 31 927 947
+type(
+  string
+)
+"src/translate.ml" 31 927 934 "src/translate.ml" 31 927 947
+type(
+  instr
+)
+"src/translate.ml" 31 927 958 "src/translate.ml" 31 927 965
+type(
+  string
+)
+"src/translate.ml" 31 927 949 "src/translate.ml" 31 927 965
+type(
+  instr
+)
+"src/translate.ml" 31 927 976 "src/translate.ml" 31 927 980
+type(
+  string
+)
+"src/translate.ml" 31 927 967 "src/translate.ml" 31 927 980
+type(
+  instr
+)
+"src/translate.ml" 31 927 987 "src/translate.ml" 31 927 995
+type(
+  string
+)
+"src/translate.ml" 31 927 982 "src/translate.ml" 31 927 995
+type(
+  instr
+)
+"src/translate.ml" 31 927 933 "src/translate.ml" 31 927 996
+type(
+  instr list
+)
+"src/translate.ml" 32 997 1001 "src/translate.ml" 32 997 1002
+type(
+  instr list -> instr list -> instr list
+)
+ident(
+  int_ref Core.( @ ) "src/list.mli" 497 21588 21590 "src/list.mli" 497 21588 21622
+)
+"src/translate.ml" 32 997 1013 "src/translate.ml" 32 997 1017
+type(
+  string
+)
+"src/translate.ml" 32 997 1004 "src/translate.ml" 32 997 1017
+type(
+  instr
+)
+"src/translate.ml" 32 997 1028 "src/translate.ml" 32 997 1039
+type(
+  string
+)
+"src/translate.ml" 32 997 1019 "src/translate.ml" 32 997 1039
+type(
+  instr
+)
+"src/translate.ml" 32 997 1050 "src/translate.ml" 32 997 1054
+type(
+  string
+)
+"src/translate.ml" 32 997 1041 "src/translate.ml" 32 997 1054
+type(
+  instr
+)
+"src/translate.ml" 32 997 1061 "src/translate.ml" 32 997 1069
+type(
+  string
+)
+"src/translate.ml" 32 997 1056 "src/translate.ml" 32 997 1069
+type(
+  instr
+)
+"src/translate.ml" 32 997 1003 "src/translate.ml" 32 997 1070
+type(
+  instr list
+)
+"src/translate.ml" 33 1071 1075 "src/translate.ml" 33 1071 1076
+type(
+  instr list -> instr list -> instr list
+)
+ident(
+  int_ref Core.( @ ) "src/list.mli" 497 21588 21590 "src/list.mli" 497 21588 21622
+)
+"src/translate.ml" 33 1071 1087 "src/translate.ml" 33 1071 1091
+type(
+  string
+)
+"src/translate.ml" 33 1071 1078 "src/translate.ml" 33 1071 1091
+type(
+  instr
+)
+"src/translate.ml" 33 1071 1098 "src/translate.ml" 33 1071 1107
+type(
+  string
+)
+"src/translate.ml" 33 1071 1093 "src/translate.ml" 33 1071 1107
+type(
+  instr
+)
+"src/translate.ml" 33 1071 1118 "src/translate.ml" 33 1071 1122
+type(
+  string
+)
+"src/translate.ml" 33 1071 1109 "src/translate.ml" 33 1071 1122
+type(
+  instr
+)
+"src/translate.ml" 33 1071 1129 "src/translate.ml" 33 1071 1138
+type(
+  string
+)
+"src/translate.ml" 33 1071 1124 "src/translate.ml" 33 1071 1138
+type(
+  instr
+)
+"src/translate.ml" 33 1071 1077 "src/translate.ml" 33 1071 1139
+type(
+  instr list
+)
+"src/translate.ml" 34 1140 1144 "src/translate.ml" 34 1140 1145
+type(
+  instr list -> instr list -> instr list
+)
+ident(
+  int_ref Core.( @ ) "src/list.mli" 497 21588 21590 "src/list.mli" 497 21588 21622
+)
+"src/translate.ml" 34 1140 1156 "src/translate.ml" 34 1140 1163
+type(
+  string
+)
+"src/translate.ml" 34 1140 1147 "src/translate.ml" 34 1140 1163
+type(
+  instr
+)
+"src/translate.ml" 34 1140 1174 "src/translate.ml" 34 1140 1181
+type(
+  string
+)
+"src/translate.ml" 34 1140 1165 "src/translate.ml" 34 1140 1181
+type(
+  instr
+)
+"src/translate.ml" 34 1140 1146 "src/translate.ml" 34 1140 1182
+type(
+  instr list
+)
+"src/translate.ml" 33 1071 1077 "src/translate.ml" 34 1140 1182
+call(
+  stack
+)
+type(
+  instr list
+)
+"src/translate.ml" 32 997 1003 "src/translate.ml" 34 1140 1182
+call(
+  stack
+)
+type(
+  instr list
+)
+"src/translate.ml" 31 927 933 "src/translate.ml" 34 1140 1182
+call(
+  stack
+)
+type(
+  instr list
+)
+"src/translate.ml" 30 853 859 "src/translate.ml" 34 1140 1182
+call(
+  stack
+)
+type(
+  instr list
+)
+"src/translate.ml" 29 796 802 "src/translate.ml" 34 1140 1182
+call(
+  stack
+)
+type(
+  instr list
+)
+"src/translate.ml" 28 729 735 "src/translate.ml" 34 1140 1182
+call(
+  stack
+)
+type(
+  instr list
+)
+"src/translate.ml" 27 662 668 "src/translate.ml" 34 1140 1182
+call(
+  stack
+)
+type(
+  instr list
+)
+"src/translate.ml" 26 636 642 "src/translate.ml" 34 1140 1182
+call(
+  stack
+)
+type(
+  instr list
+)
+"src/translate.ml" 25 612 616 "src/translate.ml" 34 1140 1182
+call(
+  tail
+)
+type(
+  instr list
+)
+"src/translate.ml" 36 1184 1200 "src/translate.ml" 36 1184 1201
+type(
+  string
+)
+ident(
+  def x "src/translate.ml" 37 1210 1214 "src/translate.ml" 38 1260 1294
+)
+"src/translate.ml" 36 1184 1203 "src/translate.ml" 36 1184 1205
+type(
+  Slang.expr list
+)
+ident(
+  def es "src/translate.ml" 37 1210 1214 "src/translate.ml" 38 1260 1294
+)
+"src/translate.ml" 36 1184 1188 "src/translate.ml" 36 1184 1206
+type(
+  Slang.expr
+)
+"src/translate.ml" 37 1210 1215 "src/translate.ml" 37 1210 1226
+type(
+  instr list list -> instr list
+)
+ident(
+  int_ref Core.List.concat "src/list.mli" 461 20014 20014 "src/list.mli" 461 20014 20041
+)
+"src/translate.ml" 37 1210 1228 "src/translate.ml" 37 1210 1236
+type(
+  Slang.expr list -> f:(Slang.expr -> instr list) -> instr list list
+)
+ident(
+  int_ref Core.List.map "src/list.mli" 191 8217 8217 "src/list.mli" 191 8217 8255
+)
+"src/translate.ml" 37 1210 1240 "src/translate.ml" 37 1210 1254
+type(
+  Slang.expr -> instr list
+)
+ident(
+  int_ref translate_expr "src/translate.ml" 7 119 127 "src/translate.ml" 7 119 141
+)
+"src/translate.ml" 37 1210 1255 "src/translate.ml" 37 1210 1257
+type(
+  Slang.expr list
+)
+ident(
+  int_ref es "src/translate.ml" 36 1184 1203 "src/translate.ml" 36 1184 1205
+)
+"src/translate.ml" 37 1210 1227 "src/translate.ml" 37 1210 1258
+call(
+  stack
+)
+type(
+  instr list list
+)
+"src/translate.ml" 37 1210 1214 "src/translate.ml" 37 1210 1259
+call(
+  stack
+)
+type(
+  instr list
+)
+"src/translate.ml" 38 1260 1264 "src/translate.ml" 38 1260 1265
+type(
+  instr list -> instr list -> instr list
+)
+ident(
+  int_ref Core.( @ ) "src/list.mli" 497 21588 21590 "src/list.mli" 497 21588 21622
+)
+"src/translate.ml" 38 1260 1272 "src/translate.ml" 38 1260 1273
+type(
+  string
+)
+ident(
+  int_ref x "src/translate.ml" 36 1184 1200 "src/translate.ml" 36 1184 1201
+)
+"src/translate.ml" 38 1260 1267 "src/translate.ml" 38 1260 1273
+type(
+  instr
+)
+"src/translate.ml" 38 1260 1285 "src/translate.ml" 38 1260 1293
+type(
+  string
+)
+"src/translate.ml" 38 1260 1275 "src/translate.ml" 38 1260 1293
+type(
+  instr
+)
+"src/translate.ml" 38 1260 1266 "src/translate.ml" 38 1260 1294
+type(
+  instr list
+)
+"src/translate.ml" 37 1210 1214 "src/translate.ml" 38 1260 1294
+call(
+  tail
+)
+type(
+  instr list
+)
+"src/translate.ml" 40 1296 1310 "src/translate.ml" 40 1296 1311
+type(
+  string
+)
+ident(
+  def x "src/translate.ml" 41 1315 1319 "src/translate.ml" 41 1315 1353
+)
+"src/translate.ml" 40 1296 1300 "src/translate.ml" 40 1296 1311
+type(
+  Slang.expr
+)
+"src/translate.ml" 41 1315 1329 "src/translate.ml" 41 1315 1330
+type(
+  string
+)
+ident(
+  int_ref x "src/translate.ml" 40 1296 1310 "src/translate.ml" 40 1296 1311
+)
+"src/translate.ml" 41 1315 1320 "src/translate.ml" 41 1315 1330
+type(
+  instr
+)
+"src/translate.ml" 41 1315 1342 "src/translate.ml" 41 1315 1343
+type(
+  string
+)
+ident(
+  int_ref x "src/translate.ml" 40 1296 1310 "src/translate.ml" 40 1296 1311
+)
+"src/translate.ml" 41 1315 1344 "src/translate.ml" 41 1315 1345
+type(
+  string -> string -> string
+)
+ident(
+  int_ref Core.( ^ ) "src/core_pervasives.mli" 539 20696 20696 "src/core_pervasives.mli" 539 20696 20734
+)
+"src/translate.ml" 41 1315 1346 "src/translate.ml" 41 1315 1351
+type(
+  string
+)
+"src/translate.ml" 41 1315 1341 "src/translate.ml" 41 1315 1352
+call(
+  stack
+)
+type(
+  string
+)
+"src/translate.ml" 41 1315 1332 "src/translate.ml" 41 1315 1352
+type(
+  instr
+)
+"src/translate.ml" 41 1315 1319 "src/translate.ml" 41 1315 1353
+type(
+  instr list
+)
+"src/translate.ml" 9 198 200 "src/translate.ml" 41 1315 1353
+type(
+  Wasm.instr list
+)
+type(
+  instr list
+)
+"src/translate.ml" 43 1355 1359 "src/translate.ml" 43 1355 1373
+type(
+  Wasm.instr list * string list ->
+  Slang.stmt -> Wasm.instr list * string list
+)
+ident(
+  def translate_stmt "src/translate.ml" 56 1749 1749 "src/translate.ml" 1 0 -1
+)
+"src/translate.ml" 44 1374 1382 "src/translate.ml" 44 1374 1385
+type(
+  Wasm.instr list
+)
+ident(
+  def gen "src/translate.ml" 45 1432 1438 "src/translate.ml" 54 1673 1747
+)
+"src/translate.ml" 44 1374 1387 "src/translate.ml" 44 1374 1393
+type(
+  string list
+)
+ident(
+  def locals "src/translate.ml" 45 1432 1438 "src/translate.ml" 54 1673 1747
+)
+"src/translate.ml" 44 1374 1381 "src/translate.ml" 44 1374 1394
+type(
+  Wasm.instr list * string list
+)
+"src/translate.ml" 45 1432 1439 "src/translate.ml" 45 1432 1443
+type(
+  Slang.stmt
+)
+ident(
+  def stmt "src/translate.ml" 46 1458 1460 "src/translate.ml" 54 1673 1747
+)
+"src/translate.ml" 49 1520 1528 "src/translate.ml" 49 1520 1532
+type(
+  stmt
+)
+ident(
+  int_ref stmt "src/translate.ml" 45 1432 1439 "src/translate.ml" 45 1432 1443
+)
+"src/translate.ml" 50 1538 1550 "src/translate.ml" 50 1538 1551
+type(
+  string
+)
+ident(
+  def x "src/translate.ml" 51 1559 1563 "src/translate.ml" 52 1627 1656
+)
+"src/translate.ml" 50 1538 1553 "src/translate.ml" 50 1538 1554
+type(
+  expr
+)
+ident(
+  def e "src/translate.ml" 51 1559 1563 "src/translate.ml" 52 1627 1656
+)
+"src/translate.ml" 50 1538 1542 "src/translate.ml" 50 1538 1555
+type(
+  stmt
+)
+"src/translate.ml" 51 1559 1564 "src/translate.ml" 51 1559 1567
+type(
+  Wasm.instr list
+)
+ident(
+  int_ref gen "src/translate.ml" 44 1374 1382 "src/translate.ml" 44 1374 1385
+)
+"src/translate.ml" 51 1559 1568 "src/translate.ml" 51 1559 1569
+type(
+  Wasm.instr list -> Wasm.instr list -> Wasm.instr list
+)
+ident(
+  int_ref Core.( @ ) "src/list.mli" 497 21588 21590 "src/list.mli" 497 21588 21622
+)
+"src/translate.ml" 51 1559 1571 "src/translate.ml" 51 1559 1585
+type(
+  expr -> Wasm.instr list
+)
+ident(
+  int_ref translate_expr "src/translate.ml" 7 119 127 "src/translate.ml" 7 119 141
+)
+"src/translate.ml" 51 1559 1586 "src/translate.ml" 51 1559 1587
+type(
+  expr
+)
+ident(
+  int_ref e "src/translate.ml" 50 1538 1553 "src/translate.ml" 50 1538 1554
+)
+"src/translate.ml" 51 1559 1570 "src/translate.ml" 51 1559 1588
+call(
+  stack
+)
+type(
+  Wasm.instr list
+)
+"src/translate.ml" 51 1559 1589 "src/translate.ml" 51 1559 1590
+type(
+  Wasm.instr list -> Wasm.instr list -> Wasm.instr list
+)
+ident(
+  int_ref Core.( @ ) "src/list.mli" 497 21588 21590 "src/list.mli" 497 21588 21622
+)
+"src/translate.ml" 51 1559 1602 "src/translate.ml" 51 1559 1603
+type(
+  string
+)
+ident(
+  int_ref x "src/translate.ml" 50 1538 1550 "src/translate.ml" 50 1538 1551
+)
+"src/translate.ml" 51 1559 1604 "src/translate.ml" 51 1559 1605
+type(
+  string -> string -> string
+)
+ident(
+  int_ref Core.( ^ ) "src/core_pervasives.mli" 539 20696 20696 "src/core_pervasives.mli" 539 20696 20734
+)
+"src/translate.ml" 51 1559 1606 "src/translate.ml" 51 1559 1611
+type(
+  string
+)
+"src/translate.ml" 51 1559 1601 "src/translate.ml" 51 1559 1612
+call(
+  stack
+)
+type(
+  string
+)
+"src/translate.ml" 51 1559 1592 "src/translate.ml" 51 1559 1612
+type(
+  Wasm.instr
+)
+"src/translate.ml" 51 1559 1623 "src/translate.ml" 51 1559 1624
+type(
+  string
+)
+ident(
+  int_ref x "src/translate.ml" 50 1538 1550 "src/translate.ml" 50 1538 1551
+)
+"src/translate.ml" 51 1559 1614 "src/translate.ml" 51 1559 1624
+type(
+  Wasm.instr
+)
+"src/translate.ml" 51 1559 1591 "src/translate.ml" 51 1559 1625
+type(
+  Wasm.instr list
+)
+"src/translate.ml" 51 1559 1570 "src/translate.ml" 51 1559 1625
+call(
+  stack
+)
+type(
+  Wasm.instr list
+)
+"src/translate.ml" 51 1559 1564 "src/translate.ml" 51 1559 1625
+call(
+  stack
+)
+type(
+  Wasm.instr list
+)
+"src/translate.ml" 52 1627 1633 "src/translate.ml" 52 1627 1634
+type(
+  string
+)
+ident(
+  int_ref x "src/translate.ml" 50 1538 1550 "src/translate.ml" 50 1538 1551
+)
+"src/translate.ml" 52 1627 1636 "src/translate.ml" 52 1627 1637
+type(
+  string
+)
+ident(
+  int_ref x "src/translate.ml" 50 1538 1550 "src/translate.ml" 50 1538 1551
+)
+"src/translate.ml" 52 1627 1638 "src/translate.ml" 52 1627 1639
+type(
+  string -> string -> string
+)
+ident(
+  int_ref Core.( ^ ) "src/core_pervasives.mli" 539 20696 20696 "src/core_pervasives.mli" 539 20696 20734
+)
+"src/translate.ml" 52 1627 1640 "src/translate.ml" 52 1627 1645
+type(
+  string
+)
+"src/translate.ml" 52 1627 1636 "src/translate.ml" 52 1627 1645
+call(
+  stack
+)
+type(
+  string
+)
+"src/translate.ml" 52 1627 1632 "src/translate.ml" 52 1627 1646
+type(
+  string list
+)
+"src/translate.ml" 52 1627 1647 "src/translate.ml" 52 1627 1648
+type(
+  string list -> string list -> string list
+)
+ident(
+  int_ref Core.( @ ) "src/list.mli" 497 21588 21590 "src/list.mli" 497 21588 21622
+)
+"src/translate.ml" 52 1627 1649 "src/translate.ml" 52 1627 1655
+type(
+  string list
+)
+ident(
+  int_ref locals "src/translate.ml" 44 1374 1387 "src/translate.ml" 44 1374 1393
+)
+"src/translate.ml" 52 1627 1632 "src/translate.ml" 52 1627 1655
+call(
+  stack
+)
+type(
+  string list
+)
+"src/translate.ml" 51 1559 1563 "src/translate.ml" 52 1627 1656
+type(
+  Wasm.instr list * string list
+)
+"src/translate.ml" 53 1657 1668 "src/translate.ml" 53 1657 1669
+type(
+  expr
+)
+ident(
+  def e "src/translate.ml" 54 1673 1677 "src/translate.ml" 54 1673 1747
+)
+"src/translate.ml" 53 1657 1661 "src/translate.ml" 53 1657 1669
+type(
+  stmt
+)
+"src/translate.ml" 54 1673 1678 "src/translate.ml" 54 1673 1681
+type(
+  Wasm.instr list
+)
+ident(
+  int_ref gen "src/translate.ml" 44 1374 1382 "src/translate.ml" 44 1374 1385
+)
+"src/translate.ml" 54 1673 1682 "src/translate.ml" 54 1673 1683
+type(
+  Wasm.instr list -> Wasm.instr list -> Wasm.instr list
+)
+ident(
+  int_ref Core.( @ ) "src/list.mli" 497 21588 21590 "src/list.mli" 497 21588 21622
+)
+"src/translate.ml" 54 1673 1685 "src/translate.ml" 54 1673 1699
+type(
+  expr -> Wasm.instr list
+)
+ident(
+  int_ref translate_expr "src/translate.ml" 7 119 127 "src/translate.ml" 7 119 141
+)
+"src/translate.ml" 54 1673 1700 "src/translate.ml" 54 1673 1701
+type(
+  expr
+)
+ident(
+  int_ref e "src/translate.ml" 53 1657 1668 "src/translate.ml" 53 1657 1669
+)
+"src/translate.ml" 54 1673 1684 "src/translate.ml" 54 1673 1702
+call(
+  stack
+)
+type(
+  Wasm.instr list
+)
+"src/translate.ml" 54 1673 1703 "src/translate.ml" 54 1673 1704
+type(
+  Wasm.instr list -> Wasm.instr list -> Wasm.instr list
+)
+ident(
+  int_ref Core.( @ ) "src/list.mli" 497 21588 21590 "src/list.mli" 497 21588 21622
+)
+"src/translate.ml" 54 1673 1716 "src/translate.ml" 54 1673 1724
+type(
+  string
+)
+"src/translate.ml" 54 1673 1706 "src/translate.ml" 54 1673 1724
+type(
+  Wasm.instr
+)
+"src/translate.ml" 54 1673 1726 "src/translate.ml" 54 1673 1737
+type(
+  Wasm.instr
+)
+"src/translate.ml" 54 1673 1705 "src/translate.ml" 54 1673 1738
+type(
+  Wasm.instr list
+)
+"src/translate.ml" 54 1673 1684 "src/translate.ml" 54 1673 1738
+call(
+  stack
+)
+type(
+  Wasm.instr list
+)
+"src/translate.ml" 54 1673 1678 "src/translate.ml" 54 1673 1738
+call(
+  stack
+)
+type(
+  Wasm.instr list
+)
+"src/translate.ml" 54 1673 1740 "src/translate.ml" 54 1673 1746
+type(
+  string list
+)
+ident(
+  int_ref locals "src/translate.ml" 44 1374 1387 "src/translate.ml" 44 1374 1393
+)
+"src/translate.ml" 54 1673 1677 "src/translate.ml" 54 1673 1747
+type(
+  Wasm.instr list * string list
+)
+"src/translate.ml" 49 1520 1522 "src/translate.ml" 54 1673 1747
+type(
+  Wasm.instr list * string list
+)
+type(
+  Wasm.instr list * string list
+)
+"src/translate.ml" 56 1749 1753 "src/translate.ml" 56 1749 1767
+type(
+  Slang.func -> Wasm.func
+)
+ident(
+  def translate_func "src/translate.ml" 64 2004 2004 "src/translate.ml" 1 0 -1
+)
+"src/translate.ml" 56 1749 1769 "src/translate.ml" 56 1749 1770
+type(
+  Slang.func
+)
+ident(
+  def f "src/translate.ml" 56 1749 1785 "src/translate.ml" 62 1986 2002
+)
+"src/translate.ml" 57 1799 1806 "src/translate.ml" 57 1799 1810
+type(
+  Wasm.instr list
+)
+ident(
+  def body "src/translate.ml" 60 1893 1895 "src/translate.ml" 62 1986 2002
+)
+"src/translate.ml" 57 1799 1812 "src/translate.ml" 57 1799 1818
+type(
+  string list
+)
+ident(
+  def locals "src/translate.ml" 60 1893 1895 "src/translate.ml" 62 1986 2002
+)
+"src/translate.ml" 57 1799 1805 "src/translate.ml" 57 1799 1819
+type(
+  Wasm.instr list * string list
+)
+"src/translate.ml" 58 1822 1826 "src/translate.ml" 58 1822 1835
+type(
+  Slang.stmt list ->
+  init:Wasm.instr list * string list ->
+  f:(Wasm.instr list * string list ->
+     Slang.stmt -> Wasm.instr list * string list) ->
+  Wasm.instr list * string list
+)
+ident(
+  int_ref Core.List.fold "src/container_intf.ml" 180 6928 6930 "src/container_intf.ml" 180 6928 7004
+)
+"src/translate.ml" 58 1822 1843 "src/translate.ml" 58 1822 1845
+type(
+  Wasm.instr list
+)
+"src/translate.ml" 58 1822 1847 "src/translate.ml" 58 1822 1861
+type(
+  string list
+)
+ident(
+  int_ref runtime_locals "src/translate.ml" 5 36 40 "src/translate.ml" 5 36 54
+)
+"src/translate.ml" 58 1822 1842 "src/translate.ml" 58 1822 1862
+type(
+  Wasm.instr list * string list
+)
+"src/translate.ml" 58 1822 1866 "src/translate.ml" 58 1822 1880
+type(
+  Wasm.instr list * string list ->
+  Slang.stmt -> Wasm.instr list * string list
+)
+ident(
+  int_ref translate_stmt "src/translate.ml" 43 1355 1359 "src/translate.ml" 43 1355 1373
+)
+"src/translate.ml" 58 1822 1881 "src/translate.ml" 58 1822 1882
+type(
+  Slang.func
+)
+ident(
+  int_ref f "src/translate.ml" 56 1749 1769 "src/translate.ml" 56 1749 1770
+)
+"src/translate.ml" 58 1822 1881 "src/translate.ml" 58 1822 1887
+type(
+  Slang.stmt list
+)
+"src/translate.ml" 58 1822 1826 "src/translate.ml" 58 1822 1887
+call(
+  stack
+)
+type(
+  Wasm.instr list * string list
+)
+"src/translate.ml" 60 1893 1903 "src/translate.ml" 60 1893 1904
+type(
+  Slang.func
+)
+ident(
+  int_ref f "src/translate.ml" 56 1749 1769 "src/translate.ml" 56 1749 1770
+)
+"src/translate.ml" 60 1893 1903 "src/translate.ml" 60 1893 1909
+type(
+  string
+)
+"src/translate.ml" 61 1911 1923 "src/translate.ml" 61 1911 1931
+type(
+  string list -> f:(string -> string list) -> string list list
+)
+ident(
+  int_ref Core.List.map "src/list.mli" 191 8217 8217 "src/list.mli" 191 8217 8255
+)
+"src/translate.ml" 61 1911 1932 "src/translate.ml" 61 1911 1933
+type(
+  Slang.func
+)
+ident(
+  int_ref f "src/translate.ml" 56 1749 1769 "src/translate.ml" 56 1749 1770
+)
+"src/translate.ml" 61 1911 1932 "src/translate.ml" 61 1911 1940
+type(
+  string list
+)
+"src/translate.ml" 61 1911 1949 "src/translate.ml" 61 1911 1950
+type(
+  string
+)
+ident(
+  def x "src/translate.ml" 61 1911 1954 "src/translate.ml" 61 1911 1968
+)
+"src/translate.ml" 61 1911 1955 "src/translate.ml" 61 1911 1956
+type(
+  string
+)
+ident(
+  int_ref x "src/translate.ml" 61 1911 1949 "src/translate.ml" 61 1911 1950
+)
+"src/translate.ml" 61 1911 1958 "src/translate.ml" 61 1911 1959
+type(
+  string
+)
+ident(
+  int_ref x "src/translate.ml" 61 1911 1949 "src/translate.ml" 61 1911 1950
+)
+"src/translate.ml" 61 1911 1960 "src/translate.ml" 61 1911 1961
+type(
+  string -> string -> string
+)
+ident(
+  int_ref Core.( ^ ) "src/core_pervasives.mli" 539 20696 20696 "src/core_pervasives.mli" 539 20696 20734
+)
+"src/translate.ml" 61 1911 1962 "src/translate.ml" 61 1911 1967
+type(
+  string
+)
+"src/translate.ml" 61 1911 1958 "src/translate.ml" 61 1911 1967
+call(
+  stack
+)
+type(
+  string
+)
+"src/translate.ml" 61 1911 1954 "src/translate.ml" 61 1911 1968
+type(
+  string list
+)
+"src/translate.ml" 61 1911 1944 "src/translate.ml" 61 1911 1969
+type(
+  string -> string list
+)
+"src/translate.ml" 61 1911 1923 "src/translate.ml" 61 1911 1969
+call(
+  stack
+)
+type(
+  string list list
+)
+"src/translate.ml" 61 1911 1973 "src/translate.ml" 61 1911 1984
+type(
+  string list list -> string list
+)
+ident(
+  int_ref Core.List.concat "src/list.mli" 461 20014 20014 "src/list.mli" 461 20014 20041
+)
+"src/translate.ml" 61 1911 1923 "src/translate.ml" 61 1911 1984
+call(
+  stack
+)
+type(
+  string list
+)
+"src/translate.ml" 62 1986 1989 "src/translate.ml" 62 1986 1993
+type(
+  Wasm.instr list
+)
+ident(
+  int_ref body "src/translate.ml" 57 1799 1806 "src/translate.ml" 57 1799 1810
+)
+"src/translate.ml" 62 1986 1995 "src/translate.ml" 62 1986 2001
+type(
+  string list
+)
+ident(
+  int_ref locals "src/translate.ml" 57 1799 1812 "src/translate.ml" 57 1799 1818
+)
+"src/translate.ml" 60 1893 1895 "src/translate.ml" 62 1986 2002
+type(
+  Wasm.func
+)
+"src/translate.ml" 57 1799 1801 "src/translate.ml" 62 1986 2002
+type(
+  Wasm.func
+)
+type(
+  Wasm.func
+)
+"src/translate.ml" 64 2004 2008 "src/translate.ml" 64 2004 2017
+type(
+  Slang.prog -> Wasm.module_
+)
+ident(
+  def translate "src/translate.ml" 65 2052 2082 "src/translate.ml" 1 0 -1
+)
+"src/translate.ml" 64 2004 2019 "src/translate.ml" 64 2004 2020
+type(
+  Slang.prog
+)
+ident(
+  def p "src/translate.ml" 64 2004 2035 "src/translate.ml" 65 2052 2082
+)
+"src/translate.ml" 65 2052 2054 "src/translate.ml" 65 2052 2062
+type(
+  Slang.func list -> f:(Slang.func -> Wasm.func) -> Wasm.func list
+)
+ident(
+  int_ref Core.List.map "src/list.mli" 191 8217 8217 "src/list.mli" 191 8217 8255
+)
+"src/translate.ml" 65 2052 2066 "src/translate.ml" 65 2052 2080
+type(
+  Slang.func -> Wasm.func
+)
+ident(
+  int_ref translate_func "src/translate.ml" 56 1749 1753 "src/translate.ml" 56 1749 1767
+)
+"src/translate.ml" 65 2052 2081 "src/translate.ml" 65 2052 2082
+type(
+  Slang.prog
+)
+ident(
+  int_ref p "src/translate.ml" 64 2004 2019 "src/translate.ml" 64 2004 2020
+)
+"src/translate.ml" 65 2052 2054 "src/translate.ml" 65 2052 2082
+call(
+  tail
+)
+type(
+  Wasm.module_
+)
+type(
+  Wasm.func list
+)

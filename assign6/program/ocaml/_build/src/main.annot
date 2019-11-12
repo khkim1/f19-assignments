@@ -1,0 +1,1106 @@
+"src/main.ml" 4 35 39 "src/main.ml" 4 35 43
+type(
+  unit -> unit
+)
+ident(
+  def main "src/main.ml" 74 2100 2100 "src/main.ml" 1 0 -1
+)
+"src/main.ml" 4 35 44 "src/main.ml" 4 35 46
+type(
+  unit
+)
+"src/main.ml" 6 69 75 "src/main.ml" 6 69 82
+type(
+  prog
+)
+ident(
+  def p_basic "src/main.ml" 11 182 184 "src/main.ml" 70 2031 2096
+)
+"src/main.ml" 7 94 106 "src/main.ml" 7 94 112
+type(
+  string
+)
+"src/main.ml" 7 94 123 "src/main.ml" 7 94 125
+type(
+  string list
+)
+"src/main.ml" 8 136 158 "src/main.ml" 8 136 165
+type(
+  string
+)
+"src/main.ml" 8 136 150 "src/main.ml" 8 136 166
+type(
+  expr
+)
+"src/main.ml" 8 136 143 "src/main.ml" 8 136 166
+type(
+  stmt
+)
+"src/main.ml" 7 94 134 "src/main.ml" 9 167 173
+type(
+  stmt list
+)
+"src/main.ml" 7 94 98 "src/main.ml" 9 167 174
+type(
+  func
+)
+"src/main.ml" 6 69 92 "src/main.ml" 10 175 178
+type(
+  prog
+)
+type(
+  prog
+)
+"src/main.ml" 11 182 188 "src/main.ml" 11 182 196
+type(
+  prog
+)
+ident(
+  def p_concat "src/main.ml" 17 352 354 "src/main.ml" 70 2031 2096
+)
+"src/main.ml" 12 208 220 "src/main.ml" 12 208 226
+type(
+  string
+)
+"src/main.ml" 12 208 237 "src/main.ml" 12 208 239
+type(
+  string list
+)
+"src/main.ml" 13 250 265 "src/main.ml" 13 250 268
+type(
+  string
+)
+"src/main.ml" 13 250 277 "src/main.ml" 13 250 284
+type(
+  string
+)
+"src/main.ml" 13 250 270 "src/main.ml" 13 250 284
+type(
+  expr
+)
+"src/main.ml" 13 250 257 "src/main.ml" 13 250 285
+type(
+  stmt
+)
+"src/main.ml" 14 287 314 "src/main.ml" 14 287 317
+type(
+  string
+)
+"src/main.ml" 14 287 310 "src/main.ml" 14 287 317
+type(
+  expr
+)
+"src/main.ml" 14 287 326 "src/main.ml" 14 287 334
+type(
+  string
+)
+"src/main.ml" 14 287 319 "src/main.ml" 14 287 334
+type(
+  expr
+)
+"src/main.ml" 14 287 301 "src/main.ml" 14 287 336
+type(
+  expr
+)
+"src/main.ml" 14 287 294 "src/main.ml" 14 287 336
+type(
+  stmt
+)
+"src/main.ml" 12 208 248 "src/main.ml" 15 337 343
+type(
+  stmt list
+)
+"src/main.ml" 12 208 212 "src/main.ml" 15 337 344
+type(
+  func
+)
+"src/main.ml" 11 182 206 "src/main.ml" 16 345 348
+type(
+  prog
+)
+type(
+  prog
+)
+"src/main.ml" 17 352 358 "src/main.ml" 17 352 367
+type(
+  prog
+)
+ident(
+  def p_funcall "src/main.ml" 27 646 648 "src/main.ml" 70 2031 2096
+)
+"src/main.ml" 18 379 391 "src/main.ml" 18 379 396
+type(
+  string
+)
+"src/main.ml" 18 379 408 "src/main.ml" 18 379 411
+type(
+  string
+)
+"src/main.ml" 18 379 407 "src/main.ml" 18 379 412
+type(
+  string list
+)
+"src/main.ml" 19 423 450 "src/main.ml" 19 423 453
+type(
+  string
+)
+"src/main.ml" 19 423 446 "src/main.ml" 19 423 453
+type(
+  expr
+)
+"src/main.ml" 19 423 462 "src/main.ml" 19 423 470
+type(
+  string
+)
+"src/main.ml" 19 423 455 "src/main.ml" 19 423 470
+type(
+  expr
+)
+"src/main.ml" 19 423 437 "src/main.ml" 19 423 472
+type(
+  expr
+)
+"src/main.ml" 19 423 430 "src/main.ml" 19 423 472
+type(
+  stmt
+)
+"src/main.ml" 18 379 421 "src/main.ml" 20 473 479
+type(
+  stmt list
+)
+"src/main.ml" 18 379 383 "src/main.ml" 20 473 480
+type(
+  func
+)
+"src/main.ml" 21 482 494 "src/main.ml" 21 482 500
+type(
+  string
+)
+"src/main.ml" 21 482 511 "src/main.ml" 21 482 513
+type(
+  string list
+)
+"src/main.ml" 22 524 539 "src/main.ml" 22 524 542
+type(
+  string
+)
+"src/main.ml" 22 524 551 "src/main.ml" 22 524 558
+type(
+  string
+)
+"src/main.ml" 22 524 544 "src/main.ml" 22 524 558
+type(
+  expr
+)
+"src/main.ml" 22 524 531 "src/main.ml" 22 524 559
+type(
+  stmt
+)
+"src/main.ml" 23 561 576 "src/main.ml" 23 561 579
+type(
+  string
+)
+"src/main.ml" 23 561 585 "src/main.ml" 23 561 588
+type(
+  string
+)
+"src/main.ml" 23 561 581 "src/main.ml" 23 561 588
+type(
+  expr
+)
+"src/main.ml" 23 561 568 "src/main.ml" 23 561 589
+type(
+  stmt
+)
+"src/main.ml" 24 591 612 "src/main.ml" 24 591 617
+type(
+  string
+)
+"src/main.ml" 24 591 624 "src/main.ml" 24 591 627
+type(
+  string
+)
+"src/main.ml" 24 591 620 "src/main.ml" 24 591 627
+type(
+  expr
+)
+"src/main.ml" 24 591 619 "src/main.ml" 24 591 628
+type(
+  expr list
+)
+"src/main.ml" 24 591 605 "src/main.ml" 24 591 630
+type(
+  expr
+)
+"src/main.ml" 24 591 598 "src/main.ml" 24 591 630
+type(
+  stmt
+)
+"src/main.ml" 21 482 522 "src/main.ml" 25 631 637
+type(
+  stmt list
+)
+"src/main.ml" 21 482 486 "src/main.ml" 25 631 638
+type(
+  func
+)
+"src/main.ml" 17 352 377 "src/main.ml" 26 639 642
+type(
+  prog
+)
+type(
+  prog
+)
+"src/main.ml" 27 646 652 "src/main.ml" 27 646 666
+type(
+  prog
+)
+ident(
+  def p_overused_var "src/main.ml" 37 937 939 "src/main.ml" 70 2031 2096
+)
+"src/main.ml" 28 678 690 "src/main.ml" 28 678 695
+type(
+  string
+)
+"src/main.ml" 28 678 707 "src/main.ml" 28 678 710
+type(
+  string
+)
+"src/main.ml" 28 678 706 "src/main.ml" 28 678 711
+type(
+  string list
+)
+"src/main.ml" 29 722 749 "src/main.ml" 29 722 752
+type(
+  string
+)
+"src/main.ml" 29 722 745 "src/main.ml" 29 722 752
+type(
+  expr
+)
+"src/main.ml" 29 722 758 "src/main.ml" 29 722 761
+type(
+  string
+)
+"src/main.ml" 29 722 754 "src/main.ml" 29 722 761
+type(
+  expr
+)
+"src/main.ml" 29 722 736 "src/main.ml" 29 722 763
+type(
+  expr
+)
+"src/main.ml" 29 722 729 "src/main.ml" 29 722 763
+type(
+  stmt
+)
+"src/main.ml" 28 678 720 "src/main.ml" 30 764 770
+type(
+  stmt list
+)
+"src/main.ml" 28 678 682 "src/main.ml" 30 764 771
+type(
+  func
+)
+"src/main.ml" 31 773 785 "src/main.ml" 31 773 791
+type(
+  string
+)
+"src/main.ml" 31 773 802 "src/main.ml" 31 773 804
+type(
+  string list
+)
+"src/main.ml" 32 815 830 "src/main.ml" 32 815 833
+type(
+  string
+)
+"src/main.ml" 32 815 842 "src/main.ml" 32 815 849
+type(
+  string
+)
+"src/main.ml" 32 815 835 "src/main.ml" 32 815 849
+type(
+  expr
+)
+"src/main.ml" 32 815 822 "src/main.ml" 32 815 850
+type(
+  stmt
+)
+"src/main.ml" 33 852 867 "src/main.ml" 33 852 870
+type(
+  string
+)
+"src/main.ml" 33 852 876 "src/main.ml" 33 852 879
+type(
+  string
+)
+"src/main.ml" 33 852 872 "src/main.ml" 33 852 879
+type(
+  expr
+)
+"src/main.ml" 33 852 859 "src/main.ml" 33 852 880
+type(
+  stmt
+)
+"src/main.ml" 34 882 903 "src/main.ml" 34 882 908
+type(
+  string
+)
+"src/main.ml" 34 882 915 "src/main.ml" 34 882 918
+type(
+  string
+)
+"src/main.ml" 34 882 911 "src/main.ml" 34 882 918
+type(
+  expr
+)
+"src/main.ml" 34 882 910 "src/main.ml" 34 882 919
+type(
+  expr list
+)
+"src/main.ml" 34 882 896 "src/main.ml" 34 882 921
+type(
+  expr
+)
+"src/main.ml" 34 882 889 "src/main.ml" 34 882 921
+type(
+  stmt
+)
+"src/main.ml" 31 773 813 "src/main.ml" 35 922 928
+type(
+  stmt list
+)
+"src/main.ml" 31 773 777 "src/main.ml" 35 922 929
+type(
+  func
+)
+"src/main.ml" 27 646 676 "src/main.ml" 36 930 933
+type(
+  prog
+)
+type(
+  prog
+)
+"src/main.ml" 37 937 943 "src/main.ml" 37 937 955
+type(
+  prog
+)
+ident(
+  def p_unused_var "src/main.ml" 42 1060 1062 "src/main.ml" 70 2031 2096
+)
+"src/main.ml" 38 967 979 "src/main.ml" 38 967 985
+type(
+  string
+)
+"src/main.ml" 38 967 996 "src/main.ml" 38 967 998
+type(
+  string list
+)
+"src/main.ml" 39 1009 1024 "src/main.ml" 39 1009 1027
+type(
+  string
+)
+"src/main.ml" 39 1009 1036 "src/main.ml" 39 1009 1043
+type(
+  string
+)
+"src/main.ml" 39 1009 1029 "src/main.ml" 39 1009 1043
+type(
+  expr
+)
+"src/main.ml" 39 1009 1016 "src/main.ml" 39 1009 1044
+type(
+  stmt
+)
+"src/main.ml" 38 967 1007 "src/main.ml" 40 1045 1051
+type(
+  stmt list
+)
+"src/main.ml" 38 967 971 "src/main.ml" 40 1045 1052
+type(
+  func
+)
+"src/main.ml" 37 937 965 "src/main.ml" 41 1053 1056
+type(
+  prog
+)
+type(
+  prog
+)
+"src/main.ml" 42 1060 1066 "src/main.ml" 42 1060 1082
+type(
+  prog
+)
+ident(
+  def p_undeclared_var "src/main.ml" 53 1335 1337 "src/main.ml" 70 2031 2096
+)
+"src/main.ml" 43 1094 1106 "src/main.ml" 43 1094 1111
+type(
+  string
+)
+"src/main.ml" 43 1094 1123 "src/main.ml" 43 1094 1126
+type(
+  string
+)
+"src/main.ml" 43 1094 1122 "src/main.ml" 43 1094 1127
+type(
+  string list
+)
+"src/main.ml" 44 1138 1156 "src/main.ml" 44 1138 1159
+type(
+  string
+)
+"src/main.ml" 44 1138 1151 "src/main.ml" 44 1138 1160
+type(
+  expr
+)
+"src/main.ml" 44 1138 1144 "src/main.ml" 44 1138 1160
+type(
+  stmt
+)
+"src/main.ml" 43 1094 1136 "src/main.ml" 45 1161 1167
+type(
+  stmt list
+)
+"src/main.ml" 43 1094 1098 "src/main.ml" 45 1161 1168
+type(
+  func
+)
+"src/main.ml" 46 1170 1182 "src/main.ml" 46 1170 1188
+type(
+  string
+)
+"src/main.ml" 46 1170 1199 "src/main.ml" 46 1170 1201
+type(
+  string list
+)
+"src/main.ml" 47 1212 1227 "src/main.ml" 47 1212 1230
+type(
+  string
+)
+"src/main.ml" 47 1212 1239 "src/main.ml" 47 1212 1246
+type(
+  string
+)
+"src/main.ml" 47 1212 1232 "src/main.ml" 47 1212 1246
+type(
+  expr
+)
+"src/main.ml" 47 1212 1219 "src/main.ml" 47 1212 1247
+type(
+  stmt
+)
+"src/main.ml" 48 1249 1264 "src/main.ml" 48 1249 1267
+type(
+  string
+)
+"src/main.ml" 48 1249 1273 "src/main.ml" 48 1249 1276
+type(
+  string
+)
+"src/main.ml" 48 1249 1269 "src/main.ml" 48 1249 1276
+type(
+  expr
+)
+"src/main.ml" 48 1249 1256 "src/main.ml" 48 1249 1277
+type(
+  stmt
+)
+"src/main.ml" 49 1279 1300 "src/main.ml" 49 1279 1305
+type(
+  string
+)
+"src/main.ml" 49 1279 1312 "src/main.ml" 49 1279 1315
+type(
+  string
+)
+"src/main.ml" 49 1279 1308 "src/main.ml" 49 1279 1315
+type(
+  expr
+)
+"src/main.ml" 49 1279 1307 "src/main.ml" 49 1279 1316
+type(
+  expr list
+)
+"src/main.ml" 49 1279 1293 "src/main.ml" 49 1279 1318
+type(
+  expr
+)
+"src/main.ml" 49 1279 1286 "src/main.ml" 49 1279 1318
+type(
+  stmt
+)
+"src/main.ml" 46 1170 1210 "src/main.ml" 50 1319 1325
+type(
+  stmt list
+)
+"src/main.ml" 46 1170 1174 "src/main.ml" 50 1319 1326
+type(
+  func
+)
+"src/main.ml" 42 1060 1092 "src/main.ml" 51 1327 1330
+type(
+  prog
+)
+type(
+  prog
+)
+"src/main.ml" 53 1335 1341 "src/main.ml" 53 1335 1355
+type(
+  prog -> string -> bool
+)
+ident(
+  def test_typecheck "src/main.ml" 65 1774 1776 "src/main.ml" 70 2031 2096
+)
+"src/main.ml" 53 1335 1357 "src/main.ml" 53 1335 1358
+type(
+  prog
+)
+ident(
+  def p "src/main.ml" 53 1335 1367 "src/main.ml" 63 1757 1768
+)
+"src/main.ml" 53 1335 1368 "src/main.ml" 53 1335 1372
+type(
+  string
+)
+ident(
+  def name "src/main.ml" 53 1335 1383 "src/main.ml" 63 1757 1768
+)
+"src/main.ml" 54 1392 1402 "src/main.ml" 54 1392 1411
+type(
+  prog -> (unit, string) result
+)
+ident(
+  int_ref Slang.typecheck "src/slang.mli" 17 269 269 "src/slang.mli" 17 269 316
+)
+"src/main.ml" 54 1392 1412 "src/main.ml" 54 1392 1413
+type(
+  prog
+)
+ident(
+  int_ref p "src/main.ml" 53 1335 1357 "src/main.ml" 53 1335 1358
+)
+"src/main.ml" 54 1392 1402 "src/main.ml" 54 1392 1413
+call(
+  stack
+)
+type(
+  (unit, string) result
+)
+"src/main.ml" 55 1419 1428 "src/main.ml" 55 1419 1430
+type(
+  unit
+)
+"src/main.ml" 55 1419 1425 "src/main.ml" 55 1419 1430
+type(
+  (unit, string) result
+)
+"src/main.ml" 56 1434 1444 "src/main.ml" 56 1434 1446
+type(
+  Wasm.module_
+)
+ident(
+  def wp "src/main.ml" 57 1474 1480 "src/main.ml" 60 1659 1669
+)
+"src/main.ml" 56 1434 1449 "src/main.ml" 56 1434 1468
+type(
+  prog -> Wasm.module_
+)
+ident(
+  int_ref Translate.translate "src/translate.mli" 1 0 0 "src/translate.mli" 1 0 42
+)
+"src/main.ml" 56 1434 1469 "src/main.ml" 56 1434 1470
+type(
+  prog
+)
+ident(
+  int_ref p "src/main.ml" 53 1335 1357 "src/main.ml" 53 1335 1358
+)
+"src/main.ml" 56 1434 1449 "src/main.ml" 56 1434 1470
+call(
+  stack
+)
+type(
+  Wasm.module_
+)
+"src/main.ml" 57 1474 1484 "src/main.ml" 57 1474 1488
+type(
+  string
+)
+ident(
+  def path "src/main.ml" 58 1527 1533 "src/main.ml" 60 1659 1669
+)
+"src/main.ml" 57 1474 1492 "src/main.ml" 57 1474 1506
+type(
+  string
+)
+"src/main.ml" 57 1474 1507 "src/main.ml" 57 1474 1508
+type(
+  string -> string -> string
+)
+ident(
+  int_ref Core.( ^ ) "src/core_pervasives.mli" 539 20696 20696 "src/core_pervasives.mli" 539 20696 20734
+)
+"src/main.ml" 57 1474 1509 "src/main.ml" 57 1474 1513
+type(
+  string
+)
+ident(
+  int_ref name "src/main.ml" 53 1335 1368 "src/main.ml" 53 1335 1372
+)
+"src/main.ml" 57 1474 1514 "src/main.ml" 57 1474 1515
+type(
+  string -> string -> string
+)
+ident(
+  int_ref Core.( ^ ) "src/core_pervasives.mli" 539 20696 20696 "src/core_pervasives.mli" 539 20696 20734
+)
+"src/main.ml" 57 1474 1516 "src/main.ml" 57 1474 1522
+type(
+  string
+)
+"src/main.ml" 57 1474 1509 "src/main.ml" 57 1474 1522
+call(
+  stack
+)
+type(
+  string
+)
+"src/main.ml" 57 1474 1491 "src/main.ml" 57 1474 1523
+call(
+  stack
+)
+type(
+  string
+)
+"src/main.ml" 58 1527 1533 "src/main.ml" 58 1527 1546
+type(
+  (string -> string -> unit, Out_channel.t, unit) Base.format ->
+  string -> string -> unit
+)
+ident(
+  int_ref Core.Printf.printf "src/printf.ml" 10 231 235 "src/printf.ml" 10 231 241
+)
+"src/main.ml" 58 1527 1547 "src/main.ml" 58 1527 1580
+type(
+  (string -> string -> unit, Out_channel.t, unit) Base.format
+)
+"src/main.ml" 58 1527 1581 "src/main.ml" 58 1527 1585
+type(
+  string
+)
+ident(
+  int_ref name "src/main.ml" 53 1335 1368 "src/main.ml" 53 1335 1372
+)
+"src/main.ml" 58 1527 1586 "src/main.ml" 58 1527 1590
+type(
+  string
+)
+ident(
+  int_ref path "src/main.ml" 57 1474 1484 "src/main.ml" 57 1474 1488
+)
+"src/main.ml" 58 1527 1533 "src/main.ml" 58 1527 1590
+call(
+  stack
+)
+type(
+  unit
+)
+"src/main.ml" 59 1592 1598 "src/main.ml" 59 1592 1619
+type(
+  string -> data:string -> unit
+)
+ident(
+  int_ref Core.Out_channel.write_all "src/out_channel.mli" 110 4113 4113 "src/out_channel.mli" 110 4113 4158
+)
+"src/main.ml" 59 1592 1620 "src/main.ml" 59 1592 1624
+type(
+  string
+)
+ident(
+  int_ref path "src/main.ml" 57 1474 1484 "src/main.ml" 57 1474 1488
+)
+"src/main.ml" 59 1592 1632 "src/main.ml" 59 1592 1653
+type(
+  Wasm.module_ -> string
+)
+ident(
+  int_ref Wasm.module_to_string "src/wasm.mli" 20 342 342 "src/wasm.mli" 20 342 382
+)
+"src/main.ml" 59 1592 1654 "src/main.ml" 59 1592 1656
+type(
+  Wasm.module_
+)
+ident(
+  int_ref wp "src/main.ml" 56 1434 1444 "src/main.ml" 56 1434 1446
+)
+"src/main.ml" 59 1592 1631 "src/main.ml" 59 1592 1657
+call(
+  stack
+)
+type(
+  string
+)
+"src/main.ml" 59 1592 1598 "src/main.ml" 59 1592 1657
+call(
+  stack
+)
+type(
+  unit
+)
+"src/main.ml" 60 1659 1665 "src/main.ml" 60 1659 1669
+type(
+  bool
+)
+"src/main.ml" 59 1592 1598 "src/main.ml" 60 1659 1669
+type(
+  bool
+)
+"src/main.ml" 58 1527 1533 "src/main.ml" 60 1659 1669
+type(
+  bool
+)
+"src/main.ml" 57 1474 1480 "src/main.ml" 60 1659 1669
+type(
+  bool
+)
+"src/main.ml" 56 1434 1440 "src/main.ml" 60 1659 1669
+type(
+  bool
+)
+"src/main.ml" 61 1670 1682 "src/main.ml" 61 1670 1683
+type(
+  string
+)
+ident(
+  def s "src/main.ml" 62 1687 1693 "src/main.ml" 63 1757 1768
+)
+"src/main.ml" 61 1670 1676 "src/main.ml" 61 1670 1683
+type(
+  (unit, string) result
+)
+"src/main.ml" 62 1687 1693 "src/main.ml" 62 1687 1706
+type(
+  (string -> string -> unit, Out_channel.t, unit) Base.format ->
+  string -> string -> unit
+)
+ident(
+  int_ref Core.Printf.printf "src/printf.ml" 10 231 235 "src/printf.ml" 10 231 241
+)
+"src/main.ml" 62 1687 1707 "src/main.ml" 62 1687 1748
+type(
+  (string -> string -> unit, Out_channel.t, unit) Base.format
+)
+"src/main.ml" 62 1687 1749 "src/main.ml" 62 1687 1753
+type(
+  string
+)
+ident(
+  int_ref name "src/main.ml" 53 1335 1368 "src/main.ml" 53 1335 1372
+)
+"src/main.ml" 62 1687 1754 "src/main.ml" 62 1687 1755
+type(
+  string
+)
+ident(
+  int_ref s "src/main.ml" 61 1670 1682 "src/main.ml" 61 1670 1683
+)
+"src/main.ml" 62 1687 1693 "src/main.ml" 62 1687 1755
+call(
+  stack
+)
+type(
+  unit
+)
+"src/main.ml" 63 1757 1763 "src/main.ml" 63 1757 1768
+type(
+  bool
+)
+"src/main.ml" 62 1687 1693 "src/main.ml" 63 1757 1768
+type(
+  bool
+)
+"src/main.ml" 54 1392 1396 "src/main.ml" 63 1757 1768
+type(
+  bool
+)
+type(
+  bool
+)
+"src/main.ml" 65 1774 1784 "src/main.ml" 65 1774 1798
+type(
+  prog -> string -> bool
+)
+ident(
+  int_ref test_typecheck "src/main.ml" 53 1335 1341 "src/main.ml" 53 1335 1355
+)
+"src/main.ml" 65 1774 1799 "src/main.ml" 65 1774 1806
+type(
+  prog
+)
+ident(
+  int_ref p_basic "src/main.ml" 6 69 75 "src/main.ml" 6 69 82
+)
+"src/main.ml" 65 1774 1807 "src/main.ml" 65 1774 1814
+type(
+  string
+)
+"src/main.ml" 65 1774 1783 "src/main.ml" 65 1774 1815
+call(
+  stack
+)
+type(
+  bool
+)
+"src/main.ml" 65 1774 1776 "src/main.ml" 65 1774 1815
+type(
+  unit
+)
+"src/main.ml" 66 1817 1827 "src/main.ml" 66 1817 1841
+type(
+  prog -> string -> bool
+)
+ident(
+  int_ref test_typecheck "src/main.ml" 53 1335 1341 "src/main.ml" 53 1335 1355
+)
+"src/main.ml" 66 1817 1842 "src/main.ml" 66 1817 1850
+type(
+  prog
+)
+ident(
+  int_ref p_concat "src/main.ml" 11 182 188 "src/main.ml" 11 182 196
+)
+"src/main.ml" 66 1817 1851 "src/main.ml" 66 1817 1859
+type(
+  string
+)
+"src/main.ml" 66 1817 1826 "src/main.ml" 66 1817 1860
+call(
+  stack
+)
+type(
+  bool
+)
+"src/main.ml" 66 1817 1819 "src/main.ml" 66 1817 1860
+type(
+  unit
+)
+"src/main.ml" 67 1862 1872 "src/main.ml" 67 1862 1886
+type(
+  prog -> string -> bool
+)
+ident(
+  int_ref test_typecheck "src/main.ml" 53 1335 1341 "src/main.ml" 53 1335 1355
+)
+"src/main.ml" 67 1862 1887 "src/main.ml" 67 1862 1896
+type(
+  prog
+)
+ident(
+  int_ref p_funcall "src/main.ml" 17 352 358 "src/main.ml" 17 352 367
+)
+"src/main.ml" 67 1862 1897 "src/main.ml" 67 1862 1906
+type(
+  string
+)
+"src/main.ml" 67 1862 1871 "src/main.ml" 67 1862 1907
+call(
+  stack
+)
+type(
+  bool
+)
+"src/main.ml" 67 1862 1864 "src/main.ml" 67 1862 1907
+type(
+  unit
+)
+"src/main.ml" 68 1909 1919 "src/main.ml" 68 1909 1922
+type(
+  bool -> bool
+)
+ident(
+  int_ref Core.not "src/core_pervasives.mli" 114 4554 4554 "src/core_pervasives.mli" 114 4554 4594
+)
+"src/main.ml" 68 1909 1924 "src/main.ml" 68 1909 1938
+type(
+  prog -> string -> bool
+)
+ident(
+  int_ref test_typecheck "src/main.ml" 53 1335 1341 "src/main.ml" 53 1335 1355
+)
+"src/main.ml" 68 1909 1939 "src/main.ml" 68 1909 1953
+type(
+  prog
+)
+ident(
+  int_ref p_overused_var "src/main.ml" 27 646 652 "src/main.ml" 27 646 666
+)
+"src/main.ml" 68 1909 1954 "src/main.ml" 68 1909 1968
+type(
+  string
+)
+"src/main.ml" 68 1909 1923 "src/main.ml" 68 1909 1969
+call(
+  stack
+)
+type(
+  bool
+)
+"src/main.ml" 68 1909 1918 "src/main.ml" 68 1909 1970
+type(
+  bool
+)
+"src/main.ml" 68 1909 1911 "src/main.ml" 68 1909 1970
+type(
+  unit
+)
+"src/main.ml" 69 1972 1982 "src/main.ml" 69 1972 1985
+type(
+  bool -> bool
+)
+ident(
+  int_ref Core.not "src/core_pervasives.mli" 114 4554 4554 "src/core_pervasives.mli" 114 4554 4594
+)
+"src/main.ml" 69 1972 1987 "src/main.ml" 69 1972 2001
+type(
+  prog -> string -> bool
+)
+ident(
+  int_ref test_typecheck "src/main.ml" 53 1335 1341 "src/main.ml" 53 1335 1355
+)
+"src/main.ml" 69 1972 2002 "src/main.ml" 69 1972 2014
+type(
+  prog
+)
+ident(
+  int_ref p_unused_var "src/main.ml" 37 937 943 "src/main.ml" 37 937 955
+)
+"src/main.ml" 69 1972 2015 "src/main.ml" 69 1972 2027
+type(
+  string
+)
+"src/main.ml" 69 1972 1986 "src/main.ml" 69 1972 2028
+call(
+  stack
+)
+type(
+  bool
+)
+"src/main.ml" 69 1972 1981 "src/main.ml" 69 1972 2029
+type(
+  bool
+)
+"src/main.ml" 69 1972 1974 "src/main.ml" 69 1972 2029
+type(
+  unit
+)
+"src/main.ml" 70 2031 2041 "src/main.ml" 70 2031 2044
+type(
+  bool -> bool
+)
+ident(
+  int_ref Core.not "src/core_pervasives.mli" 114 4554 4554 "src/core_pervasives.mli" 114 4554 4594
+)
+"src/main.ml" 70 2031 2046 "src/main.ml" 70 2031 2060
+type(
+  prog -> string -> bool
+)
+ident(
+  int_ref test_typecheck "src/main.ml" 53 1335 1341 "src/main.ml" 53 1335 1355
+)
+"src/main.ml" 70 2031 2061 "src/main.ml" 70 2031 2077
+type(
+  prog
+)
+ident(
+  int_ref p_undeclared_var "src/main.ml" 42 1060 1066 "src/main.ml" 42 1060 1082
+)
+"src/main.ml" 70 2031 2078 "src/main.ml" 70 2031 2094
+type(
+  string
+)
+"src/main.ml" 70 2031 2045 "src/main.ml" 70 2031 2095
+call(
+  stack
+)
+type(
+  bool
+)
+"src/main.ml" 70 2031 2040 "src/main.ml" 70 2031 2096
+type(
+  bool
+)
+"src/main.ml" 70 2031 2033 "src/main.ml" 70 2031 2096
+type(
+  unit
+)
+"src/main.ml" 69 1972 1974 "src/main.ml" 70 2031 2096
+type(
+  unit
+)
+"src/main.ml" 68 1909 1911 "src/main.ml" 70 2031 2096
+type(
+  unit
+)
+"src/main.ml" 67 1862 1864 "src/main.ml" 70 2031 2096
+type(
+  unit
+)
+"src/main.ml" 66 1817 1819 "src/main.ml" 70 2031 2096
+type(
+  unit
+)
+"src/main.ml" 65 1774 1776 "src/main.ml" 70 2031 2096
+type(
+  unit
+)
+"src/main.ml" 53 1335 1337 "src/main.ml" 70 2031 2096
+type(
+  unit
+)
+"src/main.ml" 42 1060 1062 "src/main.ml" 70 2031 2096
+type(
+  unit
+)
+"src/main.ml" 37 937 939 "src/main.ml" 70 2031 2096
+type(
+  unit
+)
+"src/main.ml" 27 646 648 "src/main.ml" 70 2031 2096
+type(
+  unit
+)
+"src/main.ml" 17 352 354 "src/main.ml" 70 2031 2096
+type(
+  unit
+)
+"src/main.ml" 11 182 184 "src/main.ml" 70 2031 2096
+type(
+  unit
+)
+"src/main.ml" 6 69 71 "src/main.ml" 70 2031 2096
+type(
+  unit
+)
+"src/main.ml" 74 2100 2104 "src/main.ml" 74 2100 2105
+type(
+  unit
+)
+"src/main.ml" 74 2100 2108 "src/main.ml" 74 2100 2112
+type(
+  unit -> unit
+)
+ident(
+  int_ref main "src/main.ml" 4 35 39 "src/main.ml" 4 35 43
+)
+"src/main.ml" 74 2100 2113 "src/main.ml" 74 2100 2115
+type(
+  unit
+)
+"src/main.ml" 74 2100 2108 "src/main.ml" 74 2100 2115
+call(
+  stack
+)
+type(
+  unit
+)

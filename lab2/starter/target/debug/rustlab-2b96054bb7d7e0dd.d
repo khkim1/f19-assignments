@@ -1,0 +1,1 @@
+/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/lab2/starter/target/debug/rustlab-2b96054bb7d7e0dd: /Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/lab2/starter/src/main.rs /Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/lab2/starter/src/part1.rs

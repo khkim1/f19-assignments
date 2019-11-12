@@ -1,0 +1,1290 @@
+"src/slang.ml" 18 293 301 "src/slang.ml" 18 293 315
+type(
+  string list String.Map.t ->
+  String.Set.t -> expr -> (String.Set.t, string) result
+)
+ident(
+  def typecheck_expr "src/slang.ml" 18 293 293 "src/slang.ml" 1 0 -1
+)
+"src/slang.ml" 19 316 327 "src/slang.ml" 19 316 333
+type(
+  string list String.Map.t
+)
+ident(
+  def fn_map "src/slang.ml" 20 362 372 "src/slang.ml" 47 1283 1354
+)
+"src/slang.ml" 20 362 373 "src/slang.ml" 20 362 380
+type(
+  String.Set.t
+)
+ident(
+  def var_set "src/slang.ml" 21 397 407 "src/slang.ml" 47 1283 1354
+)
+"src/slang.ml" 21 397 408 "src/slang.ml" 21 397 409
+type(
+  expr
+)
+ident(
+  def e "src/slang.ml" 22 418 420 "src/slang.ml" 47 1283 1354
+)
+"src/slang.ml" 23 456 462 "src/slang.ml" 23 456 464
+type(
+  String.Set.t -> expr -> (String.Set.t, string) result
+)
+ident(
+  def tc "src/slang.ml" 24 492 494 "src/slang.ml" 47 1283 1354
+)
+"src/slang.ml" 23 456 467 "src/slang.ml" 23 456 481
+type(
+  string list String.Map.t ->
+  String.Set.t -> expr -> (String.Set.t, string) result
+)
+ident(
+  int_ref typecheck_expr "src/slang.ml" 18 293 301 "src/slang.ml" 18 293 315
+)
+"src/slang.ml" 23 456 482 "src/slang.ml" 23 456 488
+type(
+  string list String.Map.t
+)
+ident(
+  int_ref fn_map "src/slang.ml" 19 316 327 "src/slang.ml" 19 316 333
+)
+"src/slang.ml" 23 456 467 "src/slang.ml" 23 456 488
+call(
+  stack
+)
+type(
+  String.Set.t -> expr -> (String.Set.t, string) result
+)
+"src/slang.ml" 24 492 500 "src/slang.ml" 24 492 501
+type(
+  expr
+)
+ident(
+  int_ref e "src/slang.ml" 21 397 408 "src/slang.ml" 21 397 409
+)
+"src/slang.ml" 25 507 518 "src/slang.ml" 25 507 519
+type(
+  string
+)
+"src/slang.ml" 25 507 511 "src/slang.ml" 25 507 519
+type(
+  expr
+)
+"src/slang.ml" 25 507 526 "src/slang.ml" 25 507 535
+type(
+  String.Set.t
+)
+ident(
+  int_ref var_set "src/slang.ml" 20 362 373 "src/slang.ml" 20 362 380
+)
+"src/slang.ml" 25 507 523 "src/slang.ml" 25 507 535
+type(
+  (String.Set.t, string) result
+)
+"src/slang.ml" 27 537 549 "src/slang.ml" 27 537 551
+type(
+  expr
+)
+ident(
+  def e1 "src/slang.ml" 28 560 564 "src/slang.ml" 28 560 618
+)
+"src/slang.ml" 27 537 553 "src/slang.ml" 27 537 555
+type(
+  expr
+)
+ident(
+  def e2 "src/slang.ml" 28 560 564 "src/slang.ml" 28 560 618
+)
+"src/slang.ml" 27 537 541 "src/slang.ml" 27 537 556
+type(
+  expr
+)
+"src/slang.ml" 28 560 564 "src/slang.ml" 28 560 566
+type(
+  String.Set.t -> expr -> (String.Set.t, string) result
+)
+ident(
+  int_ref tc "src/slang.ml" 23 456 462 "src/slang.ml" 23 456 464
+)
+"src/slang.ml" 28 560 567 "src/slang.ml" 28 560 574
+type(
+  String.Set.t
+)
+ident(
+  int_ref var_set "src/slang.ml" 20 362 373 "src/slang.ml" 20 362 380
+)
+"src/slang.ml" 28 560 575 "src/slang.ml" 28 560 577
+type(
+  expr
+)
+ident(
+  int_ref e1 "src/slang.ml" 27 537 549 "src/slang.ml" 27 537 551
+)
+"src/slang.ml" 28 560 564 "src/slang.ml" 28 560 577
+call(
+  stack
+)
+type(
+  (String.Set.t, string) result
+)
+"src/slang.ml" 28 560 578 "src/slang.ml" 28 560 581
+type(
+  (String.Set.t, string) result ->
+  (String.Set.t -> (String.Set.t, string) result) ->
+  (String.Set.t, string) result
+)
+ident(
+  int_ref Core.Result.Monad_infix.( >>= ) "src/monad_intf.ml" 113 3650 3652 "src/monad_intf.ml" 113 3650 3710
+)
+"src/slang.ml" 28 560 586 "src/slang.ml" 28 560 597
+type(
+  String.Set.t
+)
+ident(
+  def var_set_mod "src/slang.ml" 28 560 601 "src/slang.ml" 28 560 618
+)
+"src/slang.ml" 28 560 601 "src/slang.ml" 28 560 603
+type(
+  String.Set.t -> expr -> (String.Set.t, string) result
+)
+ident(
+  int_ref tc "src/slang.ml" 23 456 462 "src/slang.ml" 23 456 464
+)
+"src/slang.ml" 28 560 604 "src/slang.ml" 28 560 615
+type(
+  String.Set.t
+)
+ident(
+  int_ref var_set_mod "src/slang.ml" 28 560 586 "src/slang.ml" 28 560 597
+)
+"src/slang.ml" 28 560 616 "src/slang.ml" 28 560 618
+type(
+  expr
+)
+ident(
+  int_ref e2 "src/slang.ml" 27 537 553 "src/slang.ml" 27 537 555
+)
+"src/slang.ml" 28 560 601 "src/slang.ml" 28 560 618
+call(
+  tail
+)
+type(
+  (String.Set.t, string) result
+)
+"src/slang.ml" 28 560 582 "src/slang.ml" 28 560 618
+type(
+  String.Set.t -> (String.Set.t, string) result
+)
+"src/slang.ml" 28 560 564 "src/slang.ml" 28 560 618
+call(
+  tail
+)
+type(
+  (String.Set.t, string) result
+)
+"src/slang.ml" 30 620 628 "src/slang.ml" 30 620 629
+type(
+  string
+)
+ident(
+  def x "src/slang.ml" 31 633 637 "src/slang.ml" 34 718 784
+)
+"src/slang.ml" 30 620 624 "src/slang.ml" 30 620 629
+type(
+  expr
+)
+"src/slang.ml" 31 633 640 "src/slang.ml" 31 633 654
+type(
+  String.Set.t -> string -> bool
+)
+ident(
+  int_ref Core.String.Set.mem "src/set_intf.ml" 190 4678 4680 "src/set_intf.ml" 190 4678 4717
+)
+"src/slang.ml" 31 633 655 "src/slang.ml" 31 633 662
+type(
+  String.Set.t
+)
+ident(
+  int_ref var_set "src/slang.ml" 20 362 373 "src/slang.ml" 20 362 380
+)
+"src/slang.ml" 31 633 663 "src/slang.ml" 31 633 664
+type(
+  string
+)
+ident(
+  int_ref x "src/slang.ml" 30 620 628 "src/slang.ml" 30 620 629
+)
+"src/slang.ml" 31 633 640 "src/slang.ml" 31 633 664
+call(
+  stack
+)
+type(
+  bool
+)
+"src/slang.ml" 32 670 680 "src/slang.ml" 32 670 697
+type(
+  String.Set.t -> string -> String.Set.t
+)
+ident(
+  int_ref Core.String.Set.remove "src/set_intf.ml" 192 4755 4757 "src/set_intf.ml" 192 4755 4791
+)
+"src/slang.ml" 32 670 698 "src/slang.ml" 32 670 705
+type(
+  String.Set.t
+)
+ident(
+  int_ref var_set "src/slang.ml" 20 362 373 "src/slang.ml" 20 362 380
+)
+"src/slang.ml" 32 670 706 "src/slang.ml" 32 670 707
+type(
+  string
+)
+ident(
+  int_ref x "src/slang.ml" 30 620 628 "src/slang.ml" 30 620 629
+)
+"src/slang.ml" 32 670 679 "src/slang.ml" 32 670 708
+call(
+  stack
+)
+type(
+  String.Set.t
+)
+"src/slang.ml" 32 670 676 "src/slang.ml" 32 670 708
+type(
+  (String.Set.t, string) result
+)
+"src/slang.ml" 34 718 731 "src/slang.ml" 34 718 745
+type(
+  (string -> string, unit, string) Base.format -> string -> string
+)
+ident(
+  int_ref Core.Printf.sprintf "src/printf.mli" 7 128 128 "src/printf.mli" 7 128 199
+)
+"src/slang.ml" 34 718 746 "src/slang.ml" 34 718 781
+type(
+  (string -> string, unit, string) Base.format
+)
+"src/slang.ml" 34 718 782 "src/slang.ml" 34 718 783
+type(
+  string
+)
+ident(
+  int_ref x "src/slang.ml" 30 620 628 "src/slang.ml" 30 620 629
+)
+"src/slang.ml" 34 718 730 "src/slang.ml" 34 718 784
+call(
+  stack
+)
+type(
+  string
+)
+"src/slang.ml" 34 718 724 "src/slang.ml" 34 718 784
+type(
+  (String.Set.t, string) result
+)
+"src/slang.ml" 31 633 637 "src/slang.ml" 34 718 784
+type(
+  (String.Set.t, string) result
+)
+"src/slang.ml" 36 786 796 "src/slang.ml" 36 786 797
+type(
+  string
+)
+ident(
+  def x "src/slang.ml" 37 808 812 "src/slang.ml" 47 1283 1354
+)
+"src/slang.ml" 36 786 799 "src/slang.ml" 36 786 803
+type(
+  expr list
+)
+ident(
+  def args "src/slang.ml" 37 808 812 "src/slang.ml" 47 1283 1354
+)
+"src/slang.ml" 36 786 790 "src/slang.ml" 36 786 804
+type(
+  expr
+)
+"src/slang.ml" 37 808 812 "src/slang.ml" 37 808 821
+type(
+  expr list ->
+  init:(String.Set.t, string) result ->
+  f:((String.Set.t, string) result -> expr -> (String.Set.t, string) result) ->
+  (String.Set.t, string) result
+)
+ident(
+  int_ref Core.List.fold "src/container_intf.ml" 180 6928 6930 "src/container_intf.ml" 180 6928 7004
+)
+"src/slang.ml" 37 808 822 "src/slang.ml" 37 808 826
+type(
+  expr list
+)
+ident(
+  int_ref args "src/slang.ml" 36 786 799 "src/slang.ml" 36 786 803
+)
+"src/slang.ml" 37 808 837 "src/slang.ml" 37 808 846
+type(
+  String.Set.t
+)
+ident(
+  int_ref var_set "src/slang.ml" 20 362 373 "src/slang.ml" 20 362 380
+)
+"src/slang.ml" 37 808 833 "src/slang.ml" 37 808 847
+type(
+  (String.Set.t, string) result
+)
+"src/slang.ml" 38 848 862 "src/slang.ml" 38 848 865
+type(
+  (String.Set.t, string) result
+)
+ident(
+  def res "src/slang.ml" 38 848 866 "src/slang.ml" 39 873 926
+)
+"src/slang.ml" 38 848 866 "src/slang.ml" 38 848 869
+type(
+  expr
+)
+ident(
+  def arg "src/slang.ml" 39 873 881 "src/slang.ml" 39 873 926
+)
+"src/slang.ml" 39 873 881 "src/slang.ml" 39 873 884
+type(
+  (String.Set.t, string) result
+)
+ident(
+  int_ref res "src/slang.ml" 38 848 862 "src/slang.ml" 38 848 865
+)
+"src/slang.ml" 39 873 885 "src/slang.ml" 39 873 888
+type(
+  (String.Set.t, string) result ->
+  (String.Set.t -> (String.Set.t, string) result) ->
+  (String.Set.t, string) result
+)
+ident(
+  int_ref Core.Result.Monad_infix.( >>= ) "src/monad_intf.ml" 113 3650 3652 "src/monad_intf.ml" 113 3650 3710
+)
+"src/slang.ml" 39 873 893 "src/slang.ml" 39 873 904
+type(
+  String.Set.t
+)
+ident(
+  def var_set_mod "src/slang.ml" 39 873 908 "src/slang.ml" 39 873 926
+)
+"src/slang.ml" 39 873 908 "src/slang.ml" 39 873 910
+type(
+  String.Set.t -> expr -> (String.Set.t, string) result
+)
+ident(
+  int_ref tc "src/slang.ml" 23 456 462 "src/slang.ml" 23 456 464
+)
+"src/slang.ml" 39 873 911 "src/slang.ml" 39 873 922
+type(
+  String.Set.t
+)
+ident(
+  int_ref var_set_mod "src/slang.ml" 39 873 893 "src/slang.ml" 39 873 904
+)
+"src/slang.ml" 39 873 923 "src/slang.ml" 39 873 926
+type(
+  expr
+)
+ident(
+  int_ref arg "src/slang.ml" 38 848 866 "src/slang.ml" 38 848 869
+)
+"src/slang.ml" 39 873 908 "src/slang.ml" 39 873 926
+call(
+  tail
+)
+type(
+  (String.Set.t, string) result
+)
+"src/slang.ml" 39 873 889 "src/slang.ml" 39 873 926
+type(
+  String.Set.t -> (String.Set.t, string) result
+)
+"src/slang.ml" 39 873 881 "src/slang.ml" 39 873 926
+call(
+  tail
+)
+type(
+  (String.Set.t, string) result
+)
+"src/slang.ml" 38 848 857 "src/slang.ml" 39 873 927
+type(
+  (String.Set.t, string) result -> expr -> (String.Set.t, string) result
+)
+"src/slang.ml" 37 808 812 "src/slang.ml" 39 873 927
+call(
+  stack
+)
+type(
+  (String.Set.t, string) result
+)
+"src/slang.ml" 40 928 932 "src/slang.ml" 40 928 935
+type(
+  (String.Set.t, string) result ->
+  (String.Set.t -> (String.Set.t, string) result) ->
+  (String.Set.t, string) result
+)
+ident(
+  int_ref Core.Result.Monad_infix.( >>= ) "src/monad_intf.ml" 113 3650 3652 "src/monad_intf.ml" 113 3650 3710
+)
+"src/slang.ml" 40 928 940 "src/slang.ml" 40 928 952
+type(
+  String.Set.t
+)
+ident(
+  def var_set_fold "src/slang.ml" 41 956 960 "src/slang.ml" 47 1283 1354
+)
+"src/slang.ml" 41 956 967 "src/slang.ml" 41 956 982
+type(
+  string list String.Map.t -> string -> string list option
+)
+ident(
+  int_ref Core.String.Map.find "src/map_intf.ml" 504 14390 14392 "src/map_intf.ml" 504 14390 14437
+)
+"src/slang.ml" 41 956 983 "src/slang.ml" 41 956 989
+type(
+  string list String.Map.t
+)
+ident(
+  int_ref fn_map "src/slang.ml" 19 316 327 "src/slang.ml" 19 316 333
+)
+"src/slang.ml" 41 956 990 "src/slang.ml" 41 956 991
+type(
+  string
+)
+ident(
+  int_ref x "src/slang.ml" 36 786 796 "src/slang.ml" 36 786 797
+)
+"src/slang.ml" 41 956 967 "src/slang.ml" 41 956 991
+call(
+  stack
+)
+type(
+  string list option
+)
+"src/slang.ml" 42 997 1009 "src/slang.ml" 42 997 1022
+type(
+  string list
+)
+ident(
+  def expected_args "src/slang.ml" 43 1026 1033 "src/slang.ml" 46 1214 1282
+)
+"src/slang.ml" 42 997 1004 "src/slang.ml" 42 997 1022
+type(
+  string list option
+)
+"src/slang.ml" 43 1026 1036 "src/slang.ml" 43 1026 1047
+type(
+  string list -> int
+)
+ident(
+  int_ref Core.List.length "src/container_intf.ml" 172 6695 6697 "src/container_intf.ml" 172 6695 6723
+)
+"src/slang.ml" 43 1026 1048 "src/slang.ml" 43 1026 1061
+type(
+  string list
+)
+ident(
+  int_ref expected_args "src/slang.ml" 42 997 1009 "src/slang.ml" 42 997 1022
+)
+"src/slang.ml" 43 1026 1036 "src/slang.ml" 43 1026 1061
+call(
+  stack
+)
+type(
+  int
+)
+"src/slang.ml" 43 1026 1062 "src/slang.ml" 43 1026 1063
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Core.( = ) "src/core_pervasives.mli" 37 1168 1168 "src/core_pervasives.mli" 37 1168 1212
+)
+"src/slang.ml" 43 1026 1064 "src/slang.ml" 43 1026 1075
+type(
+  expr list -> int
+)
+ident(
+  int_ref Core.List.length "src/container_intf.ml" 172 6695 6697 "src/container_intf.ml" 172 6695 6723
+)
+"src/slang.ml" 43 1026 1076 "src/slang.ml" 43 1026 1080
+type(
+  expr list
+)
+ident(
+  int_ref args "src/slang.ml" 36 786 799 "src/slang.ml" 36 786 803
+)
+"src/slang.ml" 43 1026 1064 "src/slang.ml" 43 1026 1080
+call(
+  stack
+)
+type(
+  int
+)
+"src/slang.ml" 43 1026 1036 "src/slang.ml" 43 1026 1080
+type(
+  bool
+)
+"src/slang.ml" 43 1026 1089 "src/slang.ml" 43 1026 1103
+type(
+  String.Set.t
+)
+ident(
+  int_ref var_set_fold "src/slang.ml" 40 928 940 "src/slang.ml" 40 928 952
+)
+"src/slang.ml" 43 1026 1086 "src/slang.ml" 43 1026 1103
+type(
+  (String.Set.t, string) result
+)
+"src/slang.ml" 44 1104 1123 "src/slang.ml" 44 1104 1137
+type(
+  (int -> int -> string, unit, string) Base.format -> int -> int -> string
+)
+ident(
+  int_ref Core.Printf.sprintf "src/printf.mli" 7 128 128 "src/printf.mli" 7 128 199
+)
+"src/slang.ml" 45 1138 1159 "src/slang.ml" 45 1138 1213
+type(
+  (int -> int -> string, unit, string) Base.format
+)
+"src/slang.ml" 46 1214 1236 "src/slang.ml" 46 1214 1247
+type(
+  string list -> int
+)
+ident(
+  int_ref Core.List.length "src/container_intf.ml" 172 6695 6697 "src/container_intf.ml" 172 6695 6723
+)
+"src/slang.ml" 46 1214 1248 "src/slang.ml" 46 1214 1261
+type(
+  string list
+)
+ident(
+  int_ref expected_args "src/slang.ml" 42 997 1009 "src/slang.ml" 42 997 1022
+)
+"src/slang.ml" 46 1214 1235 "src/slang.ml" 46 1214 1262
+call(
+  stack
+)
+type(
+  int
+)
+"src/slang.ml" 46 1214 1264 "src/slang.ml" 46 1214 1275
+type(
+  expr list -> int
+)
+ident(
+  int_ref Core.List.length "src/container_intf.ml" 172 6695 6697 "src/container_intf.ml" 172 6695 6723
+)
+"src/slang.ml" 46 1214 1276 "src/slang.ml" 46 1214 1280
+type(
+  expr list
+)
+ident(
+  int_ref args "src/slang.ml" 36 786 799 "src/slang.ml" 36 786 803
+)
+"src/slang.ml" 46 1214 1263 "src/slang.ml" 46 1214 1281
+call(
+  stack
+)
+type(
+  int
+)
+"src/slang.ml" 44 1104 1122 "src/slang.ml" 46 1214 1282
+call(
+  stack
+)
+type(
+  string
+)
+"src/slang.ml" 44 1104 1116 "src/slang.ml" 46 1214 1282
+type(
+  (String.Set.t, string) result
+)
+"src/slang.ml" 43 1026 1033 "src/slang.ml" 46 1214 1282
+type(
+  (String.Set.t, string) result
+)
+"src/slang.ml" 47 1283 1290 "src/slang.ml" 47 1283 1294
+type(
+  string list option
+)
+"src/slang.ml" 47 1283 1305 "src/slang.ml" 47 1283 1319
+type(
+  (string -> string, unit, string) Base.format -> string -> string
+)
+ident(
+  int_ref Core.Printf.sprintf "src/printf.mli" 7 128 128 "src/printf.mli" 7 128 199
+)
+"src/slang.ml" 47 1283 1320 "src/slang.ml" 47 1283 1350
+type(
+  (string -> string, unit, string) Base.format
+)
+"src/slang.ml" 47 1283 1351 "src/slang.ml" 47 1283 1352
+type(
+  string
+)
+ident(
+  int_ref x "src/slang.ml" 36 786 796 "src/slang.ml" 36 786 797
+)
+"src/slang.ml" 47 1283 1304 "src/slang.ml" 47 1283 1353
+call(
+  stack
+)
+type(
+  string
+)
+"src/slang.ml" 47 1283 1298 "src/slang.ml" 47 1283 1353
+type(
+  (String.Set.t, string) result
+)
+"src/slang.ml" 41 956 960 "src/slang.ml" 47 1283 1354
+type(
+  (String.Set.t, string) result
+)
+"src/slang.ml" 40 928 936 "src/slang.ml" 47 1283 1354
+type(
+  String.Set.t -> (String.Set.t, string) result
+)
+"src/slang.ml" 37 808 812 "src/slang.ml" 47 1283 1354
+call(
+  tail
+)
+type(
+  (String.Set.t, string) result
+)
+"src/slang.ml" 24 492 494 "src/slang.ml" 47 1283 1354
+type(
+  (String.Set.t, string) result
+)
+"src/slang.ml" 23 456 458 "src/slang.ml" 47 1283 1354
+type(
+  (String.Set.t, string) result
+)
+type(
+  (String.Set.t, string) result
+)
+"src/slang.ml" 49 1356 1360 "src/slang.ml" 49 1356 1374
+type(
+  string list String.Map.t -> func -> (unit, string) result
+)
+ident(
+  def typecheck_func "src/slang.ml" 66 1988 1988 "src/slang.ml" 1 0 -1
+)
+"src/slang.ml" 49 1356 1376 "src/slang.ml" 49 1356 1382
+type(
+  string list String.Map.t
+)
+ident(
+  def fn_map "src/slang.ml" 49 1356 1411 "src/slang.ml" 64 1923 1986
+)
+"src/slang.ml" 49 1356 1412 "src/slang.ml" 49 1356 1413
+type(
+  func
+)
+ident(
+  def f "src/slang.ml" 50 1422 1424 "src/slang.ml" 64 1923 1986
+)
+"src/slang.ml" 51 1452 1454 "src/slang.ml" 51 1452 1463
+type(
+  stmt list ->
+  init:(String.Set.t, string) result ->
+  f:((String.Set.t, string) result -> stmt -> (String.Set.t, string) result) ->
+  (String.Set.t, string) result
+)
+ident(
+  int_ref Core.List.fold "src/container_intf.ml" 180 6928 6930 "src/container_intf.ml" 180 6928 7004
+)
+"src/slang.ml" 51 1452 1464 "src/slang.ml" 51 1452 1465
+type(
+  func
+)
+ident(
+  int_ref f "src/slang.ml" 49 1356 1412 "src/slang.ml" 49 1356 1413
+)
+"src/slang.ml" 51 1452 1464 "src/slang.ml" 51 1452 1470
+type(
+  stmt list
+)
+"src/slang.ml" 52 1471 1487 "src/slang.ml" 52 1471 1505
+type(
+  string list -> String.Set.t
+)
+ident(
+  int_ref Core.String.Set.of_list "src/set_intf.ml" 589 19394 19396 "src/set_intf.ml" 589 19394 19441
+)
+"src/slang.ml" 52 1471 1506 "src/slang.ml" 52 1471 1507
+type(
+  func
+)
+ident(
+  int_ref f "src/slang.ml" 49 1356 1412 "src/slang.ml" 49 1356 1413
+)
+"src/slang.ml" 52 1471 1506 "src/slang.ml" 52 1471 1514
+type(
+  string list
+)
+"src/slang.ml" 52 1471 1486 "src/slang.ml" 52 1471 1515
+call(
+  stack
+)
+type(
+  String.Set.t
+)
+"src/slang.ml" 52 1471 1481 "src/slang.ml" 52 1471 1517
+type(
+  (String.Set.t, string) result
+)
+"src/slang.ml" 53 1518 1530 "src/slang.ml" 53 1518 1541
+type(
+  (String.Set.t, string) result
+)
+ident(
+  def var_set_res "src/slang.ml" 53 1518 1542 "src/slang.ml" 61 1794 1838
+)
+"src/slang.ml" 53 1518 1542 "src/slang.ml" 53 1518 1543
+type(
+  stmt
+)
+ident(
+  def s "src/slang.ml" 54 1547 1553 "src/slang.ml" 61 1794 1838
+)
+"src/slang.ml" 54 1547 1553 "src/slang.ml" 54 1547 1564
+type(
+  (String.Set.t, string) result
+)
+ident(
+  int_ref var_set_res "src/slang.ml" 53 1518 1530 "src/slang.ml" 53 1518 1541
+)
+"src/slang.ml" 54 1547 1565 "src/slang.ml" 54 1547 1568
+type(
+  (String.Set.t, string) result ->
+  (String.Set.t -> (String.Set.t, string) result) ->
+  (String.Set.t, string) result
+)
+ident(
+  int_ref Core.Result.Monad_infix.( >>= ) "src/monad_intf.ml" 113 3650 3652 "src/monad_intf.ml" 113 3650 3710
+)
+"src/slang.ml" 54 1547 1573 "src/slang.ml" 54 1547 1580
+type(
+  String.Set.t
+)
+ident(
+  def var_set "src/slang.ml" 55 1584 1590 "src/slang.ml" 61 1794 1838
+)
+"src/slang.ml" 55 1584 1597 "src/slang.ml" 55 1584 1598
+type(
+  stmt
+)
+ident(
+  int_ref s "src/slang.ml" 53 1518 1542 "src/slang.ml" 53 1518 1543
+)
+"src/slang.ml" 56 1604 1621 "src/slang.ml" 56 1604 1622
+type(
+  string
+)
+ident(
+  def x "src/slang.ml" 57 1630 1639 "src/slang.ml" 58 1671 1731
+)
+"src/slang.ml" 56 1604 1624 "src/slang.ml" 56 1604 1625
+type(
+  expr
+)
+ident(
+  def e "src/slang.ml" 57 1630 1639 "src/slang.ml" 58 1671 1731
+)
+"src/slang.ml" 56 1604 1613 "src/slang.ml" 56 1604 1626
+type(
+  stmt
+)
+"src/slang.ml" 57 1630 1639 "src/slang.ml" 57 1630 1653
+type(
+  string list String.Map.t ->
+  String.Set.t -> expr -> (String.Set.t, string) result
+)
+ident(
+  int_ref typecheck_expr "src/slang.ml" 18 293 301 "src/slang.ml" 18 293 315
+)
+"src/slang.ml" 57 1630 1654 "src/slang.ml" 57 1630 1660
+type(
+  string list String.Map.t
+)
+ident(
+  int_ref fn_map "src/slang.ml" 49 1356 1376 "src/slang.ml" 49 1356 1382
+)
+"src/slang.ml" 57 1630 1661 "src/slang.ml" 57 1630 1668
+type(
+  String.Set.t
+)
+ident(
+  int_ref var_set "src/slang.ml" 54 1547 1573 "src/slang.ml" 54 1547 1580
+)
+"src/slang.ml" 57 1630 1669 "src/slang.ml" 57 1630 1670
+type(
+  expr
+)
+ident(
+  int_ref e "src/slang.ml" 56 1604 1624 "src/slang.ml" 56 1604 1625
+)
+"src/slang.ml" 57 1630 1639 "src/slang.ml" 57 1630 1670
+call(
+  stack
+)
+type(
+  (String.Set.t, string) result
+)
+"src/slang.ml" 58 1671 1680 "src/slang.ml" 58 1671 1683
+type(
+  (String.Set.t, string) result ->
+  (String.Set.t -> String.Set.t) -> (String.Set.t, string) result
+)
+ident(
+  int_ref Core.Result.Monad_infix.( >>| ) "src/monad_intf.ml" 114 3711 3713 "src/monad_intf.ml" 114 3711 3763
+)
+"src/slang.ml" 58 1671 1688 "src/slang.ml" 58 1671 1699
+type(
+  String.Set.t
+)
+ident(
+  def var_set_mod "src/slang.ml" 58 1671 1703 "src/slang.ml" 58 1671 1731
+)
+"src/slang.ml" 58 1671 1703 "src/slang.ml" 58 1671 1717
+type(
+  String.Set.t -> string -> String.Set.t
+)
+ident(
+  int_ref Core.String.Set.add "src/set_intf.ml" 191 4718 4720 "src/set_intf.ml" 191 4718 4754
+)
+"src/slang.ml" 58 1671 1718 "src/slang.ml" 58 1671 1729
+type(
+  String.Set.t
+)
+ident(
+  int_ref var_set_mod "src/slang.ml" 58 1671 1688 "src/slang.ml" 58 1671 1699
+)
+"src/slang.ml" 58 1671 1730 "src/slang.ml" 58 1671 1731
+type(
+  string
+)
+ident(
+  int_ref x "src/slang.ml" 56 1604 1621 "src/slang.ml" 56 1604 1622
+)
+"src/slang.ml" 58 1671 1703 "src/slang.ml" 58 1671 1731
+call(
+  tail
+)
+type(
+  String.Set.t
+)
+"src/slang.ml" 58 1671 1684 "src/slang.ml" 58 1671 1731
+type(
+  String.Set.t -> String.Set.t
+)
+"src/slang.ml" 57 1630 1639 "src/slang.ml" 58 1671 1731
+call(
+  tail
+)
+type(
+  (String.Set.t, string) result
+)
+"src/slang.ml" 59 1732 1748 "src/slang.ml" 59 1732 1749
+type(
+  expr
+)
+ident(
+  def e "src/slang.ml" 60 1753 1762 "src/slang.ml" 61 1794 1837
+)
+"src/slang.ml" 59 1732 1741 "src/slang.ml" 59 1732 1749
+type(
+  stmt
+)
+"src/slang.ml" 60 1753 1762 "src/slang.ml" 60 1753 1776
+type(
+  string list String.Map.t ->
+  String.Set.t -> expr -> (String.Set.t, string) result
+)
+ident(
+  int_ref typecheck_expr "src/slang.ml" 18 293 301 "src/slang.ml" 18 293 315
+)
+"src/slang.ml" 60 1753 1777 "src/slang.ml" 60 1753 1783
+type(
+  string list String.Map.t
+)
+ident(
+  int_ref fn_map "src/slang.ml" 49 1356 1376 "src/slang.ml" 49 1356 1382
+)
+"src/slang.ml" 60 1753 1784 "src/slang.ml" 60 1753 1791
+type(
+  String.Set.t
+)
+ident(
+  int_ref var_set "src/slang.ml" 54 1547 1573 "src/slang.ml" 54 1547 1580
+)
+"src/slang.ml" 60 1753 1792 "src/slang.ml" 60 1753 1793
+type(
+  expr
+)
+ident(
+  int_ref e "src/slang.ml" 59 1732 1748 "src/slang.ml" 59 1732 1749
+)
+"src/slang.ml" 60 1753 1762 "src/slang.ml" 60 1753 1793
+call(
+  stack
+)
+type(
+  (String.Set.t, string) result
+)
+"src/slang.ml" 61 1794 1803 "src/slang.ml" 61 1794 1806
+type(
+  (String.Set.t, string) result ->
+  (String.Set.t -> String.Set.t) -> (String.Set.t, string) result
+)
+ident(
+  int_ref Core.Result.Monad_infix.( >>| ) "src/monad_intf.ml" 114 3711 3713 "src/monad_intf.ml" 114 3711 3763
+)
+"src/slang.ml" 61 1794 1811 "src/slang.ml" 61 1794 1822
+type(
+  String.Set.t
+)
+ident(
+  def var_set_mod "src/slang.ml" 61 1794 1826 "src/slang.ml" 61 1794 1837
+)
+"src/slang.ml" 61 1794 1826 "src/slang.ml" 61 1794 1837
+type(
+  String.Set.t
+)
+ident(
+  int_ref var_set_mod "src/slang.ml" 61 1794 1811 "src/slang.ml" 61 1794 1822
+)
+"src/slang.ml" 61 1794 1807 "src/slang.ml" 61 1794 1837
+type(
+  String.Set.t -> String.Set.t
+)
+"src/slang.ml" 60 1753 1762 "src/slang.ml" 61 1794 1837
+call(
+  tail
+)
+type(
+  (String.Set.t, string) result
+)
+"src/slang.ml" 55 1584 1590 "src/slang.ml" 61 1794 1838
+type(
+  (String.Set.t, string) result
+)
+"src/slang.ml" 54 1547 1569 "src/slang.ml" 61 1794 1838
+type(
+  String.Set.t -> (String.Set.t, string) result
+)
+"src/slang.ml" 54 1547 1553 "src/slang.ml" 61 1794 1838
+call(
+  tail
+)
+type(
+  (String.Set.t, string) result
+)
+"src/slang.ml" 53 1518 1525 "src/slang.ml" 61 1794 1839
+type(
+  (String.Set.t, string) result -> stmt -> (String.Set.t, string) result
+)
+"src/slang.ml" 51 1452 1454 "src/slang.ml" 61 1794 1839
+call(
+  stack
+)
+type(
+  (String.Set.t, string) result
+)
+"src/slang.ml" 62 1840 1842 "src/slang.ml" 62 1840 1845
+type(
+  (String.Set.t, string) result ->
+  (String.Set.t -> (unit, string) result) -> (unit, string) result
+)
+ident(
+  int_ref Core.Result.Monad_infix.( >>= ) "src/monad_intf.ml" 113 3650 3652 "src/monad_intf.ml" 113 3650 3710
+)
+"src/slang.ml" 62 1840 1850 "src/slang.ml" 62 1840 1862
+type(
+  String.Set.t
+)
+ident(
+  def var_set_done "src/slang.ml" 62 1840 1866 "src/slang.ml" 64 1923 1986
+)
+"src/slang.ml" 63 1868 1878 "src/slang.ml" 63 1868 1897
+type(
+  String.Set.t -> bool
+)
+ident(
+  int_ref Core.String.Set.is_empty "src/container_intf.ml" 31 938 940 "src/container_intf.ml" 31 938 964
+)
+"src/slang.ml" 63 1868 1898 "src/slang.ml" 63 1868 1910
+type(
+  String.Set.t
+)
+ident(
+  int_ref var_set_done "src/slang.ml" 62 1840 1850 "src/slang.ml" 62 1840 1862
+)
+"src/slang.ml" 63 1868 1877 "src/slang.ml" 63 1868 1911
+call(
+  stack
+)
+type(
+  bool
+)
+"src/slang.ml" 63 1868 1920 "src/slang.ml" 63 1868 1922
+type(
+  unit
+)
+"src/slang.ml" 63 1868 1917 "src/slang.ml" 63 1868 1922
+type(
+  (unit, string) result
+)
+"src/slang.ml" 64 1923 1941 "src/slang.ml" 64 1923 1955
+type(
+  (string, unit, string) Base.format -> string
+)
+ident(
+  int_ref Core.Printf.sprintf "src/printf.mli" 7 128 128 "src/printf.mli" 7 128 199
+)
+"src/slang.ml" 64 1923 1956 "src/slang.ml" 64 1923 1984
+type(
+  (string, unit, string) Base.format
+)
+"src/slang.ml" 64 1923 1940 "src/slang.ml" 64 1923 1985
+call(
+  stack
+)
+type(
+  string
+)
+"src/slang.ml" 64 1923 1934 "src/slang.ml" 64 1923 1985
+type(
+  (unit, string) result
+)
+"src/slang.ml" 62 1840 1866 "src/slang.ml" 64 1923 1986
+type(
+  (unit, string) result
+)
+"src/slang.ml" 62 1840 1846 "src/slang.ml" 64 1923 1986
+type(
+  String.Set.t -> (unit, string) result
+)
+"src/slang.ml" 51 1452 1454 "src/slang.ml" 64 1923 1986
+call(
+  tail
+)
+type(
+  (unit, string) result
+)
+type(
+  (unit, string) result
+)
+"src/slang.ml" 66 1988 1992 "src/slang.ml" 66 1988 2001
+type(
+  prog -> (unit, string) result
+)
+ident(
+  def typecheck "src/slang.ml" 72 2167 2230 "src/slang.ml" 1 0 -1
+)
+"src/slang.ml" 66 1988 2003 "src/slang.ml" 66 1988 2004
+type(
+  prog
+)
+ident(
+  def p "src/slang.ml" 66 1988 2013 "src/slang.ml" 72 2167 2230
+)
+"src/slang.ml" 67 2041 2047 "src/slang.ml" 67 2041 2053
+type(
+  string list String.Map.t
+)
+ident(
+  def fn_map "src/slang.ml" 70 2135 2137 "src/slang.ml" 72 2167 2230
+)
+"src/slang.ml" 68 2056 2060 "src/slang.ml" 68 2056 2083
+type(
+  (string * string list) list -> string list String.Map.t
+)
+ident(
+  int_ref Core.String.Map.of_alist_exn "src/map_intf.ml" 1156 39679 39681 "src/map_intf.ml" 1156 39679 39726
+)
+"src/slang.ml" 68 2056 2085 "src/slang.ml" 68 2056 2093
+type(
+  func list ->
+  f:(func -> string * string list) -> (string * string list) list
+)
+ident(
+  int_ref Core.List.map "src/list.mli" 191 8217 8217 "src/list.mli" 191 8217 8255
+)
+"src/slang.ml" 68 2056 2094 "src/slang.ml" 68 2056 2095
+type(
+  prog
+)
+ident(
+  int_ref p "src/slang.ml" 66 1988 2003 "src/slang.ml" 66 1988 2004
+)
+"src/slang.ml" 68 2056 2104 "src/slang.ml" 68 2056 2105
+type(
+  func
+)
+ident(
+  def f "src/slang.ml" 68 2056 2109 "src/slang.ml" 68 2056 2127
+)
+"src/slang.ml" 68 2056 2110 "src/slang.ml" 68 2056 2111
+type(
+  func
+)
+ident(
+  int_ref f "src/slang.ml" 68 2056 2104 "src/slang.ml" 68 2056 2105
+)
+"src/slang.ml" 68 2056 2110 "src/slang.ml" 68 2056 2116
+type(
+  string
+)
+"src/slang.ml" 68 2056 2118 "src/slang.ml" 68 2056 2119
+type(
+  func
+)
+ident(
+  int_ref f "src/slang.ml" 68 2056 2104 "src/slang.ml" 68 2056 2105
+)
+"src/slang.ml" 68 2056 2118 "src/slang.ml" 68 2056 2126
+type(
+  string list
+)
+"src/slang.ml" 68 2056 2109 "src/slang.ml" 68 2056 2127
+type(
+  string * string list
+)
+"src/slang.ml" 68 2056 2099 "src/slang.ml" 68 2056 2128
+type(
+  func -> string * string list
+)
+"src/slang.ml" 68 2056 2084 "src/slang.ml" 68 2056 2129
+call(
+  stack
+)
+type(
+  (string * string list) list
+)
+"src/slang.ml" 68 2056 2060 "src/slang.ml" 68 2056 2129
+call(
+  stack
+)
+type(
+  string list String.Map.t
+)
+"src/slang.ml" 70 2135 2137 "src/slang.ml" 70 2135 2146
+type(
+  func list ->
+  init:(unit, string) result ->
+  f:((unit, string) result -> func -> (unit, string) result) ->
+  (unit, string) result
+)
+ident(
+  int_ref Core.List.fold "src/container_intf.ml" 180 6928 6930 "src/container_intf.ml" 180 6928 7004
+)
+"src/slang.ml" 70 2135 2147 "src/slang.ml" 70 2135 2148
+type(
+  prog
+)
+ident(
+  int_ref p "src/slang.ml" 66 1988 2003 "src/slang.ml" 66 1988 2004
+)
+"src/slang.ml" 71 2149 2163 "src/slang.ml" 71 2149 2165
+type(
+  unit
+)
+"src/slang.ml" 71 2149 2159 "src/slang.ml" 71 2149 2166
+type(
+  (unit, string) result
+)
+"src/slang.ml" 72 2167 2179 "src/slang.ml" 72 2167 2182
+type(
+  (unit, string) result
+)
+ident(
+  def acc "src/slang.ml" 72 2167 2183 "src/slang.ml" 72 2167 2229
+)
+"src/slang.ml" 72 2167 2183 "src/slang.ml" 72 2167 2184
+type(
+  func
+)
+ident(
+  def f "src/slang.ml" 72 2167 2188 "src/slang.ml" 72 2167 2229
+)
+"src/slang.ml" 72 2167 2188 "src/slang.ml" 72 2167 2191
+type(
+  (unit, string) result
+)
+ident(
+  int_ref acc "src/slang.ml" 72 2167 2179 "src/slang.ml" 72 2167 2182
+)
+"src/slang.ml" 72 2167 2192 "src/slang.ml" 72 2167 2195
+type(
+  (unit, string) result ->
+  (unit -> (unit, string) result) -> (unit, string) result
+)
+ident(
+  int_ref Core.Result.Monad_infix.( >>= ) "src/monad_intf.ml" 113 3650 3652 "src/monad_intf.ml" 113 3650 3710
+)
+"src/slang.ml" 72 2167 2200 "src/slang.ml" 72 2167 2202
+type(
+  unit
+)
+"src/slang.ml" 72 2167 2206 "src/slang.ml" 72 2167 2220
+type(
+  string list String.Map.t -> func -> (unit, string) result
+)
+ident(
+  int_ref typecheck_func "src/slang.ml" 49 1356 1360 "src/slang.ml" 49 1356 1374
+)
+"src/slang.ml" 72 2167 2221 "src/slang.ml" 72 2167 2227
+type(
+  string list String.Map.t
+)
+ident(
+  int_ref fn_map "src/slang.ml" 67 2041 2047 "src/slang.ml" 67 2041 2053
+)
+"src/slang.ml" 72 2167 2228 "src/slang.ml" 72 2167 2229
+type(
+  func
+)
+ident(
+  int_ref f "src/slang.ml" 72 2167 2183 "src/slang.ml" 72 2167 2184
+)
+"src/slang.ml" 72 2167 2206 "src/slang.ml" 72 2167 2229
+call(
+  tail
+)
+type(
+  (unit, string) result
+)
+"src/slang.ml" 72 2167 2196 "src/slang.ml" 72 2167 2229
+type(
+  unit -> (unit, string) result
+)
+"src/slang.ml" 72 2167 2188 "src/slang.ml" 72 2167 2229
+call(
+  tail
+)
+type(
+  (unit, string) result
+)
+"src/slang.ml" 72 2167 2174 "src/slang.ml" 72 2167 2230
+type(
+  (unit, string) result -> func -> (unit, string) result
+)
+"src/slang.ml" 70 2135 2137 "src/slang.ml" 72 2167 2230
+call(
+  tail
+)
+type(
+  (unit, string) result
+)
+"src/slang.ml" 67 2041 2043 "src/slang.ml" 72 2167 2230
+type(
+  (unit, string) result
+)
+type(
+  (unit, string) result
+)

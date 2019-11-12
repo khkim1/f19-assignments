@@ -1,0 +1,37 @@
+### Starting build.
+# Target: src/main.ml.depends, tags: { package(core), ppx(ppx-jane -as-ppx), annot, bin_annot, debug, extension:ml, file:src/main.ml, ocaml, ocamldep, quiet, short_paths, thread, traverse }
+ocamlfind ocamldep -package core -ppx 'ppx-jane -as-ppx' -modules src/main.ml > src/main.ml.depends # cached
+# Target: src/slang.mli.depends, tags: { package(core), ppx(ppx-jane -as-ppx), annot, bin_annot, debug, extension:mli, file:src/slang.mli, ocaml, ocamldep, quiet, short_paths, thread, traverse }
+ocamlfind ocamldep -package core -ppx 'ppx-jane -as-ppx' -modules src/slang.mli > src/slang.mli.depends # cached
+# Target: src/slang.cmi, tags: { package(core), ppx(ppx-jane -as-ppx), annot, bin_annot, byte, compile, debug, extension:mli, file:src/slang.mli, interf, ocaml, quiet, short_paths, thread, traverse }
+ocamlfind ocamlc -c -w A-4-33-40-41-42-43-34-44 -strict-sequence -g -annot -bin-annot -short-paths -thread -package core -ppx 'ppx-jane -as-ppx' -I src -o src/slang.cmi src/slang.mli # cached
+# Target: src/translate.mli.depends, tags: { package(core), ppx(ppx-jane -as-ppx), annot, bin_annot, debug, extension:mli, file:src/translate.mli, ocaml, ocamldep, quiet, short_paths, thread, traverse }
+ocamlfind ocamldep -package core -ppx 'ppx-jane -as-ppx' -modules src/translate.mli > src/translate.mli.depends # cached
+# Target: src/wasm.mli.depends, tags: { package(core), ppx(ppx-jane -as-ppx), annot, bin_annot, debug, extension:mli, file:src/wasm.mli, ocaml, ocamldep, quiet, short_paths, thread, traverse }
+ocamlfind ocamldep -package core -ppx 'ppx-jane -as-ppx' -modules src/wasm.mli > src/wasm.mli.depends # cached
+# Target: src/wasm.cmi, tags: { package(core), ppx(ppx-jane -as-ppx), annot, bin_annot, byte, compile, debug, extension:mli, file:src/wasm.mli, interf, ocaml, quiet, short_paths, thread, traverse }
+ocamlfind ocamlc -c -w A-4-33-40-41-42-43-34-44 -strict-sequence -g -annot -bin-annot -short-paths -thread -package core -ppx 'ppx-jane -as-ppx' -I src -o src/wasm.cmi src/wasm.mli # cached
+# Target: src/translate.cmi, tags: { package(core), ppx(ppx-jane -as-ppx), annot, bin_annot, byte, compile, debug, extension:mli, file:src/translate.mli, interf, ocaml, quiet, short_paths, thread, traverse }
+ocamlfind ocamlc -c -w A-4-33-40-41-42-43-34-44 -strict-sequence -g -annot -bin-annot -short-paths -thread -package core -ppx 'ppx-jane -as-ppx' -I src -o src/translate.cmi src/translate.mli # cached
+# Target: src/main.cmo, tags: { package(core), ppx(ppx-jane -as-ppx), annot, bin_annot, byte, compile, debug, extension:cmo, extension:ml, file:src/main.cmo, file:src/main.ml, implem, ocaml, quiet, short_paths, thread, traverse }
+ocamlfind ocamlc -c -w A-4-33-40-41-42-43-34-44 -strict-sequence -g -annot -bin-annot -short-paths -thread -package core -ppx 'ppx-jane -as-ppx' -I src -o src/main.cmo src/main.ml # cached
+# Target: src/slang.ml.depends, tags: { package(core), ppx(ppx-jane -as-ppx), annot, bin_annot, debug, extension:ml, file:src/slang.ml, ocaml, ocamldep, quiet, short_paths, thread, traverse }
+ocamlfind ocamldep -package core -ppx 'ppx-jane -as-ppx' -modules src/slang.ml > src/slang.ml.depends # cached
+# Target: src/slang.cmx, tags: { package(core), ppx(ppx-jane -as-ppx), annot, bin_annot, compile, debug, extension:cmx, extension:ml, file:src/slang.cmx, file:src/slang.ml, implem, native, ocaml, quiet, short_paths, thread, traverse }
+ocamlfind ocamlopt -c -w A-4-33-40-41-42-43-34-44 -strict-sequence -g -annot -bin-annot -short-paths -thread -package core -ppx 'ppx-jane -as-ppx' -I src -o src/slang.cmx src/slang.ml # cached
+# Target: src/translate.ml.depends, tags: { package(core), ppx(ppx-jane -as-ppx), annot, bin_annot, debug, extension:ml, file:src/translate.ml, ocaml, ocamldep, quiet, short_paths, thread, traverse }
+ocamlfind ocamldep -package core -ppx 'ppx-jane -as-ppx' -modules src/translate.ml > src/translate.ml.depends
+# Target: src/wasm.ml.depends, tags: { package(core), ppx(ppx-jane -as-ppx), annot, bin_annot, debug, extension:ml, file:src/wasm.ml, ocaml, ocamldep, quiet, short_paths, thread, traverse }
+ocamlfind ocamldep -package core -ppx 'ppx-jane -as-ppx' -modules src/wasm.ml > src/wasm.ml.depends # cached
+# Target: src/wasm.cmx, tags: { package(core), ppx(ppx-jane -as-ppx), annot, bin_annot, compile, debug, extension:cmx, extension:ml, file:src/wasm.cmx, file:src/wasm.ml, implem, native, ocaml, quiet, short_paths, thread, traverse }
+ocamlfind ocamlopt -c -w A-4-33-40-41-42-43-34-44 -strict-sequence -g -annot -bin-annot -short-paths -thread -package core -ppx 'ppx-jane -as-ppx' -I src -o src/wasm.cmx src/wasm.ml # cached
+# Target: src/translate.cmx, tags: { package(core), ppx(ppx-jane -as-ppx), annot, bin_annot, compile, debug, extension:cmx, extension:ml, file:src/translate.cmx, file:src/translate.ml, implem, native, ocaml, quiet, short_paths, thread, traverse }
+ocamlfind ocamlopt -c -w A-4-33-40-41-42-43-34-44 -strict-sequence -g -annot -bin-annot -short-paths -thread -package core -ppx 'ppx-jane -as-ppx' -I src -o src/translate.cmx src/translate.ml
++ ocamlfind ocamlopt -c -w A-4-33-40-41-42-43-34-44 -strict-sequence -g -annot -bin-annot -short-paths -thread -package core -ppx 'ppx-jane -as-ppx' -I src -o src/translate.cmx src/translate.ml
+File "src/translate.ml", line 3, characters 0-23:
+Warning 38: unused exception Unimplemented
+# Target: src/main.cmx, tags: { package(core), ppx(ppx-jane -as-ppx), annot, bin_annot, compile, debug, extension:cmx, extension:ml, file:src/main.cmx, file:src/main.ml, implem, native, ocaml, quiet, short_paths, thread, traverse }
+ocamlfind ocamlopt -c -w A-4-33-40-41-42-43-34-44 -strict-sequence -g -annot -bin-annot -short-paths -thread -package core -ppx 'ppx-jane -as-ppx' -I src -o src/main.cmx src/main.ml
+# Target: src/main.native, tags: { package(core), ppx(ppx-jane -as-ppx), annot, bin_annot, debug, dont_link_with, extension:native, file:src/main.native, link, native, ocaml, program, quiet, short_paths, thread, traverse }
+ocamlfind ocamlopt -linkpkg -g -thread -package core -I src src/slang.cmx src/wasm.cmx src/translate.cmx src/main.cmx -o src/main.native
+# Compilation successful.
