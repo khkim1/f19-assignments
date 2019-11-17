@@ -1,4 +1,3 @@
-use std::{ptr, io};
 use std::collections::HashSet;
 
 fn password_checker(s: String) {

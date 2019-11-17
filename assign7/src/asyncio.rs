@@ -6,6 +6,7 @@ use std::sync::Arc;
 use std::fs;
 use std::io;
 
+
 pub struct FileReader {
   path: PathBuf,
   thread: Option<thread::JoinHandle<io::Result<String>>>,
@@ -14,7 +15,21 @@ pub struct FileReader {
 
 impl FileReader {
   pub fn new(path: PathBuf) -> FileReader {
-    unimplemented!()
+
+    let mut done_flag = Arc::new(AtomicBool::new(false));
+
+    let done_cp = done_flag.clone();
+    let path_cp = path.clone();
+
+    let thread = Some(thread::spawn( move || {
+      let read_str = fs::read_to_string(path_cp);
+
+      // let df_own = df_ref.unwrap();
+      done_cp.store(true, Ordering::Relaxed);
+      read_str
+    }));
+
+    FileReader { path: path, thread: thread, done_flag: done_flag }
   }
 }
 
@@ -22,6 +37,10 @@ impl Future for FileReader {
   type Item = io::Result<String>;
 
   fn poll(&mut self) -> Poll<Self::Item> {
-    unimplemented!()
+
+    match self.done_flag.load(Ordering::Relaxed) {
+      false => { Poll::NotReady }
+      true => { Poll::Ready( self.thread.take().unwrap().join().unwrap() ) }
+    }
   }
 }

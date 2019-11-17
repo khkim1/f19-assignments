@@ -15,6 +15,8 @@ pub trait Future: Send {
   fn poll(&mut self) -> Poll<Self::Item>;
 }
 
+
+
 /*
  * Example implementation of a future for an item that returns immediately.
  */
@@ -45,6 +47,7 @@ where
     Poll::Ready(self.t.take().unwrap())
   }
 }
+
 
 /*
  * Example implementation of a future combinator that applies a function to
@@ -123,7 +126,44 @@ where
   type Item = (F::Item, G::Item);
 
   fn poll(&mut self) -> Poll<Self::Item> {
-    unimplemented!()
+    // Store result in variable
+    let mut result:Poll<Self::Item> = Poll::NotReady;
+
+    // Poll until self is Done
+    while match self { Join::Done => false, _ => true} {
+
+      take_mut::take(self, |join_own: Join<F, G>| -> Join<F, G> {
+
+        match join_own {
+          Join::BothRunning(mut f, mut g) => {
+            match f.poll() {
+              Poll::Ready(s) => { Join::FirstDone(s, g) }
+              Poll::NotReady => {
+                match g.poll() {
+                  Poll::Ready(s) => { Join::SecondDone(f, s) } // Q. How do I still use f here?
+                  Poll::NotReady => { Join::BothRunning(f, g) }
+                }
+              }
+            }
+          }
+          Join::FirstDone(f_ret, mut g) => {
+            match g.poll() {
+              Poll::Ready(s) => { result = Poll::Ready((f_ret, s)); Join::Done }
+              Poll::NotReady => { Join::FirstDone(f_ret, g) }
+            }
+          }
+          Join::SecondDone(mut f, g_ret) => {
+            match f.poll() {
+              Poll::Ready(s) => { result = Poll::Ready((s, g_ret)); Join::Done }
+              Poll::NotReady => { Join::SecondDone(f, g_ret) }
+            }
+          }
+          Join::Done => { unreachable!() }
+        }
+      });
+    }
+    // Return the result
+    result
   }
 }
 
@@ -157,6 +197,31 @@ where
   type Item = Fut2::Item;
 
   fn poll(&mut self) -> Poll<Self::Item> {
-    unimplemented!()
+
+    let mut result:Poll<Self::Item> = Poll::NotReady;
+
+    // Poll until self is Done
+    while match self { AndThen::Done => false, _ => true} {
+      take_mut::take(self, |at_own: AndThen<Fut1, Fut2, Fun>| -> AndThen<Fut1, Fut2, Fun> {
+        match at_own {
+          AndThen::First(mut fut1, fun) => {
+            match fut1.poll() {
+              Poll::NotReady => { AndThen::First(fut1, fun) }
+              Poll::Ready(s) => { AndThen::Second(fun(s)) }
+            }
+          }
+          AndThen::Second(mut fut2) => {
+            match fut2.poll() {
+              Poll::NotReady => { AndThen::Second(fut2) }
+              Poll::Ready(s) => { result = Poll::Ready(s); AndThen::Done }
+            }
+          }
+          AndThen::Done => { unreachable!() }
+        }
+      });
+    }
+
+    // Return results
+    result
   }
 }
