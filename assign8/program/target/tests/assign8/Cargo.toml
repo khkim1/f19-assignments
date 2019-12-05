@@ -1,0 +1,241 @@
+[package]
+name = "assign8-tests"
+version = "0.0.0"
+edition = "2018"
+publish = false
+[dependencies.assign8]
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program"
+default-features = false
+
+[dependencies.rand]
+version = "0.6.0-pre.1"
+
+[[bin]]
+name = "assign8-tests"
+path = "main.rs"
+
+[[bin]]
+name = "trybuild000"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/fail1.rs"
+
+[[bin]]
+name = "trybuild001"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/login_1.rs"
+
+[[bin]]
+name = "trybuild002"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/login_2.rs"
+
+[[bin]]
+name = "trybuild003"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/login_3.rs"
+
+[[bin]]
+name = "trybuild004"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/method_1.rs"
+
+[[bin]]
+name = "trybuild005"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/method_2.rs"
+
+[[bin]]
+name = "trybuild006"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/method_3.rs"
+
+[[bin]]
+name = "trybuild007"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/method_4.rs"
+
+[[bin]]
+name = "trybuild008"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/method_5.rs"
+
+[[bin]]
+name = "trybuild009"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/nonstart_1.rs"
+
+[[bin]]
+name = "trybuild010"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/nonstart_2.rs"
+
+[[bin]]
+name = "trybuild011"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/nonstart_3.rs"
+
+[[bin]]
+name = "trybuild012"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/nonstart_4.rs"
+
+[[bin]]
+name = "trybuild013"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/nostart_5.rs"
+
+[[bin]]
+name = "trybuild014"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/op1.rs"
+
+[[bin]]
+name = "trybuild015"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/op10.rs"
+
+[[bin]]
+name = "trybuild016"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/op11.rs"
+
+[[bin]]
+name = "trybuild017"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/op12.rs"
+
+[[bin]]
+name = "trybuild018"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/op13.rs"
+
+[[bin]]
+name = "trybuild019"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/op14.rs"
+
+[[bin]]
+name = "trybuild020"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/op15.rs"
+
+[[bin]]
+name = "trybuild021"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/op16.rs"
+
+[[bin]]
+name = "trybuild022"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/op17.rs"
+
+[[bin]]
+name = "trybuild023"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/op18.rs"
+
+[[bin]]
+name = "trybuild024"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/op19.rs"
+
+[[bin]]
+name = "trybuild025"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/op2.rs"
+
+[[bin]]
+name = "trybuild026"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/op20.rs"
+
+[[bin]]
+name = "trybuild027"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/op21.rs"
+
+[[bin]]
+name = "trybuild028"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/op22.rs"
+
+[[bin]]
+name = "trybuild029"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/op23.rs"
+
+[[bin]]
+name = "trybuild030"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/op3.rs"
+
+[[bin]]
+name = "trybuild031"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/op4.rs"
+
+[[bin]]
+name = "trybuild032"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/op5.rs"
+
+[[bin]]
+name = "trybuild033"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/op6.rs"
+
+[[bin]]
+name = "trybuild034"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/op7.rs"
+
+[[bin]]
+name = "trybuild035"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/op8.rs"
+
+[[bin]]
+name = "trybuild036"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/op9.rs"
+
+[[bin]]
+name = "trybuild037"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/trans_1.rs"
+
+[[bin]]
+name = "trybuild038"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/trans_10.rs"
+
+[[bin]]
+name = "trybuild039"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/trans_11.rs"
+
+[[bin]]
+name = "trybuild040"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/trans_12.rs"
+
+[[bin]]
+name = "trybuild041"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/trans_13.rs"
+
+[[bin]]
+name = "trybuild042"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/trans_14.rs"
+
+[[bin]]
+name = "trybuild043"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/trans_15.rs"
+
+[[bin]]
+name = "trybuild044"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/trans_16.rs"
+
+[[bin]]
+name = "trybuild045"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/trans_17.rs"
+
+[[bin]]
+name = "trybuild046"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/trans_18.rs"
+
+[[bin]]
+name = "trybuild047"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/trans_19.rs"
+
+[[bin]]
+name = "trybuild048"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/trans_2.rs"
+
+[[bin]]
+name = "trybuild049"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/trans_3.rs"
+
+[[bin]]
+name = "trybuild050"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/trans_4.rs"
+
+[[bin]]
+name = "trybuild051"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/trans_5.rs"
+
+[[bin]]
+name = "trybuild052"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/trans_6.rs"
+
+[[bin]]
+name = "trybuild053"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/trans_7.rs"
+
+[[bin]]
+name = "trybuild054"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/trans_8.rs"
+
+[[bin]]
+name = "trybuild055"
+path = "/Users/kunhokim/Desktop/Courses/FA-2019/f19-assignments/assign8/program/tests/cart-fail/trans_9.rs"
+
+[workspace]
